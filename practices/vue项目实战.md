@@ -699,5 +699,33 @@ class AppConfig {
 +    <artifactId>springfox-swagger2</artifactId>
 +    <version>2.6.1</version>
 +</dependency>
++<dependency>
++    <groupId>io.springfox</groupId>
++    <artifactId>springfox-swagger-ui</artifactId>
++    <version>2.6.1</version>
++</dependency>
+```
+
+```java
+@Bean
+Docket newApi() {
+  return new Docket(DocumentationType.SWAGGER_2)
+    .apiInfo(apiInfo())
+    .select()
+    .paths(any())
+    .build();
+}
+
+private ApiInfo apiInfo() {
+  return new ApiInfoBuilder().title("****控制台测试界面")
+    .description("用于*** rest接口测试")
+    .build();
+}
+```
+
+前端node代理
+
+```javascript
+// config/index.js
 ```
 
