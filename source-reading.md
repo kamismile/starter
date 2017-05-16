@@ -7,3 +7,6 @@
 <artifactId>zkclient</artifactId>
 <version>0.10</version>
 ```
+
+https://github.com/Netflix/curator/wiki/ZKClient-Bridge
+
