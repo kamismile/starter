@@ -95,7 +95,6 @@ npm install --save antd react react-dom
   <script src="/bundle.js"></script>
 </body>
 ...
-
 ```
 
 加入es6的 import等语法支持
@@ -188,7 +187,6 @@ class App extends React.Component {
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));
-
 ```
 
 查看http://localhost:8080/index.html发现可以使用，但样式错误，因为压根没有引入样式，现在引入样式
@@ -222,10 +220,84 @@ npm install --save-dev css-loader style-loader
 
 现在应该可以正常显示，但控制台会有提示`bundle.js:66999 You are using a whole package of antd, please use https://www.npmjs.com/package/babel-plugin-import to reduce app bundle size.`
 
-按提示安装模块化引入插件
+按提示安装模块化引入插件 [坑1]
 
 ```shell
 npm install --save-dev babel-plugin-import
+```
+
+修改index.js
+
+```javascript
+import { Layout, Menu, Icon } from 'antd';
+const { Header, Content, Footer, Sider } = Layout;
+import React from 'react';
+import ReactDOM from 'react-dom';
+import 'antd/dist/antd.css';
+import './index.css';
+
+class App extends React.Component {
+  render() {
+    return (
+      <Layout>
+        <Sider
+          breakpoint="lg"
+          collapsedWidth="0"
+          defaultCollapsed={false}
+        >
+          <div className="logo" />
+          <Menu theme="dark" mode="inline" defaultSelectedKeys={['4']}>
+            <Menu.Item key="1">
+              <Icon type="user" />
+              <span className="nav-text">nav 1</span>
+            </Menu.Item>
+            <Menu.Item key="2">
+              <Icon type="video-camera" />
+              <span className="nav-text">nav 2</span>
+            </Menu.Item>
+            <Menu.Item key="3">
+              <Icon type="upload" />
+              <span className="nav-text">nav 3</span>
+            </Menu.Item>
+            <Menu.Item key="4">
+              <Icon type="user" />
+              <span className="nav-text">nav 4</span>
+            </Menu.Item>
+          </Menu>
+        </Sider>
+        <Layout>
+          <Header style={{ background: '#fff', padding: 0 }} />
+          <Content style={{ margin: '24px 16px 0' }}>
+            <div style={{ padding: 24, background: '#fff', minHeight: 360 }}>
+              content
+            </div>
+          </Content>
+          <Footer style={{ textAlign: 'center' }}>
+            Ant Design ©2016 Created by Ant UED
+          </Footer>
+        </Layout>
+      </Layout>
+    )
+  }
+}
+
+ReactDOM.render(<App />, document.getElementById('root'));
+
+```
+
+index.css
+
+```css
+ .logo {
+  height: 32px;
+  background: #333;
+  border-radius: 6px;
+  margin: 16px;
+}
+html, body, #root {
+  height: 100%;
+}
+
 ```
 
 
