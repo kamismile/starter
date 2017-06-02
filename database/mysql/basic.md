@@ -115,3 +115,24 @@ if [ "$MYSQL_MASTER_SERVER" ]; then
 fi
 ```
 
+# switch masters
+
+https://dev.mysql.com/doc/refman/5.7/en/replication-solutions-switch.html
+
+
+
+# semi-sync
+
+http://www.orczhou.com/index.php/2011/07/why-and-how-mysql-5-5-semi-sync-replication/
+
+
+
+# Replication and auto-failover
+
+http://www.clusterdb.com/mysql/replication-and-auto-failover-made-easy-with-mysql-utilities
+
+
+
+
+
+账号须有dump binlog权限： SELECT, RELOAD, REPLICATION SLAVE, REPLICATION CLIENT ON *.*
