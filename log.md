@@ -1,5 +1,9 @@
 2017－06－03 js this bowserify
 
+​	atom beauty plugin
+
+​	vs code intellisense shortcut/ npm tasks config  
+
 2017－06－02 wasted
 
 2017－06－01 blcs serializer

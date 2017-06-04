@@ -14,3 +14,16 @@ git-cmd.exe --no-cd --command=usr/bin/bash.exe -l -i
 
 右键启动设置在Integration一栏
 
+# 2. atom plugins
+
+- file-icons
+- atom-beautify
+
+# 3. visual studio code plugins
+
+- react code snippets
+- vs code great icons
+- bookmark
+- project manager
+- guides
+
