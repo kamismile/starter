@@ -146,6 +146,20 @@ http://www.ruanyifeng.com/blog/2010/04/using_this_keyword_in_javascript.html
 
 http://jeffjade.com/2015/08/03/2015-08-03-javascript-this/
 
+# 05 npm version ^ ~含义
+
+^从左往右第一个非0
+
+~minor版本限定
+
+# 06 通过npm 安装可执行cli
+
+package.json中配置bin，指定命令名称及对应的执行文件,然后 `npm install -g`, 可执行文件应该指定shebang，如shell指定`#!/bin/bash`,python指定`#!/usr/bin/python`或如js指定`#!/usr/bin/env node`
+
+# 07 shebang env含义
+
+使用env表示从path中查询对应的指令路径
+
 
 
 
