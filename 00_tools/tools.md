@@ -27,3 +27,28 @@ git-cmd.exe --no-cd --command=usr/bin/bash.exe -l -i
 - project manager
 - guides
 
+
+# 4. ubuntu 无gui安装virtualbox
+
+https://www.virtualbox.org/wiki/Linux_Downloads
+
+更新virtualbox源
+
+```shell
+sudo apt-add-repository "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -sc) contrib"
+```
+
+添加secure key:
+
+```shell
+sudo apt-key add oracle_vbox_2016.asc
+sudo apt-key add oracle_vbox.asc
+```
+
+安装virtualbox
+
+```shell
+sudo apt-get update
+sudo apt-get install virtualbox-5.1
+```
+
