@@ -6,7 +6,230 @@
 
 [TOC]
 
+# 04 react fundamentals: #2 - building your first react component with babel and webpack 2
+
+```shell
+npm install -g create-react-app
+mkdir github-battle
+cd github-battle
+npm init -y
+npm install --save react react-dom
+touch .gitignore
+```
+
+```properties
+# node_modules
+node_modules
+```
+
+```shell
+mkdir app
+cd app
+touch index.css index.js
+
+```
+
+```css
+/* index.css */
+body {
+  background: green;
+}
+```
+
+```jsx
+// index.js
+var React = require('react');
+var ReactDOM = require('react-dom');
+require('./index.css');
+
+class App extends React.Component {
+  render() {
+    return (
+    	<div>
+      		hello world!
+      	</div>
+    )
+  }
+}
+
+ReactDOM.render(<App />, document.getElementById('app'));
+```
+
+```shell
+npm install --save-dev babel-core babel-loader babel-preset-env babel-preset-react css-loader style-loader html-webpack-plugin webpack 
+```
+
+```javascript
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+module.exports = {
+  entry: './app/index.js',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'index_bundle.js'
+  },
+  module: {
+    rules: [
+      { test: /\.(js)$/, use: 'babel-loader' },
+      { test: /\.(js)$/, use: [ 'style-loader', 'css-loader' ]}
+    ]
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: 'app/index.html'
+    })
+  ]
+}
+```
+
+babel设置通过package.json或webpack.config.js取代.babelrc
+
+```json
+// package.json
+"babel": {
+  "presets": ["env", "react"]
+},
+"scripts": {
+  "create": "webpack"
+}
+```
+
+```html
+<!-- touch index.html -->
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Github Battle</title>
+  </head>
+  <body>
+    <div id="app">
+      
+    </div>
+  </body>
+</html>
+```
+
+```shell
+npm install --save-dev webpack-dev-server
+```
+
+```diff
+# package.json
+"scripts": {
+-  "create": "webpack",
++  "start": "webpack-dev-server --open" 
+}
+```
+
+
+
 # 03 webpack 2 - how to install react and babel
+
+
+
+```shell
+mkdir webpack-101
+cd webpack-101
+yarn init -y
+yarn add --dev webpack babel-core babel-loader
+touch webpack.config.js
+# npm i -D babel babel-preset-react babel-preset-es2015
+```
+
+在babel官网有关于如何集成webpack及其它工具的方式及命令
+
+```shell
+touch .babelrc
+```
+
+```json
+// .babelrc
+{
+  "presets": ["es2015", "react"]
+}
+```
+
+```shell
+mkdir src
+touch src/app.js app.scss index.html
+
+```
+
+```jsx
+// app.js
+const css = require('./app.scss');
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+ReactDOM.render(
+	<h1>Hello, World</h1>,
+  	document.getElementById('root')
+)
+```
+
+```html
+<!-- index.html -->
+<html>
+  <head>
+    <meta charset="UTF8">
+    <title></title>
+  </head>
+  <body>
+    <div id='root'>
+      
+    </div>
+  </body>
+</html>
+```
+
+```shell
+
+```
+
+
+
+```javascript
+// webpack.config.js
+
+const path = require('path');
+
+module.exports = {
+  entry: './src/app.js',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'app.bundle.js'
+  },
+  module: {
+    rules: [{
+      test: /\.scss$/,
+      use: ExtractTextPlugin.extract({
+        fallbackLoader: 'style-loader',
+        loader: ['css-loader', 'scss-loader'],
+        publicPath: '/dist'
+      })
+    }, {
+      test: /\.js$/,
+      excluce: /node_modules/,
+      use: 'babel-loader'
+    }]
+  },
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    stats: 'errors-only',
+    open: true
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'project demo',
+      
+    })
+  ]
+}
+```
+
+
 
 
 
