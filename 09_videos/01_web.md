@@ -6,6 +6,57 @@
 
 [TOC]
 
+# 06 React Router 4.0 with the real world example ! - react js course!
+
+
+
+
+
+# 05 react fundamentals: 31 - why react? an overview of react, webpack 2, React Router v4, and babel.
+
+```javascript
+// webpack.config.js
+var path = require('path');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+
+module.exports = {
+  entry: './app/index.js',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'index_bundle.js'
+  },
+  module: {
+    rules: [
+      { test: /\.(js)$/, use: 'babel-loader' },
+      { test: /\.css$/, use: [ 'style-loader', 'css-loader' ]}
+    ]
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: 'app/index.html'
+    })
+  ]
+}
+```
+
+```json
+"babel": {
+  "presets": [
+    "env",
+    "react"
+  ]
+}
+```
+
+```javascript
+// axios
+function getRepos(username) {
+  return axios.get('http://api.github.com/users/' + username + '/repos' + param + '&per_page=100')
+}
+```
+
+
+
 # 04 react fundamentals: #2 - building your first react component with babel and webpack 2
 
 ```shell
