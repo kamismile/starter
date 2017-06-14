@@ -6,6 +6,73 @@
 
 [TOC]
 
+
+
+# [ html and css](https://www.youtube.com/watch?v=1cZtdKNB9jo&list=PLAwxTw4SYaPmd5v7c9i883AwqVZquegHM&index=1)
+
+
+
+## 01 intro to course
+
+
+
+构建热加载的开发环境
+
+```shell
+mkdir html-css
+cd html-css
+yarn init -y
+yarn add --dev webpack webpack-dev-server raw-loader
+touch webpack.config.js index.html index.js index.css
+```
+
+```javascript
+// webpack.config.js
+const path = require('path');
+
+module.exports = {
+  devtool: 'cheap-eval-source-map',
+  entry: [
+    './index.js',
+    './index.html',
+    './index.css'
+  ],
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js',
+    publicPath: 'foo'
+  },
+  module: {
+    rules: [
+      {
+        test: /\.(html|css)/,
+        loader: 'raw-loader'
+      }
+    ]
+  }
+}
+```
+
+```html
+<!-- index.html -->
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <script src="/foo/bundle.js"></script>
+  </body>
+</html>
+```
+
+
+
+
+
+
+
+
+
 # 06 React Router 4.0 with the real world example ! - react js course!
 
 
