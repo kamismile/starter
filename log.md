@@ -1,3 +1,7 @@
+2017-06-14 blcs web
+
+2017-06-13 blcs web
+
 2017-06-08 egghead.io es6 [https://egghead.io/lessons/ecmascript-6-the-let-keyword-in-es6](https://egghead.io/lessons/ecmascript-6-the-let-keyword-in-es6)
 
 2017-06-07 egghead.io react [https://egghead.io/courses/start-using-react-to-build-web-applications](https://egghead.io/courses/start-using-react-to-build-web-applications)
