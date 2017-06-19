@@ -26,6 +26,17 @@ git-cmd.exe --no-cd --command=usr/bin/bash.exe -l -i
 - bookmark
 - project manager
 - guides
+- c/c++
+- code runner
+- debugger for chrome
+- eslint
+- go
+- npm
+- npm intellisense
+- path intellisense
+- python
+- reactjs code sinippets
+- vue 2 snippets
 
 
 # 4. ubuntu 无gui安装virtualbox
