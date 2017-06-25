@@ -1,3 +1,27 @@
+# 指定日志文件路径
+
+以system property形式指定logback.configurationFile
+
+# 配置文件修改后自动重新加载
+
+```xml
+<configuration scan="true">
+...
+</configuration>
+```
+
+默认情况下会每隔一分钟扫描一次变动可以指定**scanPeriod**, 单位可以是毫秒、秒、分钟或小时
+
+```xml
+<configuration scan="true" scanPeriod="30 seconds">
+...
+</configuration>
+```
+
+
+
+
+
 # webpack basics
 
 ```shell
