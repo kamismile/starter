@@ -2,6 +2,16 @@
 
 以system property形式指定logback.configurationFile
 
+# 占位符加el表达式指定属性
+
+用法1： 指定文件路径,日志级别
+
+```shell
+java -jar *.jar -Dfoo=fooValue
+```
+
+日志文件中配置中用*${foo}*的占位符形式配置
+
 # 配置文件修改后自动重新加载
 
 ```xml
@@ -16,6 +26,56 @@
 <configuration scan="true" scanPeriod="30 seconds">
 ...
 </configuration>
+```
+
+# 判断系统类型
+
+commons-lang3 SystemUtils中可得到
+
+# 运行命令程式
+
+common-exec
+
+win: bat start /java -jar -DprocessName=foo
+
+查找相关程式 jps -v / tasklist tasklist查看得到的都是java.exe进程，这里用jps -v可看到完整的带参数的命令，通过指定的名称可定义程式用来停止
+
+taskill
+
+```powershell
+START "do something window" dir
+FOR /F "tokens=2" %I in ('TASKLIST /NH /FI "WINDOWTITLE eq do something window"' ) DO SET PID=%I
+ECHO %PID%
+TASKKILL /PID %PID%
+```
+
+```java
+private static final String TASKLIST = "tasklist";
+private static final String KILL = "taskkill /F /IM ";
+
+public static boolean isProcessRunning(String serviceName) throws Exception {
+
+ Process p = Runtime.getRuntime().exec(TASKLIST);
+ BufferedReader reader = new BufferedReader(new InputStreamReader(
+   p.getInputStream()));
+ String line;
+ while ((line = reader.readLine()) != null) {
+
+  System.out.println(line);
+  if (line.contains(serviceName)) {
+   return true;
+  }
+ }
+
+ return false;
+
+}
+
+public static void killProcess(String serviceName) throws Exception {
+
+  Runtime.getRuntime().exec(KILL + serviceName);
+
+ }
 ```
 
 
