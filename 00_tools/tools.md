@@ -37,6 +37,9 @@ git-cmd.exe --no-cd --command=usr/bin/bash.exe -l -i
 - python
 - reactjs code sinippets
 - vue 2 snippets
+- bootstrap 3 snippets
+- react standard style code snippets
+- bootstrap4 & font awesome snippets
 
 
 # 4. ubuntu 无gui安装virtualbox
