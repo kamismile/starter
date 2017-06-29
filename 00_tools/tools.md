@@ -198,3 +198,6 @@ ${type} ${newName} = ${type}.Singleton.INSTANCE.getSingleton();
 ${cursor}
 ```
 
+# 6. npm plugins
+
+live-server 比 http-server好用的一点在于，多了websocket服务器推送，在文件修改后，自动刷新页面，需要手动刷新浏览器
