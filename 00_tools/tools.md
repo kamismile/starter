@@ -201,3 +201,7 @@ ${cursor}
 # 6. npm plugins
 
 live-server 比 http-server好用的一点在于，多了websocket服务器推送，在文件修改后，自动刷新页面，需要手动刷新浏览器
+
+# 7. ideal plugins
+
+translator 中英互译， 阅读代码注释时更方便
