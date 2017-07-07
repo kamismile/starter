@@ -42,6 +42,87 @@ git-cmd.exe --no-cd --command=usr/bin/bash.exe -l -i
 - bootstrap4 & font awesome snippets
 
 
+## [php programming in vs code](https://code.visualstudio.com/docs/languages/php) 
+
+### plugins
+
+1. code runner
+2. php intellisense
+3. html css support
+4. php debug
+
+可以使用`php.suggest.basic`禁用内置的php语言提示功能来支持php插件的提示功能
+
+### snippets
+
+ctrl + space可以查看提示 （快捷键可修改）
+
+### linting
+
+- php.validate.enable
+- php.validate.executablePath
+- php.validate.run
+
+### debugging
+
+php debug extension xdebug
+
+## Python on Visual Studio Code
+
+### install python extension
+
+- python
+- code runner
+
+
+### code completion
+
+### linting
+
+don jayamanne's python extension 有三种不同的linters， pylint, pep8, flake8
+
+### debug
+
+不要再使用print，设置断点，观察数据，使用debug控制台
+
+### snippets
+
+ctrl + space 且可自定义snippets
+
+## Go programming in vs code
+
+安装vscode go extension之后，可以获得如下好处，intellisense, code navigation, symbol search, bracket matching, snippets等
+
+### intellisense
+
+#### auto completions
+
+#### hover information
+
+### code navigation
+
+- go to definition f12
+- peek definition alt + f12
+- find all references shift + f12
+- go to symbol in file ctrl + shift + o
+- go to symbol in workspace ctrl + t
+- 可以使用go:toggle test file指令(ctrl + shift + p)
+
+### build lint and vet
+
+### formatting
+
+### test
+
+### debug
+
+
+
+
+
+​
+
+
 # 4. ubuntu 无gui安装virtualbox
 
 https://www.virtualbox.org/wiki/Linux_Downloads
