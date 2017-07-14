@@ -290,3 +290,7 @@ translator 中英互译， 阅读代码注释时更方便
 # 8. windows caps ctrl交换 sharpkeys
 
 windows下caps键不怎么实用，可以和ctrl交换，这样剪切粘贴操作会方便很多，一般windows下通过修改注册表完成，如果嫌麻烦，可以使用sharpkeys这款小工具完成。
+
+# 9. chrome plugins
+
+- css used 可方便查看某个甚至整个页面使用到的样式,可方便拷站点
