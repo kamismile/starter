@@ -116,7 +116,9 @@ ctrl + space 且可自定义snippets
 
 ### debug
 
+## CPP
 
+plugins: c/c++ 、 c++ intellisense
 
 
 
