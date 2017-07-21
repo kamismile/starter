@@ -298,3 +298,16 @@ windows下caps键不怎么实用，可以和ctrl交换，这样剪切粘贴操�
 # 9. chrome plugins
 
 - css used 可方便查看某个甚至整个页面使用到的样式,可方便拷站点
+
+# 10. vagrant box download offline
+
+vagrant 镜像下载方式，一般是通过命令`vagrant box add [boxname]`来操作，有时网络原因，可以通过http方式下载再离线导入
+
+以ubuntu/trusty64为例，地址为https://app.vagrantup.com/ubuntu/boxes/trusty64/versions/20170619.0.0/
+
+可以在浏览器后输入https://app.vagrantup.com/ubuntu/boxes/trusty64/versions/20170619.0.0/providers/virtualbox.box下载virtualbox版本的镜像或通过**wget**命令也可
+
+# 11. docker 镜像下载方式 offline
+
+docker hub或最新的docker store上下载镜像时由于是国外的站点可能会有很多问题，可使用国内的如阿里云或灵雀云，配置registry地址等，如果有洁癖可以在下载完成后使用tag 重新设置成官方tag方式 **docker tag source[:tag] target[:tag]**, 当然也可以使用docker hub 上的dockerfile文件及对应材料本地build构建，docker hub上的镜像说明页面一般附有dockerfile的git地址，选定版本使用[downgit](https://minhaskamal.github.io/DownGit/#/home)即可下载sources material,然后本地解压，进入对应目录运行 `docker build . -t name:tag`即可。有时会有额外的项或父镜像的下载，有必要的话可以按此方式先构建父镜像再构建当前镜像
+
