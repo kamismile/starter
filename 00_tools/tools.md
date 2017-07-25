@@ -40,6 +40,7 @@ git-cmd.exe --no-cd --command=usr/bin/bash.exe -l -i
 - bootstrap 3 snippets
 - react standard style code snippets
 - bootstrap4 & font awesome snippets
+- vscode_hexdump [vim 中使用%!xxd命令也可查看]
 
 
 ## [php programming in vs code](https://code.visualstudio.com/docs/languages/php) 
