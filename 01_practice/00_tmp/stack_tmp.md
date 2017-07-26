@@ -77,4 +77,4 @@
 77. ansible. saltstack. puppet. zabbix. cmdb. haproxy
 78. data mining/machine learning algorithms like regression, clustering, classification, recommendation.
 79. source reading...
-
+80. drools spring boot , spring boot activiti
