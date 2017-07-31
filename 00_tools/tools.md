@@ -314,3 +314,8 @@ vagrant 镜像下载方式，一般是通过命令`vagrant box add [boxname]`来
 
 docker hub或最新的docker store上下载镜像时由于是国外的站点可能会有很多问题，可使用国内的如阿里云或灵雀云，配置registry地址等，如果有洁癖可以在下载完成后使用tag 重新设置成官方tag方式 **docker tag source[:tag] target[:tag]**, 当然也可以使用docker hub 上的dockerfile文件及对应材料本地build构建，docker hub上的镜像说明页面一般附有dockerfile的git地址，选定版本使用[downgit](https://minhaskamal.github.io/DownGit/#/home)即可下载sources material,然后本地解压，进入对应目录运行 `docker build . -t name:tag`即可。有时会有额外的项或父镜像的下载，有必要的话可以按此方式先构建父镜像再构建当前镜像
 
+# 12. java工具
+
+- spring boot admin
+- dropwizard metric-core (microservices)
+- btrace
