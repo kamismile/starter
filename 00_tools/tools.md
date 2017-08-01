@@ -319,3 +319,8 @@ docker hub或最新的docker store上下载镜像时由于是国外的站点可�
 - spring boot admin
 - dropwizard metric-core (microservices)
 - btrace
+
+# 13. jetbrains 使用jetbrain toolbox取代直接下载jetbrain idea zip绿色版
+
+下载完成toolbox.exe后修改扩展名为.exe.zip然后解压后直接使用即可
+
