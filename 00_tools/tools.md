@@ -288,11 +288,17 @@ live-server 比 http-server好用的一点在于，多了websocket服务器推�
 
 # 7. idea plugins
 
-translator 中英互译， 阅读代码注释时更方便
+translator / translation 中英互译， 阅读代码注释时更方便
 
 java stream debugger : jdk8 stream 可视化调试工具
 
 grep console： 控制台日志颜色区分，查看控制台输出更直观
+
+ide features trainer 
+
+key promoter x
+
+lombok
 
 # 8. windows caps ctrl交换 sharpkeys
 
