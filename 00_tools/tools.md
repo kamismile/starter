@@ -300,6 +300,8 @@ key promoter x
 
 lombok
 
+maven helper
+
 # 8. windows caps ctrl交换 sharpkeys
 
 windows下caps键不怎么实用，可以和ctrl交换，这样剪切粘贴操作会方便很多，一般windows下通过修改注册表完成，如果嫌麻烦，可以使用sharpkeys这款小工具完成。
