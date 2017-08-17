@@ -344,6 +344,15 @@ docker hub或最新的docker store上下载镜像时由于是国外的站点可�
 
 - teamviewer
 
+
 # 16 eclipse plugin
 
 jbenchx
+
+# 17 java查询所有 vm ops参数
+
+```shell
+java -XX:+UnlockDiagnosticVMOptions -XX:+PrintFlagsFinal -version
+```
+
+
