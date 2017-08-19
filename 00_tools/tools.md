@@ -304,6 +304,8 @@ maven helper
 
 jmh
 
+ - 使用方式 集成jmh-generator-annprocess依赖项，win alt+insert添加jmh测试项，在方法上运行ctrl+shift+f10即可运行
+
 # 8. windows caps ctrl交换 sharpkeys
 
 windows下caps键不怎么实用，可以和ctrl交换，这样剪切粘贴操作会方便很多，一般windows下通过修改注册表完成，如果嫌麻烦，可以使用sharpkeys这款小工具完成。
