@@ -9,3 +9,16 @@ mvn clean compile -U 强制更新snapshot
 mvn dependency:purge-local-repository重新下载项目依赖项
 
 不用强记 mvn dependency:help
+
+# 02  windows下git bash查询树
+
+```shell
+cmd //c tree
+```
+
+# 03 创建项目目录结构
+
+```shell
+mkdir -p src/{main,test}/{java,resources}
+```
+
