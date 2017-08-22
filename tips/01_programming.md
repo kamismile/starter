@@ -22,3 +22,6 @@ cmd //c tree
 mkdir -p src/{main,test}/{java,resources}
 ```
 
+# 04 JIT && JMH
+
+https://www.ibm.com/developerworks/library/j-benchmark1/index.html
