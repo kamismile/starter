@@ -357,4 +357,8 @@ jbenchx
 java -XX:+UnlockDiagnosticVMOptions -XX:+PrintFlagsFinal -version
 ```
 
+# 18 kindle azw3
 
+Desktop: azw3文件放到tools下的配置的文件路径下
+
+android pad: /kindle目录下就好
