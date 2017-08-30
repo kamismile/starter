@@ -14,6 +14,7 @@ mvn dependency:purge-local-repository重新下载项目依赖项
 
 ```shell
 cmd //c tree
+# cmd //c tree //F 显示文件
 ```
 
 # 03 创建项目目录结构
