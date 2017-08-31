@@ -22,6 +22,36 @@
 
 
 
+
+
+-[ ] http://wiki.jikexueyuan.com/list/sort/
+
+
+-[ ] http://wiki.jikexueyuan.com/list/nginx/
+
+
+-[ ] http://wiki.jikexueyuan.com/project/java-concurrency/
+-[ ] http://wiki.jikexueyuan.com/project/java-vm/
+-[ ] http://wiki.jikexueyuan.com/project/java-concurrent/
+-[ ] http://wiki.jikexueyuan.com/project/java-nio-zh/
+-[ ] http://wiki.jikexueyuan.com/project/java-nio/
+
+
+
+
+
+
+
+# 打印所有JVM XX参数及值
+
+```shell
+-XX:+PrintFlagsFinal && -XX:+PrintFlagsInitial
+```
+
+
+
+
+
 https://git.oschina.net/vakinge/jeesuite-libs
 
 https://github.com/kaazing/gateway
