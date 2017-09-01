@@ -25,6 +25,7 @@
 
 
 -[ ] http://wiki.jikexueyuan.com/list/sort/
+-[ ] http://wiki.jikexueyuan.com/list/lua/
 
 
 -[ ] http://wiki.jikexueyuan.com/list/nginx/
