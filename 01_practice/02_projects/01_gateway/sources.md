@@ -42,6 +42,10 @@
 
 - [ ] Java项目案例分析
 
+- [ ] 具体数学
+
+- [ ] 图灵计算机具体数学第2版
+
       ​
 
 # HTML CSS
@@ -54,7 +58,9 @@
 -[ ] Java并发编程的艺术
 -[ ] Java多线程编程核心技术
 -[ ] 实战Java高并发程序设计
+-[ ] Java io nio and nio2
 -[ ] 七周七并发模型
+-[ ] 并发的艺术
 -[ ] disruptor
 -[ ] rxjava
   -[ ] reactivex rxjava文档
@@ -98,6 +104,12 @@
 -[ ] neutral network programming with java
 -[ ] netty权威指南第2版
 -[ ] Java network programming 4th
+-[ ] 网络游戏服务器端编程
+-[ ] tcp ip 详解 卷一
+-[ ] tcp ip 详解 卷二
+-[ ] tcp ip 详解 卷三
+-[ ] java web services up and running
+-[ ] 深入理解计算机网络
 
 # 编码 
 
@@ -127,6 +139,7 @@
 -[ ] 分形算法与程序设计
 -[ ] generic algorithms in java
 -[ ] 零基础学数据结构
+-[ ] data structure and algorithms in java 6th
 
 
 
@@ -157,6 +170,10 @@
 # 数据
 
 -[ ] 谁说菜鸟不会数据分析
+-[ ] manning big data
+-[ ] programming hive
+-[ ] practical data analysis
+-[ ] storm applyied storage for real time event processing
 
 # 函数式编程
 
@@ -171,8 +188,13 @@
 -[ ] mastering elasticsearch
 -[ ] elasticsearch cookbook 2nd
 -[ ] beginning apache cassandra development
+-[ ] neo4j in action
+-[ ] apache karaf cookbook
+-[ ] mastering jbpm6
+-[ ] redis in action
+-[ ] neo4j essentials
 
-# 系统底层
+# 底层
 
 -[ ] linux内核精髓
 -[ ] 分布式系统原理与范型
@@ -184,10 +206,14 @@
 -[ ] 实战Java虚拟机 jvm故障诊断与性能优化
 -[ ] Mahout实践指南
 -[ ] 深入理解Java内存模型
+-[ ] 编译原理
+-[ ] Java虚拟机规范第8版
 
 # 设计
 
 -[ ] UML那些事儿
+-[ ] 解析极限编程拥抱变化 第2版
+-[ ] Java Test Driven development
 
 
 -[ ] Pro java clustering and  scalability
@@ -211,6 +237,13 @@
 -[ ] 面向模式的软件体系架构 卷5
 -[ ] Java design patterns
 -[ ] 软件架构实践
+-[ ] 卓越程序员密码
+-[ ] 系统之美 决策者的系统思考
+-[ ] 互联网思维独狐九剑
+-[ ] rest java patterns and best practise
+-[ ] Java设计模式深入研究
+-[ ] 彩色UML建模
+-[ ] UML设计实作宝典
 
 # 自动化
 
@@ -253,6 +286,7 @@
 -[ ] Java特种兵上
 -[ ] Java performance the definitive guide
 -[ ] Java performance tuning
+-[ ] 软件测试的艺术
 
 # 工具
 
@@ -266,13 +300,26 @@
 -[ ] Linux shell脚本攻略
 -[ ] 实战linux shell编程与服务器管理
 -[ ] linux shell编程艺术
+-[ ] the definitive antlr 4 2nd
+-[ ] git for team
 
 # 面试
 
--[ ] 学员用书java interview
--[ ] 程序员接单宝典
--[ ] Java程序员成功面试秘籍
--[ ] cracking the coding interview 4th
+- [ ] 学员用书java interview
+
+- [ ] 程序员在囧途
+
+- [ ] 程序员接单宝典
+
+- [ ] Java程序员成功面试秘籍
+
+- [ ] cracking the coding interview 4th
+
+- [ ] 程序员面试宝典第三版
+
+- [ ] Java程序员面试指南
+
+      ​
 
 # 课外
 
@@ -295,4 +342,6 @@
 -[ ] Introducing to apache flink
 -[ ] 软技能
 -[ ] 数据挖掘技术与工程实践
+-[ ] 软件故事
+-[ ] 计算机文化
 
