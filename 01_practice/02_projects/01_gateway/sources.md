@@ -3,10 +3,15 @@
 # 基础
 
 - [ ] 精通lambda表达式
+- [ ] Java程序设计与数据结构导论
 - [ ] 计算机科学概论第11版
+- [ ] 高效能程序员的修炼
 - [ ] Java程序员修炼之道
 - [ ] 高效程序员的45个习惯
+- [ ] 软件开发者路线图：从学徒到高手
 - [ ] 程序设计实践
+- [ ] Java加密与解密的艺术
+- [ ] 大话JAVA：从零基础到数据库、WEB开发
 - [ ] Java Closures and Lambda
 - [ ] Mastering lambdas
 - [ ] Java for tester
@@ -24,6 +29,7 @@
 - [ ] 30种Java技术框架-方案架构图汇总
 - [ ] git基础教程
 - [ ] 深入体验Java项目开发
+- [ ] 张孝祥Java邮件开发详解
 - [ ] advanced java programming
 - [ ] restful java with jax-rs 2.0 2nd
 - [ ] the well-grounded java developer
@@ -35,10 +41,27 @@
 - [ ] 卓有成效的程序员
 - [ ] 图灵计算机具体数学第2版
 - [ ] 事务处理的概念与技术
+- [ ] 原型设计+实践者指南
+- [ ] 开源软件之道
 
 # 提高
 
 -[ ] 系统程序员成长计划
+-[ ] Java全能速查宝典%5D.明日科技
+-[ ] 探秘Java：如何像计算机科学家一样思考
+-[ ] Java+实时编程
+-[ ] Java学习路线图+300个问题
+-[ ] 深入体验Java项目开发
+-[ ] JAVA项目开发案例全程实录(第二版)
+-[ ] 你必须知道的261个Java语言问题
+-[ ] 修炼之道：互联网产品从设计到运营
+-[ ] 编写高质量代码  改善Java程序的151个建议
+-[ ] Java典型模块与项目实战大全
+-[ ] Java开放源码编程
+-[ ] Java企业级开发项目实践
+-[ ] [敏捷技能修炼-敏捷软件开发与设计的最佳实践]
+-[ ] 程序员编程艺术
+-[ ] 敏捷教练-如何打造优秀的敏捷团队
 
 # HTML CSS
 
@@ -51,13 +74,16 @@
 -[ ] Java并发编程的艺术
 -[ ] Java线程第3版
 -[ ] Java多线程编程核心技术
+-[ ] Java+并发编程实战
 -[ ] 实战Java高并发程序设计
 -[ ] Java7 concurrency cookbook
 -[ ] functional programming in java
 -[ ] Java io nio and nio2
 -[ ] 七周七并发模型
 -[ ] 并发的艺术
+-[ ] 大型网站技术核心原理与案例分析
 -[ ] disruptor
+-[ ] Java虚拟机并发编程
 -[ ] rxjava
   -[ ] reactivex rxjava文档
   -[ ] learning rxjava
@@ -107,6 +133,7 @@
 -[ ] netty权威指南第2版
 -[ ] Java network programming 4th
 -[ ] 网络游戏服务器端编程
+-[ ] 深入理解Nginx模块开发与架构解析第2版LinuxUnix技术丛书
 -[ ] tcp ip 详解 卷一
 -[ ] tcp ip 详解 卷二
 -[ ] tcp ip 详解 卷三
@@ -129,6 +156,7 @@
 -[ ] 算法刷题leetcode
 -[ ] advance topics in java
 -[ ] 算法的乐趣
+-[ ] 挑战编程程序设计竞赛训练手册
 -[ ] 算法第四册谢路云
 -[ ] algorithms 4th
 -[ ] Java数据结构和算法第二版
@@ -154,6 +182,7 @@
 -[ ] 分形算法与程序设计
 -[ ] generic algorithms in java
 -[ ] 零基础学数据结构
+-[ ] 算法竞赛入门经典（第2版） (算法艺术与信息学竞赛)
 -[ ] data structure and algorithms in java 6th
 -[ ] 算法导论
 -[ ] 十五个经典算法研究与总结
@@ -192,6 +221,7 @@
  -[ ] orchestrating docker
  -[ ] docker技术入门与实战
  -[ ] KVM虚拟化技术实战
+ -[ ] Practical LXC and LXD
 
 # 数据
 
@@ -210,6 +240,7 @@
 # 常用中间件
 
 -[ ] 大型网站系统与java中间件实践
+-[ ] 推荐系统实践
 -[ ] 基于嵌入式Linux的QT图形开发实战
 -[ ] using redis as a time serials database
 -[ ] openstack实战指南
@@ -221,6 +252,7 @@
 -[ ] beginning apache cassandra development
 -[ ] neo4j in action
 -[ ] apache karaf cookbook
+-[ ] 搜索引擎核心技术详解
 -[ ] mastering jbpm6
 -[ ] redis in action
 -[ ] neo4j essentials
@@ -243,12 +275,16 @@
 -[ ] 编译原理
 -[ ] linux内核编程
 -[ ] Java虚拟机规范第8版
+-[ ] 操作系统设计与实现+第3版+上下册
 -[ ] 操作系统概念第七版
+-[ ] 自动机理论、语言和计算导论(原书第3版)
 -[ ] 操作系统精髓与设计原理
+-[ ] [高级编译器设计与实现(中文版)]
 -[ ] 深入浅出嵌入式底层软件开发
 -[ ] orange s 一个操作系统的实现
 -[ ] 领域特定语言
 -[ ] linux权威指南第三版
+-[ ] 数据挖掘：概念与技术（原书第3版）
 -[ ] 一步一步写嵌入式操作系统
 -[ ] linux操作系统管理与网络服务教程
 -[ ] linux_unix系统编程手册上下册
@@ -259,12 +295,23 @@
 -[ ] 操作系统原理及应用
 -[ ] 深入理解Linux虚拟内存管理(jb51.net)
 -[ ] linux操作系统分析与实践
+-[ ] 编译原理及实践
 
 # 设计
 
 -[ ] UML那些事儿
+-[ ] 软件设计师教程
+-[ ] 系统分析师UML用例实战
+-[ ] 火球+UML大战需求分析
+-[ ] 走出软件作坊
+-[ ] 软件分析建模与PowerDesigner实现
+-[ ] 设计模式解析第2版
+-[ ] 系统分析师UML实务手册
+-[ ] 软件设计之道
+-[ ] Head First 设计模式[高清中文版]
 -[ ] 解析极限编程拥抱变化 第2版
 -[ ] 领域驱动设计：软件核心复杂性应对之道
+-[ ] 软件设计精要与模式
 -[ ] 设计模式那点事
 -[ ] 重构与模式
 -[ ] Java Test Driven development
@@ -275,14 +322,18 @@
 
 -[ ] 您的设计模式
 -[ ] uml构建web应用
+-[ ] SOC设计UML实务手册
 -[ ] 设计模式之禅第2版
+-[ ] 构件化软件设计与实现
 -[ ] Java设计模式第2版
 -[ ] UML和模式应用
 -[ ] UML用户指南
+-[ ] 软件质量管理实践：软件缺陷预防、清除、管理实用方法
 -[ ] 反模式 危机中软件 架构和项目的重构
 -[ ] 驯服烂代码
 -[ ] Effective Java第二版
 -[ ] 解析极限编程
+-[ ] 项目管理修炼之道
 -[ ] 大话设计模式
 -[ ] 修改代码的艺术
 -[ ] Think java like a computer scientist
@@ -310,6 +361,7 @@
 # 自动化
 
 -[ ] 自动化运维软件设计实战
+-[ ] 鸟哥的私房菜基础篇第三版
 -[ ] shell脚本学习指南
 -[ ] gradle进阶
 -[ ] 跟老男孩学Linux运维
@@ -330,6 +382,7 @@
 
  -[ ] 性能测试诊断分析与优化
  -[ ] How-Google-Tests-Software
+ -[ ] 解析Java虚拟机器开发：权衡优化、高效和安全的最优方案
  -[ ] Junit实战第二版
  -[ ] Pragmatic Unit Testing in Java 8 with JUnit(PACKT,2015)
  -[ ] JVM trouble shooting guide
@@ -341,6 +394,7 @@
 -[ ] 深入理解Java虚拟机
 -[ ] Java performance
 -[ ] Java性能优化权威指南
+-[ ] Java程序性能优化++让你的Java程序更快、更稳定
 -[ ] Java虚拟机第二版
 -[ ] Java performance companion
 -[ ] optimizing java
@@ -353,6 +407,7 @@
 -[ ] Java性能调优指南
 -[ ] 大规模Java平台虚拟化与调优
 -[ ] Java程序设计专家门诊
+-[ ] 代码优化_有效使用内存
 -[ ] Java虚拟机精讲
 -[ ] JVM内存管理
 -[ ] Java特种兵上
@@ -363,29 +418,42 @@
 # 工具
 
 -[ ] github入门与实践
+-[ ] 正则表达式经典实例
+-[ ] 精通正则表达式 第3版 中文版. 美 Jeffrey.E.F.Friedl
+-[ ] 巧学活用Linux
 -[ ] 高级Bash脚本编程指南
 -[ ] 代码阅读方法与实践（中文版）
 -[ ] Writing compilers and interpreters 3nd
 -[ ] vim实用技巧
 -[ ] definitive antlr4
+-[ ] Linux：鸟哥私房菜1700页全文清晰版
 -[ ] 循序渐进linux 基础知识、服务器搭建、系统管理、性能调优、集群应用
 -[ ] text processing in java
 -[ ] apache hive essential
 -[ ] eclipse plugin development 2nd
 -[ ] Linux shell脚本攻略
 -[ ] Sed与awk第二版(高清版)
+-[ ] LINUX命令行与SHELL脚本编程大全第2版.布卢
 -[ ] 实战linux shell编程与服务器管理
 -[ ] linux shell编程艺术
 -[ ] the definitive antlr 4 2nd
+-[ ] JavaFX 9 by Example, 3rd Edition
 -[ ] git for team
 -[ ] Linux命令行完全技术宝典
 -[ ] shell脚本编程诀窍
 -[ ] 构建高可用linux服务器
+-[ ] linux入门很简单
+-[ ] Shell脚本学习指南
 -[ ] 软件开发这点事儿：软件开发工具手册 邵志东著 电子工业出版社 2009_12174335
 
 # 架构
 
 -[ ] 一线架构师实践指南
+-[ ] Java开发技术  在架构中体验设计模式和算法之美
+-[ ] 我也能做CTO之程序员职业规划
+-[ ] java深度历险
+-[ ] 软件架构师应该知道的97件事
+-[ ] 系统架构设计师教程-高级
 -[ ] 老码识途从机器码到框架的逆向修炼之路
 -[ ] interview1
 -[ ] 重构 极限编程 xp的实践与反思
@@ -396,6 +464,8 @@
 -[ ] 《构建高效的私有云平台：今日头条私有云架构设计》
 -[ ] 《网易蜂巢基于万节点kubernetes支撑大规模云应用实践》
 -[ ] 《京东数据中心网络的高可用架构》
+-[ ] 淘宝技术这十年
+-[ ] UML基础 案例与应用
 -[ ] 《HTTPS的性能优化》
 -[ ] 《58大数据平台的技术演进与实践》
 -[ ] 《40分钟了解传统架构如何过渡到微服务架构》
@@ -413,6 +483,12 @@
 
 - [ ] 学员用书java interview
 
+- [ ] 逻辑思维训练500题
+
+- [ ] 程序员面试笔试宝典
+
+- [ ] Java 菜鸟成长之路—Java程序员职场全攻略
+
 - [ ] 程序员面试攻略第2版
 
 - [ ] Java programming interviews exposed
@@ -423,11 +499,17 @@
 
 - [ ] Java程序员成功面试秘籍
 
+- [ ] 编程之美——微软技术面试心得
+
 - [ ] cracking the coding interview 4th
 
 - [ ] 程序员面试宝典第三版
 
+- [ ] 程序员面试逻辑题解析
+
 - [ ] Java程序员面试指南
+
+- [ ] Java程序员面试宝典第2版
 
 - [ ] 华为研发
 
@@ -439,7 +521,11 @@
 
 - [ ] interview2
 
+- [ ] 程序员职场第一课
+
 - [ ] 多线程40问题
+
+- [ ] 世界500强企业面试题解析
 
 - [ ] 程序员的职业素养
 
