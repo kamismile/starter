@@ -3,72 +3,42 @@
 # 基础
 
 - [ ] 精通lambda表达式
-
 - [ ] 计算机科学概论第11版
-
 - [ ] Java程序员修炼之道
-
 - [ ] 高效程序员的45个习惯
-
 - [ ] 程序设计实践
-
 - [ ] Java Closures and Lambda
-
 - [ ] Mastering lambdas
-
 - [ ] Java for tester
-
 - [ ] getting started with guava
-
 - [ ] Java se 8 for the really impatient
-
 - [ ] spring 4 in action
-
 - [ ] mastering spring mvc 4
-
 - [ ] Java8新特性
-
 - [ ] Java 8实战
-
 - [ ] Java In a Nutshell 6th
-
 - [ ] Java核心技术 卷2高级特性
-
 - [ ] Java_NIO_细节也精彩
-
 - [ ] Core Java Volume II advanced features
-
 - [ ] 深入理解Java7核心技术与最佳实践
-
 - [ ] 30种Java技术框架-方案架构图汇总
-
 - [ ] git基础教程
-
 - [ ] 深入体验Java项目开发
-
 - [ ] advanced java programming
-
 - [ ] restful java with jax-rs 2.0 2nd
-
 - [ ] the well-grounded java developer
-
 - [ ] build web application with java
-
 - [ ] 正则表达式必知必会
-
 - [ ] pro java7 nio2
-
 - [ ] Java项目案例分析
-
 - [ ] 具体数学
-
 - [ ] 卓有成效的程序员
-
 - [ ] 图灵计算机具体数学第2版
-
 - [ ] 事务处理的概念与技术
 
-      ​
+# 提高
+
+-[ ] 系统程序员成长计划
 
 # HTML CSS
 
@@ -192,6 +162,9 @@
 -[ ] 算法帝国
 -[ ] 深入搜索引擎海量信息的压缩索引和查询
 -[ ] 面向对象数据结构与软件开发
+-[ ] 计算机程序设计艺术一
+-[ ] 计算机程序设计艺术二
+-[ ] 计算机程序设计艺术三
 
 
 
@@ -291,6 +264,8 @@
 
 -[ ] UML那些事儿
 -[ ] 解析极限编程拥抱变化 第2版
+-[ ] 领域驱动设计：软件核心复杂性应对之道
+-[ ] 设计模式那点事
 -[ ] 重构与模式
 -[ ] Java Test Driven development
 
@@ -354,6 +329,7 @@
 # 测试调优
 
  -[ ] 性能测试诊断分析与优化
+ -[ ] How-Google-Tests-Software
  -[ ] Junit实战第二版
  -[ ] Pragmatic Unit Testing in Java 8 with JUnit(PACKT,2015)
  -[ ] JVM trouble shooting guide
@@ -387,6 +363,8 @@
 # 工具
 
 -[ ] github入门与实践
+-[ ] 高级Bash脚本编程指南
+-[ ] 代码阅读方法与实践（中文版）
 -[ ] Writing compilers and interpreters 3nd
 -[ ] vim实用技巧
 -[ ] definitive antlr4
@@ -403,6 +381,7 @@
 -[ ] Linux命令行完全技术宝典
 -[ ] shell脚本编程诀窍
 -[ ] 构建高可用linux服务器
+-[ ] 软件开发这点事儿：软件开发工具手册 邵志东著 电子工业出版社 2009_12174335
 
 # 架构
 
@@ -469,6 +448,7 @@
 # 课外
 
 -[ ] 深度学习Java语言实现
+-[ ] How to Think Like a Computer Scientist--Learinig with Python
 -[ ] 程序员健康指南
 -[ ] 从0到1 开启商业与未来的秘密
 -[ ] FastDFS教程
@@ -495,4 +475,5 @@
 -[ ] 浪潮之巅
 -[ ] 数学之美
 -[ ] 奇思妙想：15位计算机天才及其重大发现
+-[ ] R语言实战（第2版）
 
