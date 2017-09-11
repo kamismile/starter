@@ -22,6 +22,7 @@
 - [ ] Java8新特性
 - [ ] Java 8实战
 - [ ] Java In a Nutshell 6th
+- [ ] 敏捷Acegi、CAS%2B%2B构建安全的Java系统
 - [ ] Java核心技术 卷2高级特性
 - [ ] Java_NIO_细节也精彩
 - [ ] Core Java Volume II advanced features
@@ -47,31 +48,64 @@
 # 提高
 
 -[ ] 系统程序员成长计划
+-[ ] Spring源码深度解析
+-[ ] 分布式服务架构：原理、设计与实战
+-[ ] SPRING技术内幕：深入解析SPRING架构与设计原理 第2版
+-[ ] 使用Spring构建Restful的Web服务
+-[ ] Spring+Boot+Messaging
+-[ ] SpringCloud组件案例手册
+-[ ] 6-深入浅出MyBatis技术原理与实战
+-[ ] SPRING技术内幕：深入解析SPRING架构与设计原理
+-[ ] 使用SpringCloud和Docker实战微服务
+-[ ] SpringBoot实战%28第4版%29清晰版
+-[ ] 轻量级Java+Web开发整合入门
+-[ ] Activiti+User+Guide+v6.0.0
+-[ ] Pivotal Certified Professional Spring Developer Exam
+-[ ] 精通Spring+MVC+4+Geoffroy+Warin
+-[ ] 19.《JAVA企业及互联网项目集锦达内课程》
+-[ ] 深入实践Spring+Boot.陈韶健
+-[ ] Spring+5.0+Microservices+-+Second+Edition
+-[ ] Spring+Microservices+in+Action-Manning
+-[ ] Building REST API with Spring
 -[ ] Java全能速查宝典%5D.明日科技
+-[ ] spring+cloud+hystrix原理介绍及使用
+-[ ] SpringBoot揭秘+快速构建微服务体系+%2C王福强著+
 -[ ] 探秘Java：如何像计算机科学家一样思考
 -[ ] Java+实时编程
+-[ ] spring-data-elasticsearch-reference
 -[ ] Java学习路线图+300个问题
 -[ ] 深入体验Java项目开发
 -[ ] JAVA项目开发案例全程实录(第二版)
 -[ ] 你必须知道的261个Java语言问题
 -[ ] 修炼之道：互联网产品从设计到运营
+-[ ] Java开发之道
 -[ ] 编写高质量代码  改善Java程序的151个建议
 -[ ] Java典型模块与项目实战大全
 -[ ] Java开放源码编程
 -[ ] Java企业级开发项目实践
 -[ ] [敏捷技能修炼-敏捷软件开发与设计的最佳实践]
+-[ ] [深入理解Java 7 核心技术与最佳实践].成富.扫描版
 -[ ] 程序员编程艺术
+-[ ] REST+in+Practice_
+-[ ] Spring+Security+Essentials
 -[ ] 敏捷教练-如何打造优秀的敏捷团队
+-[ ] Java+Web+Services+-+Up+and+Running
 
 # HTML CSS
 
 -[ ] the jhipster mini book 2
 -[ ] export data visulization
 -[ ] html5与css3权威指南
+-[ ] Web+Development+with+MongoDB+and+NodeJS%2C+2nd+Edition
+-[ ] 术与道++移动应用UI设计必修课
+-[ ] Web前端开发最佳实践
+-[ ] Flask+Web开发：基于Python的Web应用开发实战
 
 # 并发
 
 -[ ] Java并发编程的艺术
+-[ ] 亿级流量网站架构核心技术+跟开涛学搭建高可用高并发系统
+-[ ] Java 9 Concurrency Cookbook - Second Edition
 -[ ] Java线程第3版
 -[ ] Java多线程编程核心技术
 -[ ] Java+并发编程实战
@@ -118,12 +152,14 @@
 -[ ] netty实战
  -[ ] Java Network Programming 4th edition
  -[ ] fundamental networking in java
+ -[ ] HTTPS权威指南+在服务器和Web应用上部署SSL%26TLS和PKI
 -[ ] 图解tcp / ip
 -[ ] netty实现原理浅析
 -[ ] 一本书读懂tcp/ip
 -[ ] netty实战精髓
 -[ ] 计算机网络第七版
 -[ ] netty案例集绵
+-[ ] Mastering+Apache+Camel
 -[ ] TCP / IP sockets in java 2nd
 -[ ] 图解服务器端网络架构
 -[ ] nginx module extension
@@ -131,8 +167,10 @@
 -[ ] Java网络编程第四版
 -[ ] neutral network programming with java
 -[ ] netty权威指南第2版
+-[ ] Nginx开发从入门到精通v1.0
 -[ ] Java network programming 4th
 -[ ] 网络游戏服务器端编程
+-[ ] 实战Nginx：取代Apache的高性能Web服务器+张宴
 -[ ] 深入理解Nginx模块开发与架构解析第2版LinuxUnix技术丛书
 -[ ] tcp ip 详解 卷一
 -[ ] tcp ip 详解 卷二
@@ -158,10 +196,12 @@
 -[ ] 算法的乐趣
 -[ ] 挑战编程程序设计竞赛训练手册
 -[ ] 算法第四册谢路云
+-[ ] Java常用算法手册
 -[ ] algorithms 4th
 -[ ] Java数据结构和算法第二版
 -[ ] python算法中文版
 -[ ] 算法设计手册第二版
+-[ ] 数据结构与问题求解 Java语言版 第4版
 -[ ] 算法技术手册
 -[ ] Data Structures and Algorithms in Java
 -[ ] 算法图解
@@ -221,10 +261,72 @@
  -[ ] orchestrating docker
  -[ ] docker技术入门与实战
  -[ ] KVM虚拟化技术实战
+ -[ ] Docker+容器与容器云（第2版）
  -[ ] Practical LXC and LXD
+ -[ ] OpenStack实战
 
 # 数据
 
+-[ ] 大数据架构师指南
+-[ ] MapReduce技术流程介绍
+-[ ] Packt.Mastering.ElasticSearch.5.0.3rd.Edition
+-[ ] 云计算-概念、技术与架构
+-[ ] Apache+Spark源码剖析
+-[ ] Flume++构建高可用、可扩展的海量日志采集系统
+-[ ] Packt.Mastering.Apache.Flink
+-[ ] RESTful+Web+Services+with+Dropwizard
+-[ ] ElasticSearch+可扩展的开源弹性搜索解决方案
+-[ ] Elasticsearch+Server+-+Third+Edition
+-[ ] Spark核心技术与高级应用+%2C于俊等著
+-[ ] 《Hadoop技术内幕深入解析YARN架构设计与实现原理》.com-1
+-[ ] Hadoop应用开发技术详解
+-[ ] 从Paxos到Zookeeper  分布式一致性原理与实践
+-[ ] Learning Spark
+-[ ] Learning Hadoop 2
+-[ ] 云计算应用开发实践
+-[ ] HDFS—Hadoop分布式文件系统深度实践
+-[ ] Hadoop Application Architectures
+-[ ] 深入理解Hadoop.第2版
+-[ ] Manning.Hadoop.in.Practice.2nd.Edition.2014.9
+-[ ] Hadoop Operations
+-[ ] ZooKeeper-分布式过程协同技术详解
+-[ ] 大数据挑战与NoSQL数据库技术_PDF电子书下载 带书签目录 高清完整版 simple
+-[ ] 大数据Spark企业级实战版
+-[ ] Hadoop海量数据处理
+-[ ] 迷你书 Spark大数据处理：技术、应用与性能优化
+-[ ] Storm实时数据处理
+-[ ] Storm实战构建大数据实时计算
+-[ ] Storm Real-time Processing Cookbooken
+-[ ] Programming+Pig+Dataflow+Scripting+with+Hadoop+2nd+Edition
+-[ ] Spark快速大数据分析
+-[ ] Microservices+Best
+-[ ] Pro+Hadoop+Data+Analytics+Designing+and+Building+Big+Data+Systems+using+the+Hadoop+Ecosystem
+-[ ] Android底层驱动分析和移植
+-[ ] Hadoop权威指南+第3版+
+-[ ] Hadoop技术内幕+深入理解MapReduce架构设计与实现原理-3
+-[ ] 图灵程序设计丛书-大数据 互联网大规模数据挖掘与分布式处理-2012
+-[ ] 大数据挑战与NoSQL数据库技术
+-[ ] Machine+Learning+with+Spark
+-[ ] 基于Spring_Batch的大数据量并行处理%40www.java1234.com
+-[ ] Spark GraphX In Action
+-[ ] Flume日志收集与MapReduce模式
+-[ ] Hadoop技术内幕_深入解析HADOOP_COMMON和HDFS架构设计与实现原理
+-[ ] 解析SOA架构与相关技术
+-[ ] 驾驭大数据
+-[ ] Guide+to+High+Performance+Distributed+Computing
+-[ ] Spark大数据处理：技术、应用与性能优化
+-[ ] Manning.Big.Data.Principles.and.best.practices.of.scalable.realtime.data.systems
+-[ ] Spark实战高手之路
+-[ ] Storm分布式实时计算模式
+-[ ] HBase权威指南
+-[ ] 京东大数据平台从无到有
+-[ ] Apache+ZooKeeper+Essentials-
+-[ ] Spark机器学习
+-[ ] 阿里双十一大数据计算平台
+-[ ] hadoop databases for oracle dba
+-[ ] Spark+MLlib机器学习实践+%2C王晓华著+
+-[ ] 物联网智能家居平台DIY：ARDUINO+物联网云平台
+-[ ] Advanced+Analytics+with+Spark
 -[ ] 谁说菜鸟不会数据分析
 -[ ] 深入浅出数据分析
 -[ ] manning big data
@@ -299,8 +401,14 @@
 
 # 设计
 
+-[ ] 服务框架实践与探索
 -[ ] UML那些事儿
+-[ ] Java+Web设计模式之道
 -[ ] 软件设计师教程
+-[ ] 精通Spring+4.x++企业应用开发实战
+-[ ] 架构即未来+现代企业可扩展的Web架构流程和组织+原书第2版
+-[ ] 代码之殇（原书第2版）
+-[ ] 构建高性能WEB站点
 -[ ] 系统分析师UML用例实战
 -[ ] 火球+UML大战需求分析
 -[ ] 走出软件作坊
@@ -308,6 +416,7 @@
 -[ ] 设计模式解析第2版
 -[ ] 系统分析师UML实务手册
 -[ ] 软件设计之道
+-[ ] 实用J2EE设计模式编程指南
 -[ ] Head First 设计模式[高清中文版]
 -[ ] 解析极限编程拥抱变化 第2版
 -[ ] 领域驱动设计：软件核心复杂性应对之道
@@ -382,6 +491,7 @@
 
  -[ ] 性能测试诊断分析与优化
  -[ ] How-Google-Tests-Software
+ -[ ] 性能之巅+洞悉系统、企业与云计算
  -[ ] 解析Java虚拟机器开发：权衡优化、高效和安全的最优方案
  -[ ] Junit实战第二版
  -[ ] Pragmatic Unit Testing in Java 8 with JUnit(PACKT,2015)
@@ -409,6 +519,7 @@
 -[ ] Java程序设计专家门诊
 -[ ] 代码优化_有效使用内存
 -[ ] Java虚拟机精讲
+-[ ] Web性能测试实战详解+Web开发典藏大系
 -[ ] JVM内存管理
 -[ ] Java特种兵上
 -[ ] Java performance the definitive guide
@@ -420,6 +531,7 @@
 -[ ] github入门与实践
 -[ ] 正则表达式经典实例
 -[ ] 精通正则表达式 第3版 中文版. 美 Jeffrey.E.F.Friedl
+-[ ] 完全学会GIT GITHUB%2BGIT%2BSERVER的24堂课
 -[ ] 巧学活用Linux
 -[ ] 高级Bash脚本编程指南
 -[ ] 代码阅读方法与实践（中文版）
@@ -449,13 +561,25 @@
 # 架构
 
 -[ ] 一线架构师实践指南
+-[ ] 分布式架构设计（架构分享会 )
+-[ ] 大型分布式网站架构设计与实践
 -[ ] Java开发技术  在架构中体验设计模式和算法之美
+-[ ] O2O实战+他们是如何利用互联网的
+-[ ] 程序员必读之软件架构
+-[ ] 高性能电子商务平台构建+架构、设计与开发
+-[ ] 大规模SOA系统中的分布式事务处理
+-[ ] 服务设计模式+SOAPWSDL与RESTful+Web服务设计解决方案
+-[ ] 人人都是架构师+分布式系统架构落地与瓶颈突破
+-[ ] 云计算架构技术与实践+第2版
 -[ ] 我也能做CTO之程序员职业规划
+-[ ] 架构解密.从分布式到微服务
 -[ ] java深度历险
 -[ ] 软件架构师应该知道的97件事
 -[ ] 系统架构设计师教程-高级
 -[ ] 老码识途从机器码到框架的逆向修炼之路
+-[ ] 玩转电商系统++深入剖析智慧电商平台_完整版+PDF电子书下载+带书签目录
 -[ ] interview1
+-[ ] Elasticsearch+和+Kibana+在+Hulu视频的应用实践
 -[ ] 重构 极限编程 xp的实践与反思
 -[ ] 软件工程 实践者的研究方法
 -[ ] 互联网运营智慧 高可用可扩展网站技术实战
@@ -511,6 +635,10 @@
 
 - [ ] Java程序员面试宝典第2版
 
+- [ ] 进入IT企业必读的324个JAVA面试题
+
+- [ ] 由浅入深学Java—基础、进阶与必做260题
+
 - [ ] 华为研发
 
 - [ ] Java interview bootcamp
@@ -559,6 +687,7 @@
 -[ ] 软件故事
 -[ ] 计算机文化
 -[ ] 浪潮之巅
+-[ ] 口碑-引爆网络狂欢效应的锦囊妙计
 -[ ] 数学之美
 -[ ] 奇思妙想：15位计算机天才及其重大发现
 -[ ] R语言实战（第2版）
