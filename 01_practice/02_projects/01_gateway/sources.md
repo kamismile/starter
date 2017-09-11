@@ -48,12 +48,56 @@
 # 提高
 
 -[ ] 系统程序员成长计划
+-[ ] Getting started with spring framwork
+-[ ] Learning+Spring+Boot+-+Greg+L.+Turnquist
+-[ ] Packt.Java.EE.Development.with.Eclipse.2nd.Edition.1785285343
+-[ ] 97_Things_Every_Programmer_Should_Know
+-[ ] 97 Things Every Software Architect Should Know
+-[ ] MyBatis in Practice
+-[ ] Spring Data实战
+-[ ] Spring Recipes, 3rd Edition
+-[ ] Pro Spring Boot(Apress,2016)
+-[ ] Java EE 7 Essentials
+-[ ] JavaEE开发的颠覆者 Spring Boot实战  完整版
+-[ ] Packt.Spring.Essentials.1783982349
+-[ ] Spring MVC Cookbook(PACKT,2016)
+-[ ] 轻量级J2EE企业应用实战
+-[ ] 深入分析Java  Web技术内幕  修订版
+-[ ] Java+EE7权威指南+卷2
+-[ ] 亮剑Java Web项目开发案例导航(PDF)
+-[ ] Spring Integration in Action
+-[ ] Bootiful Applications with Spring Boot
+-[ ] 看透springMvc源代码分析与实践
+-[ ] Java.EE企业级编程开发实例详解
+-[ ] Mastering+JBoss+Drools+6+for+Developers
+-[ ] SOA实践指南%5D.%28SOA.in.Practice%29.Nicolai.M.Josuttis.中文扫描版
+-[ ] Java.Web.Services-Up.and.Running_2nd.Edition—Java.Web服务-构建与运行%28第2版
+-[ ] Java Web高级编程  涵盖WebSockets、Spring Framework、JPA Hibernate和Spring Security ,（美）威廉斯著 ,P797
+-[ ] Spring.Batch批处理框架
+-[ ] Lucene搜索引擎开发进阶实战
+-[ ] 大型网站技术架构：核心原理与案例分析%2B李智慧
+-[ ] 求精要决：Java+EE编程开发案例精讲
+-[ ] Spring实战（第4版）
+-[ ] Java.EE核心技术与应用
+-[ ] SOA原理·方法·实践
+-[ ] [Peter Pilgrim] Digital Java EE 7 Web Application Development
+-[ ] Apress.Beginning.Hibernate.For.Hibernate.5.4th.Edition
+-[ ] Activiti_5.x_Business_Process_Management-_Beginner_s_Guide
+-[ ] Spring+Cloud微服务实战_PDF电子书下载+高清+带索引书签目录_翟永超
+-[ ] Node.js实战%28第2季
+-[ ] Spring+Boot+in+Action
 -[ ] Spring源码深度解析
+-[ ] Building a RESTful Web Service with Spring
+-[ ] Spring.MVC-A.Tutorial-Spring.MVC学习指南
 -[ ] 分布式服务架构：原理、设计与实战
+-[ ] Java EE 7 Developer Handbook
+-[ ] Practical Web Development
+-[ ] spring-developing-java-applications-enterprise
 -[ ] SPRING技术内幕：深入解析SPRING架构与设计原理 第2版
 -[ ] 使用Spring构建Restful的Web服务
 -[ ] Spring+Boot+Messaging
 -[ ] SpringCloud组件案例手册
+-[ ] Java+EE+7精粹
 -[ ] 6-深入浅出MyBatis技术原理与实战
 -[ ] SPRING技术内幕：深入解析SPRING架构与设计原理
 -[ ] 使用SpringCloud和Docker实战微服务
@@ -91,6 +135,14 @@
 -[ ] 敏捷教练-如何打造优秀的敏捷团队
 -[ ] Java+Web+Services+-+Up+and+Running
 
+# 多语系
+
+-[ ] Node与Express开发
+-[ ] Node.js权威指南
+-[ ] 了不起的Node  js  将JavaScript进行到底  PDF电子书下载 带书签目录 完整版
+
+
+
 # HTML CSS
 
 -[ ] the jhipster mini book 2
@@ -98,8 +150,10 @@
 -[ ] html5与css3权威指南
 -[ ] Web+Development+with+MongoDB+and+NodeJS%2C+2nd+Edition
 -[ ] 术与道++移动应用UI设计必修课
+-[ ] Web信息结构设计大型网站
 -[ ] Web前端开发最佳实践
 -[ ] Flask+Web开发：基于Python的Web应用开发实战
+-[ ] HTML&CSS design and build websites
 
 # 并发
 
@@ -162,6 +216,7 @@
 -[ ] Mastering+Apache+Camel
 -[ ] TCP / IP sockets in java 2nd
 -[ ] 图解服务器端网络架构
+-[ ] TCPIP入门经典  第5版_12997313
 -[ ] nginx module extension
 -[ ] Java WebSocket programming
 -[ ] Java网络编程第四版
@@ -171,6 +226,7 @@
 -[ ] Java network programming 4th
 -[ ] 网络游戏服务器端编程
 -[ ] 实战Nginx：取代Apache的高性能Web服务器+张宴
+-[ ] Nginx高性能Web服务器详解
 -[ ] 深入理解Nginx模块开发与架构解析第2版LinuxUnix技术丛书
 -[ ] tcp ip 详解 卷一
 -[ ] tcp ip 详解 卷二
@@ -189,6 +245,7 @@
 # 算法
 
 -[ ] leetcode solutions
+-[ ] Algorithms in a Nutshell, 2nd Edition
 -[ ] A Concise and Practical Introduction to Programming Algorithms in Java
 -[ ] data structures and algorithms in java  3nd
 -[ ] 算法刷题leetcode
@@ -242,7 +299,12 @@
  -[ ] 微服务那些事儿
  -[ ] cloud native java
  -[ ] 七天学会spring cloud教程
+ -[ ] Java RESTful Web Service实战
+ -[ ] Spring+Cloud微服务实战_PDF电子书下载+高清+带索引书签目录_翟永超
+ -[ ] RESTFUL_JAVA_WEB_SERVICES_SECOND_EDITION
+ -[ ] RESTFul.Web.Service.Development.with.Jersey.2.x.B01L12JMVS
  -[ ] Java微服务
+ -[ ] springCloud参考指南
  -[ ] Microservcies for java developers
  -[ ] modern java ee design patterns
  -[ ] 微服务设计中文完整版
@@ -252,6 +314,7 @@
 
  -[ ] 第一本docker书
  -[ ] docker进阶与实战
+ -[ ] ​
  -[ ] docker开发指南
  -[ ] docker全攻略
  -[ ] kubernets权威指南从docker到kubernetes实践全接触
@@ -268,9 +331,16 @@
 # 数据
 
 -[ ] 大数据架构师指南
+-[ ] Redis Cookbook
 -[ ] MapReduce技术流程介绍
+-[ ] Hadoop Essentials(PACKT,2015)
+-[ ] Hadoop in Practice, 2nd Edition
+-[ ] ZooKeeper.Distributed process coordination.2013
 -[ ] Packt.Mastering.ElasticSearch.5.0.3rd.Edition
+-[ ] 深入理解Spark：核心思想与源码分析
+-[ ] Packt Spark Cookbook
 -[ ] 云计算-概念、技术与架构
+-[ ] 实战Elasticsearch、Logstash、Kibana++分布式大数据搜索与日志挖掘及可视化解决方案
 -[ ] Apache+Spark源码剖析
 -[ ] Flume++构建高可用、可扩展的海量日志采集系统
 -[ ] Packt.Mastering.Apache.Flink
@@ -342,8 +412,14 @@
 # 常用中间件
 
 -[ ] 大型网站系统与java中间件实践
+-[ ] Elasticsearch服务器开发（第2版）
+-[ ] Web+GIS从基础到开发实践（基于ArcGIS+API+FOR+JavaScript）（书籍）+%2C刘光编著
+-[ ] 开发自己的搜索引擎：Lucene.Heritrix（第2版%29%5D.邱哲.扫描版
+-[ ] Activiti_5.x_Business_Process_Management_Beginners_Guide
 -[ ] 推荐系统实践
+-[ ] 疯狂Workflow讲义++基于Activiti的工作流应用开发
 -[ ] 基于嵌入式Linux的QT图形开发实战
+-[ ] RabbitMQ实战  高效部署分布式消息队列
 -[ ] using redis as a time serials database
 -[ ] openstack实战指南
 -[ ] cassandra实战
@@ -403,6 +479,7 @@
 
 -[ ] 服务框架实践与探索
 -[ ] UML那些事儿
+-[ ] Java EE设计模式解析与应用_13897087
 -[ ] Java+Web设计模式之道
 -[ ] 软件设计师教程
 -[ ] 精通Spring+4.x++企业应用开发实战
@@ -561,10 +638,14 @@
 # 架构
 
 -[ ] 一线架构师实践指南
+-[ ] 架构实战软件架构设计的过程
+-[ ] 架构探险 从零开始写javaweb框架 2015.8 
 -[ ] 分布式架构设计（架构分享会 )
+-[ ] 京东技术解密
 -[ ] 大型分布式网站架构设计与实践
 -[ ] Java开发技术  在架构中体验设计模式和算法之美
 -[ ] O2O实战+他们是如何利用互联网的
+-[ ] Tomcat+系统架构与设计模式
 -[ ] 程序员必读之软件架构
 -[ ] 高性能电子商务平台构建+架构、设计与开发
 -[ ] 大规模SOA系统中的分布式事务处理
@@ -664,6 +745,7 @@
 -[ ] 深度学习Java语言实现
 -[ ] How to Think Like a Computer Scientist--Learinig with Python
 -[ ] 程序员健康指南
+-[ ] OReilly.Node.js.for.Embedded.Systems.Using.Web.Technologies.to.Build.Connected.Devices.1491928999
 -[ ] 从0到1 开启商业与未来的秘密
 -[ ] FastDFS教程
 -[ ] 项目自动化之道
