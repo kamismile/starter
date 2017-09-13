@@ -5,6 +5,7 @@
 - [ ] 精通lambda表达式
 - [ ] Java程序设计与数据结构导论
 - [ ] 计算机科学概论第11版
+- [ ] Spring+3.0就这么简单
 - [ ] 高效能程序员的修炼
 - [ ] Java程序员修炼之道
 - [ ] 高效程序员的45个习惯
@@ -48,11 +49,54 @@
 # 提高
 
 -[ ] 系统程序员成长计划
+-[ ] 云计算第二版
+-[ ] [Java Web开发之道].王国辉等.扫描版
+-[ ] Spring_in_Action_4
+-[ ] Camel in Action
+-[ ] Apress.Pro.Spring.4th.Edition
+-[ ] Tika.in.Action D.Chris.A.Mattmann
+-[ ] JAVA+WEB项目开发案例精粹
+-[ ] JAVA+WEB典型模块与项目实战大全
+-[ ] 亮剑Java项目开发案例导航
+-[ ] 大规模Web服务开发技术
+-[ ] 高性能网站构建实战
+-[ ] WEB服务_原理与技术
+-[ ] 精通Spring：Java轻量级架构开发实践%5D.孟劼
+-[ ] Spring-Web-Flow-2.0-入门
+-[ ] spring揭秘
+-[ ] J2EE核心模式
+-[ ] 实战突击：Java+Web项目整合开发
+-[ ] Learning Spring Application Development(PACKT,2015)
+-[ ] 软件架构师的12项修炼
+-[ ] Spring+3.x企业应用开发实战%5B完整版%2B书签%5D
+-[ ] 人人都玩开心网
+-[ ] Spring实战 第3版
+-[ ] spring-webflow-reference
+-[ ] 分布式JAVA应用 基础与实践
+-[ ] Java Web轻量级开发全体验
+-[ ] 深入分析Java++Web技术内幕++修订版_13596247
+-[ ] Hadoop_ Beginner's Guide
+-[ ] 独门架构：Java Web开发应用详解
+-[ ] Building_and_Testing_with_Gradle
+-[ ] Packt.RESTful.Java.Web.Services.Security.1783980109
+-[ ] Professional Java for Web Applications(Wrox,2014)
+-[ ] Spring.Batch_.in_.Action.Oct_.2011
+-[ ] Mockito for Spring(PACKT,2015)
+-[ ] Developing RESTful Services with JAX-RS 2.0, WebSockets, and JSON(PACKT,2013)
+-[ ] [Spring技术内幕：深入解析Spring架构与设计原理（第2版）].计文柯.扫描版
+-[ ] Java EE 7 with GlassFish 4 Application Server
+-[ ] springmvc with web flow
+-[ ] Pro JPA 2, 2nd Edition
+-[ ] Apress.Spring.REST.1484208242
+-[ ] [JAVA.WEB服务.构建与运行].(Java.Web.ServicesUp.and.Running).Martin.Kalin.扫描版
 -[ ] Getting started with spring framwork
+-[ ] Java EE核心框架实战
 -[ ] Learning+Spring+Boot+-+Greg+L.+Turnquist
 -[ ] Packt.Java.EE.Development.with.Eclipse.2nd.Edition.1785285343
 -[ ] 97_Things_Every_Programmer_Should_Know
 -[ ] 97 Things Every Software Architect Should Know
+-[ ] 2010 - Packt - OSGi and Apache Felix 3.0 Beginner's Guide
+-[ ] Spring源码深度解析 PDF电子书下载 带书签目录 完整版
 -[ ] MyBatis in Practice
 -[ ] Spring Data实战
 -[ ] Spring Recipes, 3rd Edition
@@ -63,6 +107,7 @@
 -[ ] Spring MVC Cookbook(PACKT,2016)
 -[ ] 轻量级J2EE企业应用实战
 -[ ] 深入分析Java  Web技术内幕  修订版
+-[ ] Java EE 7权威指南 卷1
 -[ ] Java+EE7权威指南+卷2
 -[ ] 亮剑Java Web项目开发案例导航(PDF)
 -[ ] Spring Integration in Action
@@ -140,6 +185,109 @@
 -[ ] Node与Express开发
 -[ ] Node.js权威指南
 -[ ] 了不起的Node  js  将JavaScript进行到底  PDF电子书下载 带书签目录 完整版
+-[ ] Python 学习笔记 - v1.0
+-[ ] 从头到尾彻底理解 KMP - v1.0
+-[ ] 坐在马桶上学算法 - v1.1
+-[ ] 一步一步写算法 - v1.0
+-[ ] 轻松学习排序算法 - v1.0
+-[ ] Android 开发教程 - v1.0
+-[ ] 《从零开始学 Python》(第二版) - v1.1
+-[ ] 简明 Python 教程 - v1.1
+-[ ] Python 实战-从菜鸟到大牛的进阶之路 - v1.1
+-[ ] Apress Practical Node.js, Building Real-World Scalable Web Apps (2014)
+-[ ] 轻松学习正则表达式 - v1.0
+-[ ] -一起talk C栗子吧 - v1.0
+-[ ] 笨办法学C 中文版 - v1.0
+-[ ] Cocos2D-x 从 C++ 到 JS 的进阶之路 - v1.2
+-[ ] Google C++ 风格指南 - v1.0
+-[ ] Qt 学习之路 - v1.1
+-[ ] 《C++ Concurrency in Action》中文版 - v1.0
+-[ ] Real C - v1.0
+-[ ] C++ 基础教程 - v1.4.1
+-[ ] 深入理解 Android 之 Gradle - v1.0
+-[ ] Android Gradle 用户指南 - v1.0
+-[ ] Android 实战技巧 - v1.1
+-[ ] Android 开源项目指南 - v1.1
+-[ ] Android 百战经典 - v1.0
+-[ ] Android 坦克大战游戏 - v1.0
+-[ ] Android NDK 开发教程 - v1.0
+-[ ] Android 测试教程 - v1.1
+-[ ] Lua 教程 - v1.0
+-[ ] OpenResty 最佳实践 - v1.1
+-[ ] 杰出产品经理书 - v1.3
+-[ ] HTTP API 设计指南 - v1.0
+-[ ] Java TCP%2FIP Socket 编程 - v1.0
+-[ ] Android Studio 操作手册 - v1.1
+-[ ] RESTful Web 服务教程 - v1.0
+-[ ] 神奇的 Go 语言 - v1.0
+-[ ] 学习 GO 语言 - v1.1
+-[ ] GO 命令教程 - v1.0
+-[ ] Go Web 编程 - v1.0
+-[ ] 跟我学 Nginx+Lua 开发 - v1.1
+-[ ] Maven 教程 - v1.0
+-[ ] Shell 十三问 - v1.1
+-[ ] 一步一步学 Linux - v1.1
+-[ ] UNIX 入门指南 - v1.0
+-[ ] 两个月精通 Shell 脚本 - v1.1
+-[ ] 理解 Linux 进程 - v1.0
+-[ ] Pixate 使用指南 - v1.0
+-[ ] Shell 教程 - v1.0
+-[ ] Gradle 实战中文版 - v1.0
+-[ ] shell 脚本编程 - v1.1
+-[ ] Android控件操作-二十四章经 - v1.0
+-[ ] Docker —— 从入门到实践 - v1.0
+-[ ] OpenResty 最佳实践 - v1.1
+-[ ] Docker 实践 - v1.1
+-[ ] Linux 命令行 - v1.0
+-[ ] Linux 入门教程 - v1.0
+-[ ] AWK 教程 - v1.0
+-[ ] Axure RP 指南 - v1.1
+-[ ] 树莓派使用指南 - v1.1
+-[ ] Apache Cordova 教程 - v1.0
+-[ ] Raspberry pi 一个好玩的派 - v1.0
+-[ ] Cordova 3.x 入门-基础篇 - v1.0
+-[ ] Linux 工具 - v1.0
+-[ ] 单片机教程(一) - v1.0
+-[ ] 单片机教程(二) - v1.0
+-[ ] 单片机教程(三) - v1.0
+-[ ] Nginx 入门指南 - v1.0
+-[ ] Cordova 3.x 入门-源码篇 - v1.0
+-[ ] TensorFlow 官方文档中文版 - v1.2
+-[ ] 云计算设计模式 - v1.0
+-[ ] Cordova 3.x 入门-插件篇 - v1.0
+-[ ] Hadoop - v1.0
+-[ ] 区块链技术 - v1.0
+-[ ] SEO 教程 - v1.0
+-[ ] ​
+
+
+
+# C/CPP
+
+-[ ] C%2B%2B编程规范-101条规则准则与最佳实践
+-[ ] 大规模C++程序设计
+-[ ] 《C语言经典编程282例》
+-[ ] [C.程序设计（第8版）]
+-[ ] [C语言深度解剖--解开程序员面试笔试的秘密]
+-[ ] 数据结构与算法分析C++描述第三版
+-[ ] 好学的C.第2版 奥弗兰.扫描版
+-[ ] 《C语言设计伴侣》.(陈良乔)
+-[ ] [C.编程-从问题分析到程序设计].D.S.Malik.扫描版(jb51.net)
+-[ ] 写给大家看的C语言书_入门神器
+-[ ] 《测试驱动的嵌入式C语言开发》
+-[ ] Java面试关键与综合软件项目开发全程实战
+-[ ] 计算机图形学原理及算法教程(Visual.Cpp版)第二版[jb51.net]
+-[ ] [Ｃ语言入门很简单].马磊.扫描版[电子书]
+-[ ] Linux环境下C编程指南 第二版(jb51.net)
+-[ ] [C.代码设计与重用].(Martin.D.Carroll).陈伟柱.扫描版(jb51.net)
+-[ ] C语言描述(中文版)
+-[ ] 《C++从入门到精通 (第2版)》.(明日科技).[PDF]@ckook
+-[ ] C++面向对象多线程编程(jb51.net)
+-[ ] 像程序员一样思考.V.Anton.Spraul.扫描版
+-[ ] %5B像计算机科学家一样思考C.%5D.Allen.B.Downey.扫描版
+-[ ] 算法设计、分析与实现从入门到精通：C、C++和Java.徐子珊.扫描版
+-[ ] 《明解C语言》.((日)柴田望洋).[PDF].&ckook
+-[ ] C语言开发技术详解.戴建华.扫描版
 
 
 
@@ -153,6 +301,7 @@
 -[ ] Web信息结构设计大型网站
 -[ ] Web前端开发最佳实践
 -[ ] Flask+Web开发：基于Python的Web应用开发实战
+-[ ] html5与css3权威指南 第二版 下册 (2)
 -[ ] HTML&CSS design and build websites
 
 # 并发
@@ -206,10 +355,14 @@
 -[ ] netty实战
  -[ ] Java Network Programming 4th edition
  -[ ] fundamental networking in java
+ -[ ] Linux高性能服务器编程
+ -[ ] Netty in Action》第五版
  -[ ] HTTPS权威指南+在服务器和Web应用上部署SSL%26TLS和PKI
 -[ ] 图解tcp / ip
+-[ ] TCP／IP最佳入门：因特网原理与应用（原书第6版）%5D.萧文龙等.扫描版
 -[ ] netty实现原理浅析
 -[ ] 一本书读懂tcp/ip
+-[ ] Learning Network Programming with Java
 -[ ] netty实战精髓
 -[ ] 计算机网络第七版
 -[ ] netty案例集绵
@@ -220,8 +373,11 @@
 -[ ] nginx module extension
 -[ ] Java WebSocket programming
 -[ ] Java网络编程第四版
+-[ ] 实战Nginx：取代Apache的高性能Web服务器
 -[ ] neutral network programming with java
 -[ ] netty权威指南第2版
+-[ ] OpenResty-Best-Practices
+-[ ] Nginx.HTTP.Server
 -[ ] Nginx开发从入门到精通v1.0
 -[ ] Java network programming 4th
 -[ ] 网络游戏服务器端编程
@@ -241,6 +397,7 @@
 # 编码 
 
  -[ ] 编码的本质与乱码的恢复
+ -[ ] 编码：隐匿在计算机软硬件背后的语言
 
 # 算法
 
@@ -256,6 +413,7 @@
 -[ ] Java常用算法手册
 -[ ] algorithms 4th
 -[ ] Java数据结构和算法第二版
+-[ ] OReilly.Data.Algorithms.Recipes.for.Scaling.Up.with.Hadoop.and.Spark.1491906189(1)
 -[ ] python算法中文版
 -[ ] 算法设计手册第二版
 -[ ] 数据结构与问题求解 Java语言版 第4版
@@ -332,13 +490,32 @@
 
 -[ ] 大数据架构师指南
 -[ ] Redis Cookbook
+-[ ] 决战大数据：驾驭未来商业的利器
+-[ ] Hadoop技术内幕：深入解析YARN架构设计与实现原理
 -[ ] MapReduce技术流程介绍
+-[ ] Hadoop实战-陆嘉恒%28高清完整版%29
+-[ ] 正在到来的数据革命-大数据-涂子沛
 -[ ] Hadoop Essentials(PACKT,2015)
+-[ ] Learning Storm
+-[ ] 云计算：技术、平台及应用案例
+-[ ] Hadoop实战%28第2版
+-[ ] 典型Hadoop云计算
+-[ ] 云存储解析
+-[ ] Getting Started with Storm
+-[ ] Pro Apache Hadoop 2nd Edition 2014
+-[ ] Hive编程指南
 -[ ] Hadoop in Practice, 2nd Edition
+-[ ] Pig编程指南
+-[ ] Hadoop- The Definitive Guide, 4th Edition
+-[ ] Field.Guide.to.Hadoop.2015.3
+-[ ] HBase实战中文版
 -[ ] ZooKeeper.Distributed process coordination.2013
+-[ ] Hadoop MapReduce v2 Cookbook(PACKT,2ed,2015)
 -[ ] Packt.Mastering.ElasticSearch.5.0.3rd.Edition
+-[ ] Hadoop MapReduce v2 Cookbook(PACKT,2ed,2015)
 -[ ] 深入理解Spark：核心思想与源码分析
 -[ ] Packt Spark Cookbook
+-[ ] Apache_Flume_Distributed_Log_Collection_For_Hadoop
 -[ ] 云计算-概念、技术与架构
 -[ ] 实战Elasticsearch、Logstash、Kibana++分布式大数据搜索与日志挖掘及可视化解决方案
 -[ ] Apache+Spark源码剖析
@@ -412,12 +589,23 @@
 # 常用中间件
 
 -[ ] 大型网站系统与java中间件实践
+-[ ] lucene实战-第二版-中文版
+-[ ] Lucene in Action 2nd Edition
+-[ ] Spark快速数据处理
+-[ ] Apache Solr Search Patterns(PACKT,2015)
+-[ ] 解密搜索引擎技术实战Java精华版(javazx.com)
 -[ ] Elasticsearch服务器开发（第2版）
+-[ ] Elasticsearch in Action 全文检索
+-[ ] [云计算解码（第2版）].雷葆华等.扫描版
 -[ ] Web+GIS从基础到开发实践（基于ArcGIS+API+FOR+JavaScript）（书籍）+%2C刘光编著
 -[ ] 开发自己的搜索引擎：Lucene.Heritrix（第2版%29%5D.邱哲.扫描版
 -[ ] Activiti_5.x_Business_Process_Management_Beginners_Guide
 -[ ] 推荐系统实践
+-[ ] jBPM 6 Developer Guide
+-[ ] Apache OFBiz Cookbook
+-[ ] Cassandra权威指南.带目录书签.完整版
 -[ ] 疯狂Workflow讲义++基于Activiti的工作流应用开发
+-[ ] Practical MongoDB
 -[ ] 基于嵌入式Linux的QT图形开发实战
 -[ ] RabbitMQ实战  高效部署分布式消息队列
 -[ ] using redis as a time serials database
@@ -458,6 +646,7 @@
 -[ ] 自动机理论、语言和计算导论(原书第3版)
 -[ ] 操作系统精髓与设计原理
 -[ ] [高级编译器设计与实现(中文版)]
+-[ ] 领域特定语言_ThoughtWorks中国
 -[ ] 深入浅出嵌入式底层软件开发
 -[ ] orange s 一个操作系统的实现
 -[ ] 领域特定语言
@@ -479,15 +668,23 @@
 
 -[ ] 服务框架实践与探索
 -[ ] UML那些事儿
+-[ ] 《设计模式沉思录》
+-[ ] JAVA web模式设计之道
+-[ ] 大象Thinking.in.UML%5D.ThinkingInUML
 -[ ] Java EE设计模式解析与应用_13897087
 -[ ] Java+Web设计模式之道
 -[ ] 软件设计师教程
 -[ ] 精通Spring+4.x++企业应用开发实战
+-[ ] J2EE设计开发编程指南
+-[ ] Wrox.Professional.Java.EE.Design.Patterns.111884341X
 -[ ] 架构即未来+现代企业可扩展的Web架构流程和组织+原书第2版
 -[ ] 代码之殇（原书第2版）
+-[ ] j2ee核心模式第二版
 -[ ] 构建高性能WEB站点
+-[ ] 软件框架设计的艺术
 -[ ] 系统分析师UML用例实战
 -[ ] 火球+UML大战需求分析
+-[ ] Wrox.Expert.One-On-One.J2EE.Design.And.Development
 -[ ] 走出软件作坊
 -[ ] 软件分析建模与PowerDesigner实现
 -[ ] 设计模式解析第2版
@@ -580,6 +777,7 @@
 
 -[ ] 深入理解Java虚拟机
 -[ ] Java performance
+-[ ] Packt.Java.EE.7.Performance.Tuning.and.Optimization.178217642X
 -[ ] Java性能优化权威指南
 -[ ] Java程序性能优化++让你的Java程序更快、更稳定
 -[ ] Java虚拟机第二版
@@ -611,6 +809,7 @@
 -[ ] 完全学会GIT GITHUB%2BGIT%2BSERVER的24堂课
 -[ ] 巧学活用Linux
 -[ ] 高级Bash脚本编程指南
+-[ ] UNIX+Linux系统管理技术手册+原书第4版
 -[ ] 代码阅读方法与实践（中文版）
 -[ ] Writing compilers and interpreters 3nd
 -[ ] vim实用技巧
@@ -622,10 +821,13 @@
 -[ ] eclipse plugin development 2nd
 -[ ] Linux shell脚本攻略
 -[ ] Sed与awk第二版(高清版)
+-[ ] 开发自己的搜索引擎：Lucene.Heritrix（第2版%29%5D.邱哲.扫描版
 -[ ] LINUX命令行与SHELL脚本编程大全第2版.布卢
 -[ ] 实战linux shell编程与服务器管理
 -[ ] linux shell编程艺术
 -[ ] the definitive antlr 4 2nd
+-[ ] 决战Nginx  技术卷：高性能Web服务器部署与运维
+-[ ] 决战Nginx：+系统卷+-+高性能Web服务器详解与运维
 -[ ] JavaFX 9 by Example, 3rd Edition
 -[ ] git for team
 -[ ] Linux命令行完全技术宝典
@@ -638,12 +840,33 @@
 # 架构
 
 -[ ] 一线架构师实践指南
+-[ ] 云计算第二版
+-[ ] 架构之美
+-[ ] 云计算和物联网
+-[ ] 互联网时代的软件革命-SaaS架构设计
+-[ ] 架构实战软件架构设计过程
+-[ ] 云计算入门指南
+-[ ] Java EE设计模式：Spring企业级开发最佳实践
 -[ ] 架构实战软件架构设计的过程
+-[ ] 智慧云数据中心
+-[ ] 软件架构师的12项修炼
+-[ ] Java高手真经(系统架构卷)：Java Web系统设计与架构
+-[ ] 大型网站技术架构：核心原理与案例分析
+-[ ] Java应用架构设计 模块化模式与OSGi
+-[ ] 软件架构设计 程序员向架构师转型必备 第二版 .温昱.扫描版
 -[ ] 架构探险 从零开始写javaweb框架 2015.8 
+-[ ] 阿里巴巴(B2B)的服务框架探索(钱霄)
+-[ ] 现代企业的Web架构、流程及组织
+-[ ] 腾云：云计算和大数据时代网络技术揭秘
 -[ ] 分布式架构设计（架构分享会 )
+-[ ] 大众点评网监控系统架构剖析会
+-[ ] 架构师培训讲义
 -[ ] 京东技术解密
+-[ ] 大话云计算
+-[ ] SOA实践指南+分布式系统设计的艺术
 -[ ] 大型分布式网站架构设计与实践
 -[ ] Java开发技术  在架构中体验设计模式和算法之美
+-[ ] [架构实战软件架构设计的过程].中文扫描完整版
 -[ ] O2O实战+他们是如何利用互联网的
 -[ ] Tomcat+系统架构与设计模式
 -[ ] 程序员必读之软件架构
@@ -651,6 +874,8 @@
 -[ ] 大规模SOA系统中的分布式事务处理
 -[ ] 服务设计模式+SOAPWSDL与RESTful+Web服务设计解决方案
 -[ ] 人人都是架构师+分布式系统架构落地与瓶颈突破
+-[ ] SOA核心技术及应用
+-[ ] SOA之道：思想、技术、过程与实践
 -[ ] 云计算架构技术与实践+第2版
 -[ ] 我也能做CTO之程序员职业规划
 -[ ] 架构解密.从分布式到微服务
