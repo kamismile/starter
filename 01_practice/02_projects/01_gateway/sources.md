@@ -349,6 +349,7 @@
 -[ ] Python学习手册%28第4版%29%28Learning+Python+4th+Edition%29-Mark+Lutz
 -[ ] Python核心编程
 -[ ] Python网络编程基础
+-[ ] FlaskWeb开发：基于Python的Web应用开发实战
 -[ ] Python技术参考大全
 -[ ] 用 Python 和 Pygame 写游戏 - 从入门到精通
 -[ ] 深入_Python_3
@@ -359,6 +360,74 @@
 -[ ] the-complete-guide-to-application-performance-monitoring-tools.original
 -[ ] 高性能Linux服务器构建实战：运维监控、性能调优与集群应用
 -[ ] Python编程金典
+-[ ] Python.Cookbook(第2版)中文版
+-[ ] Python.UNIX和Linux系统管理指南
+-[ ] 编写高质量代码 改善Python程序的91个建议
+-[ ] Python基础教程(第2版)
+-[ ] Python高级编程
+-[ ] 《Python开发实战》.((日)BePROUD股份有限公司).[PDF]@jb51.net
+-[ ] 《利用Python进行数据分析》.(Wes McKinney).[PDF]@jb51.net
+-[ ] 《Python科学计算》.%28张若愚%29
+-[ ] Python基础教程%28第2版%29_高清版
+-[ ] Python编程实践
+-[ ] 《Python Cookbook》第三版中文
+-[ ] Python基础教程(第2版 修订版)
+-[ ] Python袖珍指南  第5版
+-[ ] Python数据分析基础教程2014
+-[ ] python绝技：运用python成为顶级黑客
+-[ ] 廖雪峰Python3
+-[ ] Python编程实战  运用设计模式、并发和程序库创建高质量程序
+-[ ] 我的名字叫python
+-[ ] python基础教程(自编精品)
+-[ ] Python进阶
+-[ ] Django自学教程
+-[ ] PYTHON数据可视化编程实战
+-[ ] Python金融大数据分析
+-[ ] Python高级编程 (2)
+-[ ] Python高手之路
+-[ ] Python学习手册%28第4版%29
+-[ ] 21天学通PYTHON
+-[ ] 使用Python分析社交网络数据
+-[ ] pythonguidecn-中文版
+-[ ] Python数据分析基础教程：NumPy学习指南（第2版）
+-[ ] python计算机视觉
+-[ ] Python编程(第4版)(Programming.Python.4th.Edit
+-[ ] Python自动化运维  技术与最佳实践 [刘天斯著][机械工业出版社][2014.12][291页]
+-[ ] 贝叶斯思维统计建模的PYTHON学习法
+-[ ] Python编程快速上手++让繁琐工作自动化
+-[ ] Python数据分析与挖掘实战
+-[ ] 深入Python3
+-[ ] violent-py
+-[ ] Black Hat Python
+-[ ] 笨办法学 Python （第三版）
+-[ ] Python数据挖掘入门与实践
+-[ ] Python网络数据采集
+-[ ] Python编程：从入门到实践
+-[ ] 编程小白的第一本 python 入门书
+-[ ] Python语言及其应用(美Lubanovic 2016)
+-[ ] 父与子的编程之旅：与小卡特一起学Python
+-[ ] 树莓派实战指南
+-[ ] Python项目开发实战 第2版 日本BePROUD公司 人民邮电 2017.1
+-[ ] 数据科学入门
+-[ ] 用Python写网络爬虫
+-[ ] Python算法教程_中文版
+-[ ] 精通Python设计模式
+-[ ] Python3-廖雪峰[带标签完整版]-www.yeayee.com
+-[ ] Foundations of Python Network Programming, 3rd Edition
+-[ ] liaoxuefeng_Python2
+-[ ] 数据科学实战
+-[ ] PYTHON机器学习及实践_从零开始通往KAGGLE竞赛之路
+-[ ] Head_First_Python（中文版）
+-[ ] Claus+Fuhrer%2C+Jan+Erik+Solem%2C+Olivier+Verdier-Scientific+Computing+with+Python+3-Packt+Publishing+%282017%29
+-[ ] AW.Effective.Python.59.Specific.Ways.to.Write.Better.Python.0134034287
+-[ ] Python核心编程第3版中文版
+-[ ] Python算法教程%7F2016.01
+-[ ] 数据结构与算法++Python语言描述2016.01
+-[ ] 541122+python科学计算第二版（可编辑）
+-[ ] 流畅的python
+-[ ] 真实世界的Python仪器监控++数据采集与控制系统自动化
+
+
 
 
 
@@ -837,6 +906,7 @@
 # 测试调优
 
  -[ ] 性能测试诊断分析与优化
+ -[ ] Java+Tuning+GuideV1.8
  -[ ] How-Google-Tests-Software
  -[ ] 性能之巅+洞悉系统、企业与云计算
  -[ ] 解析Java虚拟机器开发：权衡优化、高效和安全的最优方案
