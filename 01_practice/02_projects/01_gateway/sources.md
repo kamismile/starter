@@ -335,6 +335,31 @@
 -[ ] C语言范例开发大全
 -[ ] [编译器构造：C语言描述].(费希尔等).郑启龙等.扫描版
 
+# python
+
+-[ ] Python语言入门
+-[ ] 深入浅出：使用Python编程%28A+Learner%27s+Guide+to+Programming+Using+the+Python+Language
+-[ ] Python核心编程%28第二版%29英文原版+Core+Python+Programming%2C2nd+Edition
+-[ ] Python参考手册%28第4版%29-（美）比兹利.扫描版
+-[ ] Python学习手册%28第3版%29中文
+-[ ] Python源码剖析-深度探索动态语言核心技术
+-[ ] Python核心编程+%28中文第二版%29
+-[ ] 用Python做科学计算-中文版
+-[ ] Python编程%28第4版%29-Programming+Python+4th+Edition-Mark+Lutz
+-[ ] Python学习手册%28第4版%29%28Learning+Python+4th+Edition%29-Mark+Lutz
+-[ ] Python核心编程
+-[ ] Python网络编程基础
+-[ ] Python技术参考大全
+-[ ] 用 Python 和 Pygame 写游戏 - 从入门到精通
+-[ ] 深入_Python_3
+-[ ] [深入Python].(Dive.Into.Python).Mark.Pilgrim.文字版
+-[ ] Python简明教程
+-[ ] 用Python进行自然语言处理(jb51.net)
+-[ ] 《像计算机科学家一样思考Python》.((美)Allen B.Downey).[PDF]@jb51.net
+-[ ] the-complete-guide-to-application-performance-monitoring-tools.original
+-[ ] 高性能Linux服务器构建实战：运维监控、性能调优与集群应用
+-[ ] Python编程金典
+
 
 
 # HTML CSS
