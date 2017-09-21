@@ -368,3 +368,12 @@ android pad: /kindle目录下就好
 # 20 btrace / jmc （JDK7自带）
 
 # 21 ngrok内网代理
+
+# 22 pstree 查看所有进程
+
+```shell
+pstree -p <pid>
+top -Hp <pid>
+ps -eT | grep <pid>
+```
+
