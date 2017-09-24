@@ -42,3 +42,7 @@ http://ebook3000.com/Identity-and-Data-Security-for-Web-Development--Best-Practi
 
 http://ebook3000.com/Raspberry-Pi-By-Example_471302.html
 
+http://www.finelybook.com/category/ebooks/page/56/
+
+http://smtebooks.com/Category/programming-it?page=41
+
