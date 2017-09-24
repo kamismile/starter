@@ -377,4 +377,4 @@ top -Hp <pid>
 ps -eT | grep <pid>
 ```
 
-# 23 rawgit 下载git上单独文件
+# 23 downgit下载git上指定目录rawgit 下载git上单独文件
