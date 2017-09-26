@@ -78,7 +78,7 @@
 
 - [ ] 边框
 
-      - 田框样式border-style (dotted, dashed)
+      - 边框样式border-style (dotted, dashed)
       - 边框宽度 border-width
       - 边框颜色border-color
       - 单独设置各边 border-top-style border-right-style border-bottom-style border-left-style
@@ -122,6 +122,7 @@
       - fixed 相对于浏览器窗口是固定的
       - relative 相对定位元素
       - absolute 相对于最近的已定位父元素 如果没有，相对于<html>
+      - ​
 
       ​
 
