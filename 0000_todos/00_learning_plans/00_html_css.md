@@ -86,7 +86,44 @@
 
 - [ ] 轮廓outline
 
-      - ​
+      - outline: green dotted thick;
+      - outline-style: dashed;
+      - outline-color
+      - outline-width
+
+- [ ] 外边距margin
+
+      - 单边外边距属性 margin-top, margin-bottom , margin-right, margin-left
+      - 简写属性 margin: 100px 50px
+
+- [ ] 填充padding
+
+      - 单边内边距属性 padding-(top|bottom|right|left)
+
+- [ ] 分组与嵌套选择器
+
+      - 减少代码，可以使用分组选择器foo,bar, tar {}
+      - 嵌套选择器 .marked p {}
+
+- [ ] 尺寸 dimension 控制元素的高度和宽度 height, line-height, max-height, max-width, min-height, min-width, width
+
+- [ ] 显示display与可见性visibility
+
+      - 隐藏元素 display:none 或visibility:hidden ,后者占用空间不会释放，会影响布局
+      - 块和内联元素
+        - 块元素占用全部宽度，前后都是换行符 h1, p, div
+        - 内联元素只需要必要的宽度，不强制换行 span, a
+      - 改变一个元素的显示 li {display: inline} span {display: block;}
+      - 一个内联元素设置为display: block是不允许有它内部的嵌套元素的
+
+- [ ] 定位position
+
+      - static 没有定位 默认
+      - fixed 相对于浏览器窗口是固定的
+      - relative 相对定位元素
+      - absolute 相对于最近的已定位父元素 如果没有，相对于<html>
+
+      ​
 
 
  
