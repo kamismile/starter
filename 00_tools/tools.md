@@ -304,6 +304,8 @@ maven helper
 
 jmh
 
+flow
+
  - 使用方式 集成jmh-generator-annprocess依赖项，win alt+insert添加jmh测试项，在方法上运行ctrl+shift+f10即可运行
 
 # 8. windows caps ctrl交换 sharpkeys
@@ -378,3 +380,25 @@ ps -eT | grep <pid>
 ```
 
 # 23 downgit下载git上指定目录rawgit 下载git上单独文件
+
+# 24 code flow visualization
+
+ - eclipse / intellij idea:  ctrl + alt + h
+ - jtracert <http://code.google.com/p/jtracert/>
+ - jsonde <https://github.com/bedrin/jsonde>
+ - doxygen https://www.stack.nl/~dimitri/doxygen/manual/starting.html
+ - btrace https://github.com/btraceio/btrace
+ - zeta code https://www.kickstarter.com/projects/adamldavis/zeta-code
+ - jeliot https://cs.joensuu.fi/jeliot/downloads/jeliot372.php
+ - intellij idea plugin: code explorer 
+ - jgrasp: http://spider.eng.auburn.edu/user-cgi/grasp/grasp.pl
+ - heatlamp
+ - http://findtheflow.io
+
+btrace download https://github.com/btraceio/btrace/releases/tag/v1.3.9
+
+## btrace使用
+
+- 下载  :https://github.com/btraceio/btrace/releases/
+- 使用
+
