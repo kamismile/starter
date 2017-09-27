@@ -357,7 +357,10 @@ jbenchx
 
 ```shell
 java -XX:+UnlockDiagnosticVMOptions -XX:+PrintFlagsFinal -version
-java -X
+java -X # 查看所有-X参数
+# 查看默认堆大小
+java -XX:+PrintFlagsFinal -version | findstr HeapSize
+java -XX:+PrintFlagsFinal -version | grep HeapSize
 ```
 
 # 18 kindle azw3
