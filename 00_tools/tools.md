@@ -357,6 +357,7 @@ jbenchx
 
 ```shell
 java -XX:+UnlockDiagnosticVMOptions -XX:+PrintFlagsFinal -version
+java -X
 ```
 
 # 18 kindle azw3
