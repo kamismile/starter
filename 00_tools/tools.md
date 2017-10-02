@@ -401,8 +401,37 @@ ps -eT | grep <pid>
 
 btrace download https://github.com/btraceio/btrace/releases/tag/v1.3.9
 
-## btrace使用
+## 25 btrace使用
 
 - 下载  :https://github.com/btraceio/btrace/releases/
 - 使用
 
+
+#26 mac
+
+- Copy: cmd + c
+- Paste: cmd + v
+- Cut: cmd + x
+- select all: cmd + a
+- Undo: cmd + z
+- redo: cmd + shift + z
+- switch programs: cmd + tab
+- close window: cmd + w
+- new document: cmd + n
+- save document: cmd + s
+- save as : cmd + shift + s
+- open file: cmd + o
+- Print: cmd + p
+- quit the program: cmd + q
+- Spotlight: cmd + space
+- new folder: cmd + shift + n
+- Delete: cmd + delete
+- empty the trash: cmd + shift + delete
+- open preferences: cmd  + ,
+- move to right or left: cmd + < or cmd + >
+- move to top or bottom: cmd + down or cmd + up
+- capture entile screen: cmd + shift + 3
+- capture custom area: cmd + shift + 4
+- capture window: cmd + shift + 4 + space
+
+  
