@@ -378,9 +378,72 @@ if [ $GRADE -ge 85 ] && [ $GRADE -le 100 ] ; then
 
 # 09 使得for循环
 
+## for语名结构
+
+​	语法格式
+
+​	for 变量名 in 取值列表
+
+​	do
+
+​		命令操作
+
+​	done
+
+```shell
+#!/bin/bash
+for i in "1st" "2nd" "3rd"
+do
+	echo $i
+done
 
 
+#!/bin/bash
+for i in $(cat /etc/host.conf)
+do
+	echo $i
+done
+```
 
+目标: 批量加用户账号
+
+​	用户列表 文件 users.txt, 每行一个
+
+​	初始口令设为123456，首次登陆后必须更改
+
+```shell
+cat uad.sh
+#!/bin/bash
+for i in $(cat /root/users.txt)
+do
+	useradd $i
+	echo "123456" | passwd --stdin $i
+	chage -d 0 $i
+done
+```
+
+目标： 检测一个IP范围内的主机状态
+
+​	192.168.4.1 - 192.168.4.10
+
+​	根据是否ping通来判断
+
+```shell
+#!/bin/bash
+IP_PRE="192.168.4."
+for IP in $(seq 1 5)
+do
+	ping -c 3 -i 0.2 -W 3 ${IP_PRE}$IP &> /dev/null
+	if [ $? -eq 0 ]; then
+		echo "${IP_PRE}$IP is up."
+	else 
+		echo "${IP_PRE}$IP is down."
+	fi
+done
+
+```
+
+# 10 使用case分支
 
 
 
