@@ -141,5 +141,73 @@ echo "scale=4;10/3" | bc # 3.3333
 
 ```
 
+# 字符串处理
+
+​	子串截取操作
+
+​		路径分割
+
+​			dirname命令， basename命令
+
+​		使用expr命令
+
+​			格式: expr substr $var1 起始位置 截取位置 # 起始位置从1开始
+
+​		使用${}表达式
+
+​			格式: \${var1:起始位置:截取长度} # 起始位置从0开始
+
+​	字符串替换
+
+​		使用${}表达式
+
+​			格式1: ${var1/oldnew}   # 仅替换第一个
+
+​			格式2: ${var1//old/new} # 替换所有
+
+​	使用随机字符串
+
+​		/dev/urandom -> /usr/bin/md5sum -> /bin/cut 
+
+​		随机字符 -> ascii字符
+
+​			head -1 /dev/urandom | md5sum
+
+​		使用cut切割字符串
+
+​			echo $var1 | cut -b 起始位置-结束位置 # 位置为首尾时可省略
+
+
+
+```shell
+var1="/etc/httpd/conf/httpd.conf"
+dirname $var1 # /etc/httpd/conf
+basename $var1 # httpd.conf
+var1=BeidaQingNiao
+expr substr $var1 4 6 # daQing
+echo ${var1:4:6} # aQing
+echo ${var1::5} # Beida
+
+head -1 /dev/urandom
+head -1 /dev/urandom | md5sum
+
+head -1 /dev/urandom | md5sum | cut -b -8 # 随机截取8字符
+cat /dev/urandom | tr -cd 'a-f0-9' | head -c 32
+uuidgen
+
+```
+
+# 条件测试
+
+​	
+
+
+
+
+
+
+
+
+
 
 
