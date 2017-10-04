@@ -82,7 +82,7 @@ echo "所有的参数如下: $*"
 
 ```
 
-# 数值运算及处理
+# 05 数值运算及处理
 
 ​	整数运算操作
 
@@ -141,7 +141,7 @@ echo "scale=4;10/3" | bc # 3.3333
 
 ```
 
-# 字符串处理
+# 06 字符串处理
 
 ​	子串截取操作
 
@@ -197,9 +197,250 @@ uuidgen
 
 ```
 
-# 条件测试
+# 07 条件测试
 
-​	
+​	测试操作规范
+
+​		测试的本质
+
+​			是一条操作命令
+
+​			根据$?返回值来判断条件是否成立
+
+​		操作规范
+
+​			格式1:  test 条件表达式
+
+​			格式2: [ 条件表达式 ]
+
+​		测试操作的练习方法
+
+​			直接跟 && echo YES 判断结果
+
+​			用法: [ 条件表达式 ] && echo YES
+
+​	文件状态的检测
+
+​		存在及识别
+
+​			-e: 目录是否存在(exist)
+
+​			-d: 是否为目录(directory) # 判断是否存在且是否是目录
+
+​			-f: 是否文件(file)
+
+​		权限的检测
+
+​			-r: 是否有读取权限 (read)
+
+​			-w: 是否有写入权限 (write)  # 文件所有者即使没有显示有写权限 实际也是有的
+
+​			-x: 是否有可执行权限 (execute)
+
+​		整数值比较
+
+​			-eq: 等于(equal)
+
+​			-ne: 不等于(not equal)
+
+​			-gt: 大于(greater than)
+
+​			-lt: 小于(less than)
+
+​			-ge: 大于或等于（greater or equal)
+
+​			-le: 小于或等于(less or equal)
+
+​	整数值比较，字串比较
+
+​		字符串比较:
+
+​			=： 两个字串相同
+
+​			!=: 两个字串不相同
+
+```shell
+ls -dl /etc/grub /boot/grub
+[ -d "/etc/grub" ] && echo yes
+[ -d "/etc/grub" ] || echo no
+
+[ -d "/etc" ] && echo yes
+[ -f "/etc/fstab" ] && echo yes 
+
+who | wc -l
+[ $(who | wc -l) -eq 2 ] && echo yes
+[ $(who | wc -l) -gt 5 ] && echo yes
+
+
+echo $USER
+[ $USER = "root" ] && echo yes
+[ $USER != "nobody" ] && echo yes
+
+
+```
+
+# 08 使用if判断结构
+
+## 程序流控制
+
+​	执行过程的顺序化/自动化
+
+​		智能化的选择及处理
+
+​	让重复操作更聪明一些
+
+​	对于。。。多个对象。。。如何逐个处理 for
+
+​	在。。。取值是。。。的情况下怎么办？ case
+
+​	如果。。。条件是。。。时程序需要做什么？ if
+
+
+
+## 单分支/双分支的if应用
+
+if 条件测试
+
+​	then 命令序列
+
+fi
+
+​	检查备份目录 /opt/mrepo, 若不存在则创建
+
+
+
+双分支
+
+if 条件测试
+
+​	then 命令序列1
+
+​	else 命令测试2
+
+fi
+
+```shell
+cat chkdir.sh
+BACKUP_DIR="/opt/mrepo"
+if [ ! -d $BACKUP_DIR ]
+then
+	mkdir -p $BACKUP_DIR
+fi
+
+```
+
+判断目录主机是否存活，显示 测试结果
+
+```shell
+cat chkhost.sh
+#!/bin/bash
+ping -c 3 -i 0.2 -W 3 $1 &> /dev/null
+if [ $? -eq 0 ]
+then
+	echo "host $1 is up."
+else 
+	echo "host $1 is down."
+fi
+```
+
+
+
+## 多重分支的if应用
+
+if 条件测试1
+
+​	then 命令序列1
+
+elif 条件测试2
+
+​	then 命令序列2
+
+。。。
+
+else 
+
+​	命令序列n
+
+fi
+
+判断机试分数，区分优秀，合格，不及格
+
+```shell
+cat gradediv.sh
+#!/bin/bash
+read -p "请输入你的分数 (0-100):" GRADE
+if [ $GRADE -ge 85 ] && [ $GRADE -le 100 ] ; then
+	echo "$GRADLE 分！优秀"
+	
+```
+
+
+
+# 09 使得for循环
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
