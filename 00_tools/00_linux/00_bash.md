@@ -445,7 +445,112 @@ done
 
 # 10 使用case分支
 
+## case语句结构
 
+​	case 变量值 in
+
+​	格式1)
+
+​		命令序列1
+
+​		;;
+
+​	格式2)
+
+​		命令序列2
+
+​		;;
+
+​	。。。
+
+​	*)
+
+​		默认命令序列
+
+​	esac
+
+
+
+​	语法格式
+
+​	case 控制参数 in
+
+​	start)
+
+​		启动XX服务
+
+​		;;
+
+​	stop)
+
+​		停止XX服务
+
+​		;;
+
+​	...
+
+​	*) 显示服务脚本的用法
+
+​	esac
+
+## 基本用法示范
+
+```shell
+cat hitkey.sh
+#!/bin/bash
+read -p "请输入一个字符，并按enter键确认: " KEY
+case "$KEY" in
+	[a-z]|[A-Z])
+		echo "你输入的是字母"
+		;;
+	[0-9])
+		echo "你输入的是数字"
+		;;
+	*)
+		echo "你输入的是空格/功能键或其它控制字符"
+esac
+```
+
+
+
+## 案例实战
+
+目标： 编写服务脚本 sleepd
+
+​	能够响应start, stop控制参数
+
+​	将服务交给chkconfig进行管理
+
+```shell
+cat /etc/init.d/sleepd
+#!/bin/bash
+case "$1" in 
+start)
+	sleep 3600 &
+	;;
+stop)
+	pkill -x "sleep"
+	;;
+*)
+	echo "用法: $0 [start|stop]"
+esac
+```
+
+chkconfig处理
+
+​	在脚本开头设计chkconfig参数
+
+​	添加为系统服务
+
+```shell
+cat /etc/init.d/sleepd
+#!/bin/bash
+# chkconfig: - 90 10
+# description: Daemon script for sleepd server
+...
+chkconfig --add sleep # 开机之后自动运行
+
+```
 
 
 
