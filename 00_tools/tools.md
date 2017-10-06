@@ -434,4 +434,25 @@ btrace download https://github.com/btraceio/btrace/releases/tag/v1.3.9
 - capture custom area: cmd + shift + 4
 - capture window: cmd + shift + 4 + space
 
-  
+# 27 mac softs
+
+- alfred
+- cleanmymac 3
+- spectacle
+- keyboard maestro
+- mindnote
+- iterm
+- homebrew
+- zsh
+- sketchup
+- cheatsheet for mac
+- screenflow
+- transmit
+- dash
+- 1password
+- appcleaner
+- keymo
+- vagrant / vagrant manager
+- staruml
+- axure rp 8
+- omnigraffle
