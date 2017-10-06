@@ -552,6 +552,102 @@ chkconfig --add sleep # 开机之后自动运行
 
 ```
 
+# 11 awk文本处理工具
+
+## 关于文本处理
+
+​	shell输出为文本
+
+​		面向过程，而非面向对象
+
+​	非交互处理方式
+
+​		重定向/管道/命令替换
+
+​		head, more, cut, tr
+
+​		grep, awk, sed
+
+​	awk编程语言/数据处理引擎
+
+​		创造者: aho, weiberger, kernighan
+
+​		基于模式匹配检查输入
+
+​		将期望的匹配结果print到屏幕
+
+## awk基本命令格式
+
+语法格式
+
+​	awk '模式 {操作}' 文件1 文件2  ....
+
+```shell
+awk 'NR==1{print}' /etc/hosts
+```
+
+常见的内建变量
+
+​	NR: 当前处理行的序数(行号)
+
+​	FS: 字段分割，缺省为空格或Tab位
+
+​	$n: 当前行的第n个字段
+
+​	$0: 当前行的所有文本内容
+
+
+
+```shell
+cat file.txt
+1 this is the first line
+2 hello, everybody!
+3 192.168.4.2 w2k8.benet.com
+4 hunter:x:504:504:/home/hunter:bin/bash
+
+awk 'NR==1,NR==3{print}' file.txt # 从第一行到第3行
+
+awk '(NR==1) || (NR==3) {print}' file.txt # 输出第一行和第三行
+```
+
+使用比较运算
+
+```shell
+awk '(NR%2)==1{print}' file.txt # 输出所有奇数行
+
+awk '(NR%2)==0{print}' file.txt # 输出所有偶数行
+```
+
+使用正则表达式 ,// 两斜杠包裹起来的
+
+```shell
+awk '/2/{print}' file.txt # 输出包含数字2的行
+
+awk '/bash$/{print}' file.txt # 输出以bash结尾的行
+```
+
+
+
+## 常见用法示例
+
+指定分隔/指定输出字段
+
+```shell
+awk 'NR==2,NR==3{print $1,$3}' file.txt
+
+awk -F. '$5=="benet"{print $0}' file.txt # -F 指定分隔符， 以.分隔且第5字段为benet
+```
+
+# sed文本处理工具
+
+过滤及修改
+
+## sed基本用法
+
+## 输出文本
+
+## 删除及替换文本
+
 
 
 
