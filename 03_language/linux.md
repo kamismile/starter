@@ -18,3 +18,6 @@ http://edu.51cto.com/course/2220.html
 http://edu.51cto.com/course/7001.html
 http://edu.51cto.com/course/5541.html
 
+https://ke.qq.com/course/206642
+https://ke.qq.com/course/27065
+https://ke.qq.com/course/8509
