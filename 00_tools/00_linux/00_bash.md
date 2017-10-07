@@ -811,8 +811,42 @@ crontab -r # 删除
 1 1 * * *  find /home/log/ -type f -mtime +5 exec rm {} \;
 
 # 使用root身份，给其它普通用户指定crontab
-# crontab -u USERNAME -l/-e/-r
+# crontab -u USERNAME -l/-e/-r # 清空操作会清空所有
+
+anacron # 在机器重启后，检查已有cron任务是否有执行成功，没有则执行
+
+vim /var/log/cron # 查看定时任务运行日志
+
+
 ```
+
+## 实战定时开机
+
+1. 进入bios, 进入电源管理power management setup
+2. 唤醒事件设置 wakeup event setup
+3. resume by rtc alarm -> date everyday
+
+## 日志管理
+
+```shell
+# /var/log
+# 核心启动日志: /var/log/dmesg
+# 系统报错或重启服务等日志 /var/log/messages
+# 邮件系统日志 /var/log/maillog
+# cron定时任务日志 /var/log/cron
+# /var/log/secure 验证系统用户登陆
+# /var/log/wtmp 记录所有的登入登出 last
+last # 查看所有登陆过系统的用户和ip
+> /var/log/wtmp # 清空痕迹
+# 文件/var/log/lastlog 记录每个用户最后的登入信息
+lastlog
+# /var/log/btmp 
+lastb # 记录错误的登入尝试
+```
+
+
+
+
 
 ## find
 
@@ -905,6 +939,100 @@ find /tmp -type f -exec -rm {} \;
 # \; {}和\;之间要有空格。固定语法，就是以这个结尾
 ```
 
+## 进程管理
+
+进程和线程
+
+> 一个程序至少有一个进程，一个进程至少有一个线程
+>
+> 进程之间内存是独立的
+>
+> 线程之间内存共享，高并发好一些。安全性差一些。一个线程挂了，共享内存会受影响
+
+```shell
+pstree
+pstree -p # 显示pid
+tree /foo # 显示树型结构
+
+```
+
+列出目前所有的正在内存当中的进程
+
+- user: 运行此进程的用户 process属于哪个使用者账号
+- PID: 该process的号码 
+- %CPU: 该process使用掉的cpu资源百分比
+- %MEM 该process所占用的物理内存百分比
+- VSZ: 该process使用掉的虚拟内存量(Kbytes)
+- RSS: 该process占用的固定的内存量(Kbytes)
+- TTY：显示是在哪个终端机上运行，若与终端无关，显示?,另外tty1-tty6是本机上面的登入者程序，若为pts/0等等的，则表示为由网络连接进主机的程序
+- STAT：该程序目前的状态， linux进程有5种基本状态
+  - R: 正在运行或在运行队列中等待
+  - S: 该程序目前正在睡眠中，但可被某些记号(signal)唤醒
+  - T: 该程序目前暂停了
+  - Z: 该程序应该已经终止，但是其父程序却无法正常的终止他，造成zombie(僵尸)程序的状态
+  - D: 不可中断状态
+  - < 高优先级
+  - N 低优先级
+  - L 有内存分页但是带锁
+  - l 包含子进程
+  - \+ 前台程序 ()
+- START： 该process实际使用cpu运作的时间
+- COMMAND: 该程序的实际指令
+
+```shell
+ps
+ps -aux | more # a: all x: execute u: user
+vim foo.sh # ctrl + z
+ps -aux | grep vim # 查看到是stat是T状态
+# ctrl + c是发送SIGINT信号，终止一个进程
+# ctrl + z是发送SIGSTOP信号，挂起一个起程
+
+```
+
+ps aux 是用BSD的格式来显示进程
+
+ps -ef  是用标准的格式来显示进程
+
+## top 动态查看进程
+
+[sysstat 黄金60秒](http://www.jianshu.com/p/fd6e35f529c1)
+
+[Brendan linux performance](http://www.brendangregg.com/linuxperf.html)
+
+```shell
+uptime
+dmesg | tail
+vmstat 1
+mpstat -P ALL 1
+pidstat 1
+iostat -xz 1
+free -m
+sar -n DEV 1
+sar -n TCP,ETCP 1
+top # ctrl - s 暂停 ctrl - q 继续 
+
+
+
+
+```
+
+
+
+ps静态，top动态
+
+统计信息区前五行是系统整体的统计信息
+
+13:22:30 up 8min, 4 users, load average: 0.14, 0.38, 0.25
+
+第一行: 等同于uptime, 任务队列信息
+
+- 当前时间  
+- 系统运行时间，格式为时: 分
+- 当前登陆用户数
+- 系统负载，即任务队列的平均长度。三个数值分别为1分钟，5分钟，15分钟前到现在的平均值
+
+
+
 
 
 
@@ -914,6 +1042,207 @@ find /tmp -type f -exec -rm {} \;
 
 
 # 网络管理相关命令
+
+## OSI七层模型和TCP/IP四层模型
+
+osi七层模型
+
+应用层
+
+表示层 -> ascii
+
+会话层
+
+传输层 -> 防火墙
+
+网络层 -> 三层交换机和路由器
+
+数据链路 -> 二层交换机和网卡
+
+物理层 -> 集线器
+
+
+
+tcp/ip 四层模型
+
+应用: http ftp
+
+传输 tcp upd 数据包网络
+
+网络层 路由器
+
+链路接口层
+
+
+
+
+
+## IP地址分类
+
+分5类: 常见的是A, B, C类
+
+A 类 范围从0-127， 0是保留的并且表示所有的IP地址，而127也是保留地址，并且是用于测试环回口用的。因此A类地址的可用范围其实是从1-126之间，以子网掩码来区别: 255.0.0.0
+
+B类 范围从128-192， 如172.168.1.1，第一和第二段为网络号码，剩下的2段号码为本地计算机的号码，以子网掩码来进行区别: 255.255.0.0
+
+C类地址: 范围从192-223,以子网掩码来进行区别: 255.255.255.0
+
+例如: 192.168.1.254 (192.168.1.255是广播地址)
+
+D：范围从224-239, 被用在多点广播(multicast)中，多点广播地址用来一次寻址一组计算机，它标识共享同一协议的一组计算机， 有组播的发况下，不需要多次发相同包到不同客户机
+
+私有IP地址
+
+A: 10.0.0.0/8 # 8, 16, 24 表示子网掩码
+
+B: 172.16.0.0 ~ 172.31.0.0/16
+
+C: 192.168.0.0 ~ 192.168.255.0/24
+
+环回口一直是可用up状态
+
+```shell
+ifconfig lo
+ping 127.23.23.23 # 所有127打头均可ping通
+```
+
+
+
+## 了解常见的网络相关协议
+
+TCP/IP协议
+
+​	tcp/ip协议是一个协议簇，里面包含很多协议
+
+​	例如:
+
+​		http： 超文本传输协议
+
+​		tftp：文件传输
+
+​		telnet: 远程登陆
+
+​		snmp: 网络管理
+
+​		tcp transmission control prototal 传输控制协议，面向连接的协议
+
+​		udp user data protocol 用户数据报协议 非连接的协议
+
+​		Internet ip协议
+
+​		internet 控制信息协议 icmp
+
+​		地址解析协议 arp
+
+​		反向地址解析协议rarp
+
+
+
+## TCP三次握手和四次挥手
+
+​	tcp和udp的区别
+
+  - 基于连接与无连接
+  - 对系统资源的要求(tcp较多，udp少)
+  - udp程序结构较简单
+  - 流模式与数据报模式
+  - tcp保证数据正确性，udp可能丢包，tcp保证数据顺序，udp不保证
+
+tcp: 三次握手的状态
+
+​	c								s
+
+​	tcp 连接状态		建立过程		tcp连接状态
+
+​									listen
+
+​	SY N_SENT		---syn seq=a ---> 		SYN_RCVD
+
+​	ESTABLISHED 	<--syn seq=b		ack=a+1
+
+​				--ack=b+1--->			ESTABLISHED			
+
+
+
+客户端发送syn报文，并置发送序号为X		
+
+​									服务端发送syn+ack报文，并置发送序号为Y,在确认序号为X+1
+
+客户端发送ack报文，并置发送序号为，在确认序号为Y+1
+
+​		
+
+TCP 四次挥手
+
+主动方													被动方
+
+主动发发送Fin+Ack报文并轩发送序号为X
+
+​														被动方发送ACK报文，并置发送序号为Z,在确认序号为X+1
+
+​														被动方发送Fin+ack报文，并置发送序号为Y,在确认序号为X
+
+主动方发送ack报文，并置发送序号为X,再确认序号为Y
+
+
+
+四次挥手状态
+
+关闭连接: 四次挥手
+
+c									c
+
+FIN_WAIT		--fin seq=a -->		CLOSE_WAIT
+
+FIN_WAIT2 		<--ack a + 1--
+
+TIME_WAIT		<--fin b--				LAST_ACK
+
+​				--ack b+1--> 			CLOSE		
+
+
+
+## 网络相关的调试命
+
+## 网络接口类型表示方法
+
+以太网(ethernet) 					ethN
+
+回环口							lo
+
+光纤网							fddiN
+
+桥设备							br0
+
+Linux ADSL宽带接口				ppp pppN如:ppp0
+
+随道							tun0 tun1
+
+## 查看网卡物理连接信息
+
+```shell
+mii-tool eth0
+```
+
+## 查看网卡详细参数
+
+```shell
+ethtool eth0
+# speed 
+# duplex
+```
+
+## 配置网络和IP地址
+
+- 方法一
+  - setup (TUI， 方式，文本用户界面) 配置IP地址
+  - ​
+
+
+
+## 实战tcpdump和tshark抓包
+
+
 
 # 正则表达式-awk-sed使用方法
 
@@ -966,6 +1295,9 @@ TODO
 
 
 
+[python algorithms and data structure](https://www.youtube.com/playlist?list=PLib7LoYR5PuDxi8TxxGKxMgf8b-jtoS3i)
+
+[machine learning with python](https://www.youtube.com/playlist?list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v)
 
 
 
@@ -975,8 +1307,35 @@ TODO
 
 
 
+# 算法
 
+-[ ] [C算法](http://edu.51cto.com/center/course/lesson/index?id=181152)
 
+## 百钱百鸡
+
+> 公鸡5元一只，母鸡3元一只，3只小鸡1元，100元买100只鸡，求组合
+
+```c
+#include <stdio.h>
+
+int main() {
+    int x, y, z; // x: 公，y: 母, z: 小
+  	for (x = 0; x <= 20; x++) {
+        for (y = 0; y <= 33; y++) {
+            if (z % 3 == 0 && x * 5 + y * 3 + z / 3 == 100) {
+                printf("公鸡: %d, 母鸡: %d, 小鸡: %d\n", x, y, z);
+            }
+        }
+    }
+  	return 0;
+}
+```
+
+## 凑数
+
+> 输入5个数，通过加减乘除，使前4个数
+
+## 裴波纳契算法
 
 
 
