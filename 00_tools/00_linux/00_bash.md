@@ -1,3 +1,13 @@
+[Java架构师，年薪50万](http://www.guaishouxueyuan.net/thread-35704-1-1.html)
+
+1。 算法
+
+2。 架构 
+
+3。 python
+
+4。 CPP
+
 # 01 清屏
 
 clear 或ctrl + l
@@ -1451,43 +1461,145 @@ ls /sda5/
 df -h
 ```
 
+卸载
+
+umount /sda5 或 umount /dev/sda5
+
+检查  mount -a
+
+```shell
+fuser -muv /sda5 # 查看文件正在被谁使用
+```
+
+GPT分区
+
+GPT： 全局唯一标识分区表(GUID partition Table)， guid,与mbr最大4个分区表项的限制相比，GPT对分区数量没有限制，但windows最大仅支持128个分区。GPT可管理硬盘大小达到了18EB(1048576TB)， 不过NTFS格式最大仅支持256TB.(受限于文件系统 )
+
+```shell
+parted
+> help
+> quit
+parted -l # fdisk -l
+parted /dev/sdc 
+> p
+> gpt
+> mkpart
+...
+> mkpart
+...
+> quit
+
+```
+
+## lvm
+
+逻辑卷管理logical volume manager
+
+是linux环境下对底层磁盘的一种管理机制，处在物理磁盘和文件系统之间的
+
+pv physical volume (物理卷)
+
+vg volume group (卷组)
+
+lv logical volume (逻辑卷)
+
+最小存储单位: PE
+
+总结
+
+名称： 最小存储单位
+
+硬盘:  扇区(512字节)
+
+文件系统 block (1K 或 4K)
+
+raid: chunk (512K) mdadm -c
+
+lVM: PE (16M 自己定义)
 
 
 
+开始
 
+在虚拟机中添加一块或多块硬盘 : sdb
 
+准备分区
 
+\# fdisk /dev/sdb 分三个分区1,2,3
 
+制作PV
 
+```shell
+pvcreate /dev/sdb{1,2}
 
+```
 
+制作VG
 
+```shell
+vgcreate /dev/sdb1 /dev/sdb2
 
+```
 
+制作LV
 
+```shell
+lvcreate -n LV1 -L 1.5G Vg1 # -n 名称 -L 大小
+```
 
+pv -> 对应 分区
 
+vg -> 对应  卷组
 
+lv -> 逻辑卷
 
+各种查看
 
+pvs		pvscan 		pvdisplay
 
+vgs 		vgscan 		vgdisplay
 
+lvs 		lvscan		lvdisplay
 
+创建时指定PE
 
+```shell
+vgcreate -s 16M vg1 /dev/sdb1 /dev/sdb2 # -s 指定PE大小
+mkfs.ext4 /dev/Vg1/LV1
+mount /dev/Vg1/LV1 /opt
 
+```
 
+lV扩展
 
+```shell
+lvextend -L +300M /dev/Vg1/LV1 # 扩展完之后需要再扩展文件系统 
+resize2fs /dev/Vg1/LV1
+df -h
 
+```
 
+VG扩展
 
+```shell
+vgextend Vg1 /dev/sdb3
+```
 
+### lvm 缩减 删除
 
+lvm支持在线缩小，但ext4文件系统不支持在线缩小。btrfs支持在线缩小
 
+btrfs的特性
 
+首先，是扩展性。其整体性能不会随着系统容量的增加而降低
 
+其次是数据一致性相关的特性
 
+第三是多设备管理相关的特性。btrfs支持创建快照和克隆
 
+这些特性都是比较先进的技术，能够显著提高文件系统的时间 / 空间性能，包括延迟分配，小文件的存储优化，目录索引等。
 
+卸载umount, 缩减文件系统大小，缩减lv大小lvreduce
 
 
 
@@ -1738,6 +1850,7 @@ TODO
 -[ ] https://ke.qq.com/course/219551
 -[ ] haproxy
 -[ ] lvs
+-[ ] 大数据就是这么任性第一季数据结构
 
 
 
