@@ -1766,7 +1766,7 @@ TIME_WAIT		<--fin b--				LAST_ACK
 
 
 
-## 网络相关的调试命
+## 网络相关的调试命令
 
 ## 网络接口类型表示方法
 
@@ -1799,12 +1799,170 @@ ethtool eth0
 ## 配置网络和IP地址
 
 - 方法一
+
   - setup (TUI， 方式，文本用户界面) 配置IP地址
-  - ​
+
+    - 在rhel6中增加了一个新的网络服务 /etc/init.d/NetworkManager stop
+    - chkconfig NetworkManager off
+    - service network restart
+    - [for ubuntu](https://help.ubuntu.com/lts/serverguide/network-configuration.html)
+
+  - 修改网卡配置文件
+
+    ​
+
+```shell
+ifconfig all
+ifconfig eth0
+ifconfig eth0 up/down
+ifdown eth0
+ifconfig -a
+ifup eth0
 
 
+ifconfig eth0:1 192.168.1.80
+ifconfig eth0:2 192.168.2.80
+
+# 修改网卡配置文件
+vim /etc/sysconfig/network-scripts/ifcft-eth0
+# ubuntu /etc/network/interfaces
+
+
+
+
+
+```
+
+## 网络调试相关命令
+
+设置主机名
+
+```shell
+vim /etc/sysconfig/network
+```
+
+ip和主机名(域名)对应关系
+
+```shell
+cat /etc/hosts
+# hosts优先级高于dns 可更改 /etc/nsswitch.conf host项
+cat /etc/resolv.conf
+# !命令前缀可以快速补全历史记录
+# 端口对应协议
+cat /etc/services
+```
+
+查看路由信息
+
+```shell
+route -n
+0.0.0.0 ****** 0.0.0.0 对应的是默认网关
+```
+
+- destination 目录 目标网络或目标主机
+- gateway 网关 网关地址，如果没有就显示星号
+- genmask 网络掩码 
+
+添加路由(把linux做成路由器时或服务器有多个网卡，指定到不同的网段走哪个网卡)
+
+删除路由
+
+```shell
+route add -net 192.168.2.0 netmask 255.255.255.0 dev eth1 # dev 设备
+route del -net 192.168.2.0 netmask 255.255.255.0 
+```
+
+ -net 表示后面新年好的路由为一个网域
+
+-host 表示后面接的为连接到单部主机的路由
+
+netmask 与网域有关，可以设定netmask决定网域的大小
+
+dev: 如果只是要指定由哪一块网络卡连线出去，则使用这个设定，后面接eth0等
+
+
+
+查看连接状态
+
+```shell
+netstat -antup
+```
+
+-a, --all
+
+-n, --numberic
+
+-p, --programs
+
+-t, 显示 tcp连接
+
+-u 显示udp连接
+
+-p 进程
+
+
+
+ping 
+
+```shell
+ping -c 1 192.168.1.1 # 指定次数
+ping -i 0.001 192.168.1.1 # 指定间隔周期
+ping -I eth0 192.168.1.1 # 指定网卡
+
+
+```
+
+查看网络流量
+
+```shell
+iptraf
+
+```
+
+查看IP地址是否有冲突
+
+```shell
+arping 192.188.1.1 # arp
+# arp
+
+```
 
 ## 实战tcpdump和tshark抓包
+
+tcpdump命令
+
+指定接口 -i
+
+指定IP地址(host) 可以辅加and, or !等逻辑以及src, dest等表示方向
+
+
+
+```shell
+tcpdump -i eth0
+tcpdump port 22 -c 3 -n -S # tcpdump -h
+# port 端口号
+# -c 抓几个包
+# -n 不解析端口号为协议名
+# -S 打印tcp sequence numbers
+telnet localhost 22
+
+tshark -w filename =i eth0 -q
+# -w 将抓包的数据写入到文件filename中
+# -i 指定要抓包的接口名称
+
+tshark -r filename
+# -r 指定要读取的包文件
+# -V 将包尽可能的解析，这个有时在包数量很多的情况下可以不使用，这样它会给出一个很简洁的报文解释
+
+```
+
+
+
+# shell脚本编程
+
+# case-for-while
+
+# shift命令
 
 
 
