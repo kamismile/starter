@@ -8,7 +8,7 @@ clear 或ctrl + l
 
 常用用软连接
 
-# 03 重定向2>, && ||, ;
+# 03 重定向2>, &>, 2>&1, && ||, ; 
 
 ```shell
 mkdir /mulu/a 2> /dev/null && echo "success"
@@ -1013,10 +1013,7 @@ top # ctrl - s 暂停 ctrl - q 继续
 
 
 
-
 ```
-
-
 
 ps静态，top动态
 
@@ -1030,6 +1027,461 @@ ps静态，top动态
 - 系统运行时间，格式为时: 分
 - 当前登陆用户数
 - 系统负载，即任务队列的平均长度。三个数值分别为1分钟，5分钟，15分钟前到现在的平均值
+
+一般来说，每个cpu内核当前活动进程数不大于3，则系统运行表现良好。这里说的是每个cpu内核，也就是如果你的主机是四核cpu的话，那么只要uptime最后输出的一串数值小于4 * 3 = 12即表示系统负载不是很严重
+
+第二行: 进程信息
+
+​	总进程数 正在运行的进程数 睡眠的进程数 停止的进程数 僵死的进程数
+
+第三行:  cpu信息
+
+​	cpu(s): 系统用户进程使用cpu百分比。不包括调高优先级的进程。cpu%是由每个核的cpu占用率之和算出来的。如果你是4核cpu,核1，cpu使用率为100%，核2，cpu使用百分率为100%，则会出现cpu高于100%，最终为200%, top中按下1可查看各cpu使用情况
+
+​	sy: 	内核占用cpu百分比
+
+​	ni: 	用户进程空间内改变过优先级的进程占用cpu百分比
+
+​	id: 	空间cpu百分比
+
+​	wa: 
+
+第四五行信息： 内存
+
+​	mem total: 	物理内存总量
+
+​	used:		使用的物理内存总量
+
+​	free:		空闲内存总量
+
+​	buffers:		用作内核缓存的物理总量，和free -k 一个意思
+
+​	swap: total  	交换区总量
+
+​	OK used 	使用的交换区总量
+
+​	free			空闲交换区总量
+
+​	cached		缓冲的交换区总量。内存中的内容被换出到交换区，而后又被换入到内存，但使用过的交换区尚未被覆盖，该数值即为这些内容已存在于内存中的交换区的大小。相应的内存再次被换出时可不必再对交换区写入。 和free -k 中cache一样
+
+### 进程信息
+
+- pid
+- user
+- ni 进程优化级，nice值，负值表示高优先级，正值表示低优先级
+- RES 实际 使用内存大小
+- S 进程状态 D R S T Z
+- %cpu  上次更新到现在的cpu时间占用百分比
+- %mem 进程使用的物理内存百分比
+- TIME+ 进程使用的CPU时间总计，单位1/100秒
+- command 命令名/命令行
+
+### top快捷键
+
+​	默认3秒刷新一次
+
+​	空格立即刷新
+
+- q 退出 
+- M 按内存排序
+- P 按CPU排序
+- <>翻页
+
+### 控制关闭进程
+
+kill 向进程发送信号（停止进程）
+
+​	kill -9 pid
+
+​	killall  name通过程序名称直接杀掉所有进程
+
+​	pkill name
+
+- 1 HUP 重新加载配置文件 类似重启
+- 2 INT 和ctrl + c一样 一般用于通知进程组终止进程
+- 9 KILL 强行中断
+- 19 STOP 和ctrl + z一样
+
+### 优先级控制 
+
+nice值  -20 ~ 19 越小优先级越高，普通用户 0-19
+
+```shell
+vim foo.txt
+ps aux | grep vim 
+top -p 7869
+nice -n -5 vim foo.txt
+# 修改正在运行的进程的优先级
+renice -n 5 pid
+```
+
+
+
+## nice-free-前后台进程切换-free-screen命令
+
+nice -n num command
+
+renice -n <pid>
+
+前后台进程切换
+
+ - jobs 列出所有后台进程
+ - fg 后台程序改成前台  
+    - fg 后台进程序列号
+
+```shell
+jobs
+vim foo.txt &
+jobs
+
+```
+
+free 
+
+ - buffer 缓存从磁盘读出的内容
+ - cached 缓存需要写入磁盘的内容
+
+```shell
+find / -type f # buffer会增加，cached不会
+dd if=/dev/zero of=a.txt bs=10M count=10 # 写数据 10M 10次 cached会增长
+file a.txt
+
+```
+
+linux为了提高性能，会使用buffer cache
+
+实际使用 = used - buffers - cached 
+
+可用 = free + buffers + cached
+
+
+
+​			total 	used 	free 	shared		buffer 		cached
+
+mem:		1164636	 A		B		0			C			D
+
+-/+ buffers/cache		X		Y
+
+Swap:		1023992	0	1023992
+
+X = A - C - D
+
+Y = B + C + D
+
+```shell
+vim foo.txt & # 在窗口关闭后会退出进程
+
+```
+
+### screen 实战后台实时执行命令备份命令
+
+nohup, 在shell中提示了nohup成功后还需要按终端上键盘任意键退回到shell输入命令窗口，然后通过在shell中输入exit退出终端，这样启动的进程在关闭终端后依然可以运行。但如果在nohup执行成功后直接点关闭程序按钮关闭终端，会断调该命令所对应的session，导致nohup对应的进程被通知需要一起shutdown
+
+nohup 
+
+讲法: nohup command \[args... ][ &]
+
+描述: nohup命令运行由command参数和任何相关的arg参数指定的命令，忽略所有挂断(SIGHUP)信号。在注销后用nohup命令运行后台中的程序。要运行后台中的nohup命令，添加& 到命令的尾部
+
+如果使用nohup命令提交作业，那么在缺省情况下该作业所有输出都被重定向到一个名为nohup.out的文件中，除非另外指定了输出文件
+
+disown -h %num
+
+shopt huponexit
+
+shopt -s huponexit
+
+nohup command > myout.file 2>&1 &
+
+```shell
+screen
+# ctrl + a + d detatch
+screen -ls 
+screen -r <pid|name>
+
+```
+
+## 输入输出重定向 文件查找 
+
+文件描述符 0 1 2 
+
+/dev/null 类似黑洞， 用于抛弃无用信息
+
+\> 输出重定向 等同于1>
+
+1> 标准输出重定向
+
+2> 标准错误输出重定向
+
+& 等同于
+
+2>&1
+
+```shell
+ls /home /homee > /dev/null 2>&1
+```
+
+输入重定向
+
+<, <<EOF
+
+```shell
+wc /etc/passwd
+wc < /etc/passwd
+
+cat > a.txt <<EOF
+...
+EOF
+cat > a.txt <<FF
+
+FF
+```
+
+管道
+
+tee: 将标准输出的内容同时写到一个文件中
+
+```shell
+cat /etc/passwd | tee a.txt # 保存到文件且输出到控制台
+cat /etc/passwd > a.txt # 保存到文件
+```
+
+## 文件查找 
+
+which: 	查看可执行文件的位置
+
+​	which ls
+
+​	which find
+
+whereis	查看可执行文件的位置及相关文件
+
+​	whereis ls
+
+locate 	配合数据库缓存快速查看文件位置
+
+​		updatedb # 使用前使用此命令更新数据库，否则最新创建的文件找不到。另会在晚上2:00左右自动更新数据库。在计划任务中有
+
+​		locate 
+
+find		实际搜寻硬盘查询文件名称
+
+grep	过滤
+
+​	grep --color root /etc/passwd
+
+## 文件系统
+
+### 硬盘结构
+
+CHS结构体系的磁盘 (Cylinder/header/sector)
+
+> 硬盘盘片的每一条磁道有相同的扇区数，由此产生了所谓的3D参数(disk geometry), 磁头数(heads) 柱面数(cylinders) 扇区数(sectors)以及对应的3D寻址方式
+>
+> 缺点: 外圈浪费，但速度很平
+>
+> 每个磁道的扇区数都一样，这样外磁道整个弧长要大于内部的扇区弧长，因而其磁记录密度就要比内部磁道的密度要小。最终，导致了外部磁道的空间浪费
+>
+> 簇类似于linux系统中的block
+
+例: 文本文件“新建文本文档.txt"中有只有aa两个字符， 大小2字节，占用空间4KB
+
+
+
+ZBR (Zoned Bit Recording) 区位记录(zoned) 
+
+> zoned-bit recording(ZBR 区位记录) 是一种物理优化磁盘存储空间的方法，此方法通过将更多的扇区放到磁盘的外部磁道而获取更多的存储空间
+>
+> 外磁道扇区多，速度外，向内逐渐变慢
+>
+> 磁盘大文件读写时速度会逐渐变慢就是这个原因 
+
+操作系统读取硬盘的时候，不会一个个扇区地读取，这样效率太低，而是一次性连续读取多个扇区，即一次性读取一个”块“(block)。这种由多个扇区组成的”块“，是文件存取的最小单位。”块“的大小，最常见的是1KB, 即连2个sector组成一个block。
+
+### 查看系统块大小
+
+```shell
+tune2fs -l /dev/sda1 | grep --color size
+```
+
+不同的分区可以有不同的块大小, 并非block越大越好
+
+```shell
+df -h # 查看mounted on 根分区/
+ll -d # 仅显示目录
+```
+
+### 文件系统结构 
+
+三部分: 文件名, inode, block(真正存储数据在block)
+
+inode: 文件数据都存储在"块”中，那么很显然 ，我们还必须找到一个地方存储文件的元信息，比如文件的创建者，文件的创建日期，文件的大小等。这种存储文件元信息的区域就叫做inode，中文译名为"索引节点"
+
+inode的内容:
+
+ - 文件的字节数
+ - 拥有者的uid
+ - group id
+ - 文件的读，写，执行权限 
+ - 文件的时间戳，共有三个，ctime指上一次变动时间，mtime指文件内容上一次变动时间，atime指文件上一次打开时间。
+ - 链接数，即有多少文件名指向这个inode
+ - 文件数据block的位置
+
+查看inode信息
+
+```shell
+stat /etc/passwd
+
+```
+
+inode的大小
+
+inode也会消耗硬盘空间，所以硬盘格式化的时候，操作系统自动将硬盘分成两个区域，一个是数据区，存放文件数据；另一个是inode区(inode table)，存放inode所包含的信息。
+
+```shell
+df -i
+```
+
+每个文件至少有一个inode号。操作系统用inode号码来识别不同文件
+
+```shell
+ls -i /etc/passwd # 查看文件inode号
+ls -id /etc # 查看目录的inode号
+```
+
+### 文件软硬链接
+
+ln命令可以创建硬链接
+
+ln 源文件 目标文件
+
+硬连接:  不同的文件名相同的inode指向同一个块设备
+
+文件名1 -> inode1 -> blockA
+
+文件名2 -> inode1 -> blockA
+
+硬链接特点: 创建时不能跨分区，不能给文件夹创建
+
+
+
+软链接: 相当于windows中的快捷方式
+
+ln -s 源文件或目录 目标文件或目录
+
+为什么新建的目录链接数是2， 因为除自身外还有. 指向同一个inode, 再创建子目录时会变为3，是因为多了..
+
+```shell
+mkdir foo
+cd !$
+ls -id .
+ls -id foo
+mkdir bar
+cd !$
+ls -id bar/..
+
+```
+
+实例:
+
+web服务器中小文件很多，导致硬盘有空间，但无法创建文件。
+
+是因为inode数被用光了
+
+```shell
+df -i # 检查inode数
+```
+
+block设置大: 效率高，利用率低
+
+block设置小: 效率低, 利用率高
+
+一般系统默认就行。
+
+### ext4 文件系统 比Ext3 文件系统强的方面
+
+1.  ext4与ext3兼容
+2. 更大的文件系统和更大的文件。较之ext3目前所支持的最大16TB文件系统和最大2TB文件，EXT4分别支持1EB(1048576TB, 1EB = 1024PE, 1PB = 1024TB)的文件系统，以及16TB的文件
+3. 无限数量的子目录。ext3目前仅支持32000个子目录，而ext4支持无限数量的子目录
+4. “无日志”(no journaling) 模式。日志总归有一些开销，Ext4允许关闭日志，以便某些有特殊需求的用户可以借此提升性能
+
+
+
+### 磁盘管理
+
+mbr: master boot record 主引导扇区
+
+硬盘的0柱面，0磁头，1扇区称为主引导扇区也叫主引导记录mbr, 它由三个部分组成，主引导程序/硬盘表dpt(dist partition table)和分区有效标志(55AA)
+
+在总共512字节的主引导扇区里主引导程序 (boot loader)占446个字节，第二部分是partition table区(分区表)，即dpt，占64个字节，16 * 4 = 64，硬盘中分区有多少以及每一分区的大小都记在其中。第三部分是magic number，占2个字节，固定为55AA.
+
+
+
+添加磁盘步骤
+
+添加设备	分区 格式化(创建文件系统) [起名] 修改配置文件 创建挂载点 挂载
+
+fdisk
+
+```shell
+fdisk -l # 查看信息
+fdisk /dev/sdb # 创建/管理分区
+fdisk m # 获取帮助
+fdisk p # 打印分区表
+fdisk n # 新建
+fdisk e # 扩展 在mbr这亲的分区表中，只有一个扩展分区，最多4个主分区， p 主分区， e 扩展分区
+		# 逻辑分区
+fdisk q # 退出 
+fdisk d # 删除
+fdisk w # 保存
+```
+
+格式化
+
+mkfs.ext3 /dev/sda5
+
+mkfs.ext4 /dev/sda5
+
+挂载
+
+```shell
+mkdir /sda5
+mount /dev/sda5 /sda5/
+ls /sda5/
+df -h
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
