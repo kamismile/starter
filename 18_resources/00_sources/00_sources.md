@@ -1,5 +1,7 @@
 优秀代码库
 
+[xdiamond](https://github.com/hengyunabc/xdiamond.git)
+
 [jeesuite](https://git.oschina.net/vakinge/jeesuite-libs)
 
 [zheng](https://git.oschina.net/shuzheng/zheng)
