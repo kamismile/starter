@@ -1021,9 +1021,60 @@ sar -n DEV 1
 sar -n TCP,ETCP 1
 top # ctrl - s 暂停 ctrl - q 继续 
 
+# 查找最消耗cpu的java线程
+ps -mp <pid> -o THREAD,tid,time
+ps -Lfp <pid>
+
+tailf
+```
+
+
+
+### 用JStack和top分析Java进程cpu占用率
+
+[用jstack和top分析Java进程占用率](http://blog.csdn.net/wanglha/article/details/39989303)
+
+[高手是怎样使用jstack等解决cpu](https://jingyan.baidu.com/article/4f34706e3ec075e387b56df2.html)
+
+[JVM调优之jstack找出最耗cpu的线程并定位代码](http://www.cnblogs.com/chengJAVA/p/5821218.html)
+
+[linux下java高cpu高内存故障](http://blog.csdn.net/ty19921009/article/details/48317925)
+
+```shel
+top
+# 找到cpu高的pid
+ps p 3036 -L -o pcpu,pid,tid,time,tname,cmd
+# 线程号10进制转16进制
+printf "%x\n" 3046
+# 0xb46
+jstack -l 3036 | grep 0xbe6
+```
+
+```shell
+top -H
+top -H -p pid # top -H -p 26514
+top -p PID,shift + h # top -p 26514 线程按cpu排序
+
+# 查找这个线程的信息
+jstack <pid> | grep -A 10 [线程的16进制]
+```
+
+```shell
+# 找出java进程id, top 或者ps -ef | grep name | grep -v grep
+# 找出进程内最耗费cpu的线程
+ps -Lfp pid
+ps -mp pid -o THREAD,tid,time
+top -Hp pid
+
+printf "%x\n" 21742 # 54ee
+jstack 27111 | grep 54ee
 
 
 ```
+
+
+
+
 
 ps静态，top动态
 
