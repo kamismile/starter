@@ -437,6 +437,7 @@ btrace download https://github.com/btraceio/btrace/releases/tag/v1.3.9
 # 27 mac softs
 
 - alfred
+- keycastr
 - cleanmymac 3
 - spectacle
 - keyboard maestro
