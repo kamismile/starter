@@ -114,7 +114,7 @@ public int search(long value) {
 
 ## 09 二分法查找
 
-前提是数组必须是有序的
+前提是数组必须是有序的, 每次规模折半
 
 ```java
 public int search(long value) {
@@ -158,7 +158,43 @@ public int binarySearch(int value) {
 
 ## 01 冒泡排序
 
+```java
+public static void sort(long arr) {
+  long tmp = 0;
+  for (int i = 0; i < arr.length - 1; i++) {
+    for (int j = arr.length - 1; j > i; j--) {
+      tmp = arr[j];
+      arr[j] = arr[j - 1];
+      arr[j - 1] = tmp;
+    }
+  }
+}
+```
+
+
+
 ## 02  选择排序
+
+与冒泡算法相似，指针记住最小的, 少了中间不断的交换动作，只交换当前规模下的首项和最大(小)项
+
+```java
+public static void sort(long[] arr) {
+  int k = 0;
+  long tmp = 0;
+  for (int i = 0; i < arr.length - 1; i++) {
+    for (int j = i; j < arr.length; j++) {
+      if (arr[j] < arr[k]) {
+        k = j;
+      }
+    }
+    tmp = arr[i];
+    arr[i] = arr[k];
+    arr[k] = tmp;
+  }
+}
+```
+
+
 
 ## 03 插入排序
 
