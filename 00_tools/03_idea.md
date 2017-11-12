@@ -15,3 +15,22 @@
 - psf public static final
 - prsf private static final 
 - iter 
+- ctrl + b查看声明，也可以查看被使用情况
+- 尽量不使用tabs,
+- ctrl + n  file:lines
+- ctrl + shift + n
+- ctrl + alt + shit + n
+- double shift : show recent files comands + tab navgate
+- ctrl + e : recent files
+- ctrl + shift + e: recent editing files
+- ctrl + alt + left / right
+- esc / alt + 1 / f4
+- alt + shift + up / down
+- alt + shift + j
+- ctrl + alt + g
+- ctrl + alt + shift + j : show all occurency
+- ctrl + alt  + l : reformat
+- ctrl + alt + i : indent
+- ctrl + shift + left / right ： 调整侧边栏大小
+- language inject (json, sql, regex)
+

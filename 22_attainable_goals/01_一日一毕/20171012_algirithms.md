@@ -670,6 +670,19 @@ public void find(long value) {
 >  	2. 后序遍历右子树
 >  	3. 访问根节点
 
+```java
+public void frontOrder(Node localNode) {
+  if (localNode != null) {
+    // 访问根节点
+    System.out.println(localNode.data);
+    // 前序遍历左子树
+    frontOrder(localNode.leftChild);
+    // 前序遍历右子树
+    frontOrder(localNode.rightChild);
+  }
+}
+```
+
 
 
 
