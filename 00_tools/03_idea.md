@@ -10,3 +10,5 @@
   - 比如System.out.println("hello")提取变量"hello"到字符串
 - ctrl + alt + f提取变量
 - ctrl + alt + c提取常量
+- alt + home 跳转面包屑 
+  - 全屏状态下可在面包屑上导航不用alt + 1到侧边栏
