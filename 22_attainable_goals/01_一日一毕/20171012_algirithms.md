@@ -453,9 +453,107 @@ public class Recursion {
 
 
 
+# 07 递归的高级应用
+
+> 汉诺塔， 子树概念
+
+```java
+public class HanoiTower {
+  /**
+  *	topN: 移动的盘子数
+  	from: 起始塔座
+  	inter: 中间塔座
+  	to: 目标塔座
+  */	
+  public static void doTower(int topN, char from, char inner, char to) {
+    if (topN == 1) {
+      System.out.println("盘子1, 从" + from + "塔座到" + to + "塔座");
+    } else {
+      doTower(topN - 1, from, to, inter);
+      System.out.println("盘子" + topN + ", 从" + from + "塔座到" + to + "塔座");
+      doTower(topN - 1, inter, from, to);
+    }
+  }
+}
+```
 
 
 
+# 08 希尔排序
+
+> 插入排序缺点: 如果很小的数据在靠右侧，那么要将该数据排序到正确的位置上，则所有的中间数据都需要向右移动一位
+
+```java
+public class ShellSort {
+  public static void sort(long[] arr) {
+    // 初始化一个间隔
+    int h = 1;
+    // 计算最大间隔
+    while (h < arr.length / 3) {
+      h = h * 3 + 1;
+    }
+    
+    while (h > 0) {
+      // 进行插入排序
+      long tmp = 0;
+      
+      for (int i = h; i < arr.length; i++) {
+        tmp = arr[i];
+        int j = i;
+        while (j > h - 1 && arr[j - h] >= tmp) {
+          arr[j] = arr[j - h];
+          j -= h;
+        }
+        arr[j] = tmp;
+      }
+      
+      // 减小间隔
+      h = (h - 1) / 3
+    }
+  }
+}
+```
+
+# 09 快速排序
+
+> 划分两个子数组，设定关键字，比关键字小的放一组，比关键字大的放另一组
+
+```java
+public static void partition(long arr[], int left, int right, int point) {
+  int leftPtr = left - 1;
+  int right = right + 1;
+  while (true) {
+    // 循环, 将比关键字小的留在左端
+    while (leftPtr < rightPtr && arr[++leftPtr] < point);
+    // 循环，将比关键字大的留在右端
+    while (rightPtr > leftPtr && arr[--rightPtr] > point);
+    if (leftPtr >= rightPtr) {
+      return;
+    }
+    long tmp = arr[leftPtr];
+    arr[leftPtr] = arr[rightPtr];
+    arr[rightPtr] = tmp;
+    
+    return leftPtr;
+  }
+}
+
+public static void sort(long[] arr, int left, int right) {
+  if (right - left <= 0) {
+    return;
+  }
+  // 设置关键字
+  long point = arr[right];
+  // 获得切入点，同时对数组进行划分
+  int partition = partition(arr, left, right, point);
+  // 对左边的子数组进行快速排序
+  sort(arr, left, partition - 1);
+  // 对右边的子数组进行快速排序
+  sort(arr, partition + 1, right);
+}
+```
+
+# 10 二叉树
 
 
 
