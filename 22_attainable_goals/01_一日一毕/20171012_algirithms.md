@@ -233,11 +233,205 @@ public void push(int value) {
 public void pop() {
   return arr[top--];
 }
+
+// 查看数据
+public void peek() {
+  return arr[top];
+}
+
+// 判断是否为空
+public boolean isEmpty() {
+  return top == -1;
+}
+
+// 判断是否满了
+public boolean isFull() {
+  return top == arr.length - 1;
+}
 ```
 
 
 
 ## 02 队列的构造和应用
+
+底层也是数组
+
+```java
+public class MyQueue {
+  private long[] arr;
+  private int elements;
+  private int front;
+  private int end;
+  
+  public MyQueue() {
+    arr = new long[10];
+    elements = 0;
+    front = 0;
+    end = -1;
+  }
+  
+  public MyQueue(int maxsize) {
+    arr = new long[maxsize];
+    elements = 0;
+    front = 0;
+    end = -1;
+  }
+  
+  // 添加数据, 从队尾插入
+  public void insert(long value) {
+    arr[++end] = value;
+    elements++;
+  }
+  
+  // 删除数据， 从队头删除
+  public long remove() {
+    return arr[front++];
+  }
+  
+  // 查看队头
+  public long peek() {
+    return arr[front];
+  }
+  
+  // 判断是否为空
+  public boolean isEmpty() {
+    return elements == 0;
+  }
+  
+  // 判断是否满了
+  public boolean isFull() {
+    return elements == arr.length;
+  }
+}
+```
+
+循环队列
+
+```java
+public void insert(long value) {
+  if (end == arr.length - 1) {
+    end = -1;
+  }
+  arr[++end] = value;
+  elements++;
+}
+
+public long remove() {
+  long value = arr[front++];
+  if (front == arr.length) {
+    front == 0;
+  }
+  elements--;
+  return value;
+}
+```
+
+# 04 链表
+
+```java
+public class Node {
+  public long data;
+  public Node next;
+  
+  public Node(long value) {
+    this.data = value;
+    
+  }
+  
+  // 显示方法
+  public void display() {
+    System.out.print(data + " ");
+  }
+}
+
+public class LinkList {
+  private Node first;
+  public LinkList() {
+    first = null;
+  }
+  
+  // 插入一个节点，在头结点后进行插入
+  public void insertFirst(long value) {
+    Node node = new Node(value);
+    if (first == null) {
+      first = node;
+    } else {
+      node.next = first;
+      first = node;
+    }
+    
+  }
+  
+  // 删除一个节点，在头节点后进行删除
+  public Node deleteFirst() {
+    Node tmp = first;
+    first = tmp.next;
+    return tmp;
+  }
+  // 显示方法
+  public void display() {
+    Node current = first;
+    while (current != null) {
+      current.display();
+      current = current.next;
+    }
+  }
+  
+  // 查找方法
+  public Node find(long value) {
+    Node current = first;
+    while (current.data != value) {
+      if (current.next == null) {
+        return null;
+      }
+      current = current.next;
+    }
+    return current;
+  }
+  
+  // 删除方法
+  public Node delete(long value) {
+    Node current = first;
+    Node previous = first;
+    while (current.data != value) {
+      if (current.next == null) {
+        return null;
+      }
+      previous = current;
+      current = current.next;
+    }
+    if (current == first) {
+      first = tmp.next;
+    } else {
+      previous.next = current.next;
+    }
+    
+    return current;
+  }
+}
+```
+
+# 05 双端链表和双向链表
+
+> 双端: 链表中保存着对最后一个链结点引用的链表 
+
+```java
+public class FirstLastLinkList {
+  private Node first;
+  
+  public FirstLastLinkList() {
+    first = null;
+  }
+  
+  // 判断是否为空
+  public boolean isEmpty() {
+    return first == null;
+  }
+  
+}
+```
+
+
 
 
 
