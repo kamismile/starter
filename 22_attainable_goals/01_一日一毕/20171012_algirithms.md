@@ -555,11 +555,120 @@ public static void sort(long[] arr, int left, int right) {
 
 # 10 二叉树
 
+> 有序数组插入和删除数据项太慢
+>
+> 链表查询数据太慢
+>
+> 树中能够很快的查找数据项，插入数据项和删除数据项
 
 
 
+```java
+public class Node {
+  private long data; // 数据项
+  private Node leftChild;
+  private Node rightChild;
+  
+  public Node(long data) {
+    this.data = data;
+  }
+}
+
+public class Tree {
+  // 根节点
+  private Node root;
+  // 插入节点
+  public void insert(long value) {
+    
+  }
+  // 查找节点
+  public void find(long value) {
+   
+  }
+  // 删除节点
+  public void delete(long value) {
+    
+  }
+}
+```
+
+# 11 二叉树的基本操作
+
+```java
+// 插入
+public void insert(long value) {
+  // 封装节点
+  Node newNode = new Node(value);
+  // 引用当前节点
+  Node current = root;
+  Node parent;
+  if (root == null) {
+    root = newNode;
+    return;
+  } else {
+    while (true) {
+      // 父节点指向当前节点
+      parent = current;
+      // 如果当前指向的节点数据比插入的要大，则向左走
+      if (current.data > value) {
+        current = current.leftChild;
+        if (current == null) {
+          parent.leftChild = newNode;
+          return;
+        }
+      } else {
+        current = current.rightChild;
+        if (current == null) {
+          parent.rightChild = newNode;
+          return;
+        }
+      }
+    }
+  }
+}
 
 
+// 查找节点
+public void find(long value) {
+  // 引用当前节点，从根节点开始
+  Node current = root;
+  // 循环 只要查找值不等于当前节点的数据项
+  while (current.data != value) {
+    if (current.data > value) {
+      current = current.leftChild;
+    } else {
+      current = current.rightChild;
+    }
+    // 如果查找不到
+    if (current == null) {
+      return null;
+    }
+  }
+  return current;
+}
+```
+
+# 12 遍历二叉树
+
+> 前中后指相对访问节点的顺序
+>
+> 前序遍历 
+>
+> 1. 访问根节点
+> 2. 前序遍历左子树
+> 3. 前序遍历右子树
+>
+> 中序遍历
+>
+>  	1. 中序遍历左子树
+>  	2. 访问根节点
+>  	3. 中序遍历右子树
+>
+> 后序遍历
+>
+>  	1. 后序遍历左子树
+>  	2. 后序遍历右子树
+>  	3. 访问根节点
 
 
 
