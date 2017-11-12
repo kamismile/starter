@@ -198,6 +198,49 @@ public static void sort(long[] arr) {
 
 ## 03 插入排序
 
+```java
+public static void sort(long[] arr) {
+  long tmp = 0;
+  for (int i = 1; i < arr.length; i++) {
+    tmp = arr[i];
+    int j = i;
+    while (j > 0 && arr[j - 1] >= tmp) {
+      arr[j] = arr[j - 1];
+      j--;
+    }
+    arr[j] = tmp;
+  }
+}
+```
+
+# 03 栈和队列
+
+## 01 栈的构造和应用
+
+底层是一个数组
+
+```java
+// 
+private long[] arr;
+private int top;
+
+// 添加数据
+public void push(int value) {
+  arr[++top] = value;
+}
+
+// 移除数据
+public void pop() {
+  return arr[top--];
+}
+```
+
+
+
+## 02 队列的构造和应用
+
+
+
 
 
 
