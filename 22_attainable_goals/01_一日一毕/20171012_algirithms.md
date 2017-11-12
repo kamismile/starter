@@ -427,6 +427,26 @@ public class FirstLastLinkList {
   public boolean isEmpty() {
     return first == null;
   }
+  // 从头部插入
+  // 从头部删除
+  // 
+}
+```
+
+> 双向链表
+
+```java
+public class Node {
+  public long data;
+  public Node previous;
+  public Node next;
+}
+```
+
+# 06 递归的应用
+
+```java
+public class Recursion {
   
 }
 ```
