@@ -33,4 +33,6 @@
 - ctrl + alt + i : indent
 - ctrl + shift + left / right ： 调整侧边栏大小
 - language inject (json, sql, regex)
+- person.notnull tab
+- ctrl + h hierarchy
 
