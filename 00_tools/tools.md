@@ -459,3 +459,14 @@ btrace download https://github.com/btraceio/btrace/releases/tag/v1.3.9
 - staruml
 - axure rp 8
 - omnigraffle
+
+# 28 Vagrant CentOS安装报Rsync不在path中
+
+[vagrant centos安装常见报错](http://blog.csdn.net/shilei_zhang/article/details/72811274)
+
+```ruby
+# 添加sync folder type为virtualbox
+# vagrant plugin install vagrant-vbguest
+config.vm.synced_folder "E:/stone/month11_null", "/vagrant", type: "virtualbox"
+```
+
