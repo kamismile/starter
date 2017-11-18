@@ -42,5 +42,53 @@ graph LR
 
 ### 模块
 
+### 执行
 
+1. 新建.py文件
+2. 第一行shebang，执行脚本时通知内容要启动的解释器
+3. 第二行通过import 导入一个python模块platform
+4. 第三行打印platform模块的uname方法的执行结果
+
+```python
+#!/usr/bin/python
+import platform
+print platform.uname()
+```
+
+```shell
+chmod +x firstpycode.py
+./firstpycode.py
+```
+
+python程序可分为
+
+1. 模块
+2. 语句
+3. 表达式
+4. 对象
+
+## python ide
+
+# 03 程序文件结构
+
+面向过程
+
+​	以指令为中心，由指令处理数据
+
+面向对象
+
+​	以数据为中心，所有的处理代码都围绕数据展开
+
+​	如何设计数据结构组织数据，并提供对此类数据所允许处理操作
+
+## python开发环境
+
+```shell
+dir(platform) # 查看
+```
+
+简单方法:
+
+1. 编译安装新版本至某特定路径
+2. pyenv
 
