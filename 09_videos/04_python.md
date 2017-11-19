@@ -92,3 +92,116 @@ dir(platform) # 查看
 1. 编译安装新版本至某特定路径
 2. pyenv
 
+## python关键要素
+
+- 基本数据类型
+- 对象引用 
+- 组合数据类型
+- 逻辑操作符
+- 控制流语句
+- 算术操作符
+- 输入/输出
+- 函数的创建与调用
+
+# 05 编程语言基础技术框架
+
+对象引用 ，字母，数字，下划线
+
+区分大小写
+
+禁止使用保留字
+
+## 常用组合数据类型
+
+- 列表 
+- 元组
+- 字符串
+- 集合
+- 字典 可变
+
+len() 获取元素个数
+
+id()
+
+# 07 输入/输出
+
+```python
+print("%s %s" % ('hello', 'world'))
+dir(__builtins__)
+help(str)
+```
+
+- 字典: kv集合 {'a': 31, 'b': 78}
+
+```python
+d = {"a": 21, "b": 31}
+print("%(a)d %(b)d" % d)
+```
+
+# 08 函数
+
+> def functionName(arguments): 
+>
+> ​	print name
+
+- 内置函数
+- 标准库，内置模块
+
+过程式编程:
+
+​	变量，表达式，语句，函数
+
+
+
+# 09 python基本编程风格
+
+## 注释: #
+
+## 续行
+
+- \
+- ''' 闭合操作符，单一语句跨多行
+
+## 代码组
+
+## 文档
+
+> 可通过\__doc__获取
+
+## 缩进
+
+> 统一缩进4个字串
+
+## 命名惯例
+
+- 以单一下划线开头的变量名(_x)不会被from module import * 语句导入
+- 前后有下划线的变量名(\__x__) 是系统变量名，对解释器有特殊意义
+- 以两个下划线开头，但结尾没有下划线的变量名(\__x)是类的本地变量
+- 交互模式下，只有单个下划线的变量名(\_)用于保存最后表达式的结果
+
+```python
+#!/usr/bin/env python
+
+"this is a test module"
+
+import sys
+import os
+
+debug = True
+
+class FooClass (object):
+    "foo classs"
+    
+    pass
+
+def test():
+    "test function"
+    foo = FooClass()
+    
+    if debug:
+        print("ran test()")
+        
+if __name__ == '__main__'
+	test()
+```
+
