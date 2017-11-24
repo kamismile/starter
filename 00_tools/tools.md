@@ -307,6 +307,8 @@ jmh
 
 jprofiler
 
+visualvm launcher
+
 flow
 
 docker integration
