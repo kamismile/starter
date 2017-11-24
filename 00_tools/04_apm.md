@@ -4,6 +4,8 @@
 
 
 
+[GitHub上那些值得一试的JAVA开源库](http://www.jianshu.com/p/ad40e6dd3789)
+
 
 
 - JAmon
@@ -45,3 +47,8 @@ scouter
 inspectIT
 
 pinpoint
+
+
+
+
+
