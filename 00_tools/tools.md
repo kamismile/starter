@@ -305,6 +305,8 @@ maven helper
 
 jmh
 
+jprofiler
+
 flow
 
 docker integration
