@@ -32,6 +32,7 @@
 - jClarity
 - jconsole
 - jprofiler
+- perfino
 - jrockit mission control
 - netbeans profiler
 - plumbr
