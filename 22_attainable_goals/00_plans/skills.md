@@ -214,6 +214,76 @@
 
 
 
+ejb / web service restful
+
+ilog drools
+
+jenkins, gitlab, airflow, ant, jmeter, selenium, junit
+
+aws, openstack kubernetes, mesos
+
+lvs, nginx, haproxy
+
+nagios, cacti zabbix
+
+aws, docker, kubernetes, spark, tensorflow, mxnet, kafka
+
+puppet, ansible 
+
+数据库存储， KV存储系统，全文检索系统，文档预览系统，数据挖掘系统
+
+100PB级别分布式存储系统
+
+systemtap/dtrace
+
+tcpdump
+
+appium自动控制脚本
+
+运维自动化系统，监控系统，日志收集/分析系统，持续集成/自动化发布系统，CMDB，虚拟机管理系统
+
+前台可视化
+
+kvm, xen, docker
+
+jenkins, grafana, elk, zabbix, ansible
+
+saltstack
+
+flask & sqlalchemy & celery & rabbitmq
+
+pytest / nose / unittest
+
+sentry , gitlab, jenkins
+
+nameko / sqlalchemy
+
+thrift protobuffers
+
+tornado coroutine, asynchttpclient, websocket, torndb
+
+signal, os, time, datetime, hashlib, urllib, json, lxml, logging, urllib2
+
+python c/c++扩展
+
+scrapy
+
+gunicorn
+
+supervisor
+
+loadrunner, jmeter, locust
+
+mesos, chronos, docker, elk
+
+
+
+consol, etcd
+
+groupcache
+
+kafka, bookkeeper, thrift
+
 
 
 

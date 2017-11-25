@@ -9,6 +9,9 @@
 
 
 - JAmon
+- intel vtune
+- solaris performance analyzer
+- solarwinds
 - new relic
 - appdynamics
 - dynatrace
