@@ -36,3 +36,13 @@
 - person.notnull tab
 - ctrl + h hierarchy
 
+
+
+
+
+
+# idea vim
+
+: e 编辑文件
+
+: find 查找并打开文件(ctrl + shift + n)
