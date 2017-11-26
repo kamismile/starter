@@ -288,6 +288,90 @@ kafka, bookkeeper, thrift
 
 
 
+数据结构/算法/多线程，高并发，设计模式，jvm，内存模型 类加载机制， 性能优化
+
+soa/微服务
+
+dubbo， spring boot， spring cloud， 分布式调用链，自动化发布，zk, elk， 分库分表，消息中间件,分布式缓存， 监控，分布式调度
+
+spring mvc， mybatis/ibatis, ssh
+
+netty
+
+uml
+
+nginx/apache
+
+TDD html, css, js 
+
+internet tcp/ip, http
+
+hadoop/spark， postgresql/mysql, linux, mass data processing, lucerne/solr, data mining 
+
+gis qgis, arcgis
+
+ant/maven/gradle
+
+git
+
+nosql(redis/cassandra/hbase/mongodb)
+
+apache commons/guava
+
+webservice hessian cxf
+
+mysql/redis/mongodb
+
+hadoop/kafka/flume/rocketmq/nsq
+
+storm
+
+apache mesos, dcos
+
+freemarker themyleaf
+
+php
+
+openid / oauth
+
+docker / kubernete
+
+rest / soap
+
+nosql (memecached, redis, cassandra)
+
+monitoring tools( new relic, datadog)
+
+jms ejb jmx
+
+hessian shiro quartz mina netty
+
+db2
+
+osgi
+
+rpc
+
+sornarqube, jenkins
+
+系统建模，总体设计
+
+负载均衡/缓存/网络存储/网络安全/数据库高可用/性能评估
+
+海量数据/大批量/高并发/高性能分析及处理
+
+高并发/分布式 ，jvm, 数据库性能优化
+
+UV过百万，PV过千万的互联网后端服务
+
+ORM IOC
+
+每天10亿动态请求，1万QPS， TB级数据量
+
+kafka, netty, redis, protocal buffer, docker, dubbo, rpc
+
+hadoop flink, hbase, phoenix, elasticsearch, tensorflow
+
 
 
 
