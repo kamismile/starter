@@ -307,6 +307,8 @@ jmh
 
 jprofiler
 
+ideaVim
+
 visualvm launcher
 
 flow
