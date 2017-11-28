@@ -27,6 +27,7 @@ git-cmd.exe --no-cd --command=usr/bin/bash.exe -l -i
 - project manager
 - guides
 - c/c++
+- plantUML
 - code runner
 - debugger for chrome
 - eslint
@@ -308,6 +309,8 @@ jmh
 jprofiler
 
 ideaVim
+
+plantUML integration
 
 visualvm launcher
 
