@@ -524,6 +524,7 @@ config.vm.synced_folder "E:/stone/month11_null", "/vagrant", type: "virtualbox"
       mkdir bundle
       cd bundle
       git clone https://github.com/vimwiki/vimwiki.git
+      ```
 
 
       # launch vim run :HelpTags then :help vimwiki to verify it wasy installed
@@ -565,4 +566,18 @@ config.vm.synced_folder "E:/stone/month11_null", "/vagrant", type: "virtualbox"
     - impress.js
   - ide / editor presentation tool
     - vscode-reveal
+
     - [remark](https://github.com/gnab/remark)
+
+    - gitpitch
+
+    - [pub server](https://github.com/jldec/pub-server)
+
+    - rayVeal
+
+    - ```shell
+      sudo apt-get install mdp
+      ```
+
+    - ​
+
