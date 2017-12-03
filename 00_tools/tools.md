@@ -525,4 +525,25 @@ config.vm.synced_folder "E:/stone/month11_null", "/vagrant", type: "virtualbox"
       # launch vim run :HelpTags then :help vimwiki to verify it wasy installed
       ```
 
-    - ​
+  - NERDTree
+
+    ```shell
+    vim .
+    # 开启NERDTree
+    :NERDTree
+    # 查看帮助文档
+    ?
+    ```
+
+  - tab
+
+    ```shell
+    vim . 
+    # 查看tab相关
+    :help tabnew
+    :help tabprev
+    :help tabnext
+    :help tab
+    ```
+
+    ​
