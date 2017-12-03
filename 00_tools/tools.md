@@ -488,6 +488,10 @@ config.vm.synced_folder "E:/stone/month11_null", "/vagrant", type: "virtualbox"
 
 - vim
 
+  - 入门
+
+    - vimtotor命令
+
   - vundle
 
     - [地址](https://github.com/VundleVim/Vundle.vim)
@@ -544,6 +548,21 @@ config.vm.synced_folder "E:/stone/month11_null", "/vagrant", type: "virtualbox"
     :help tabprev
     :help tabnext
     :help tab
+
     ```
 
-    ​
+- emacs
+
+  - 入门
+    - c-h t
+
+- presentation展示用工具
+
+  - [html presentation framework](https://www.sitepoint.com/5-free-html5-presentation-systems/)
+    - revealjs
+    - deck
+    - slides
+    - impress.js
+  - ide / editor presentation tool
+    - vscode-reveal
+    - [remark](https://github.com/gnab/remark)
