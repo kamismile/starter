@@ -482,3 +482,6 @@ btrace download https://github.com/btraceio/btrace/releases/tag/v1.3.9
 config.vm.synced_folder "E:/stone/month11_null", "/vagrant", type: "virtualbox"
 ```
 
+# 29 vim /emacs plugin
+
+- org mode 
