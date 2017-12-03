@@ -485,3 +485,44 @@ config.vm.synced_folder "E:/stone/month11_null", "/vagrant", type: "virtualbox"
 # 29 vim /emacs plugin
 
 - org mode 
+
+- vim
+
+  - vundle
+
+    - [地址](https://github.com/VundleVim/Vundle.vim)
+
+  - vim-plug
+
+    - ```shell
+      curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+          https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+      ```
+
+    - ​
+
+    - PlugInstall
+
+    - PlugUpdate
+
+    - PlugClean
+
+    - PlugUpgrade
+
+    - PlugStatus
+
+    - PlugDiff
+
+  - PathOgen
+
+    - ```shell
+      cd ~/.vim
+      mkdir bundle
+      cd bundle
+      git clone https://github.com/vimwiki/vimwiki.git
+
+
+      # launch vim run :HelpTags then :help vimwiki to verify it wasy installed
+      ```
+
+    - ​
