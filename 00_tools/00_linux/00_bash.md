@@ -750,6 +750,12 @@ sed 's/ter//g' file.txt # 删除字符串ter
 
 
 
+# 13 查看linux上mysql连接数
+
+```shell
+sudo netstat -antlup | grep :3306 | wc -l
+```
+
 
 
 
