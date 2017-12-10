@@ -296,6 +296,8 @@ java stream debugger : jdk8 stream 可视化调试工具
 
 grep console： 控制台日志颜色区分，查看控制台输出更直观
 
+.ignore 版本控制
+
 ide features trainer 
 
 key promoter x
