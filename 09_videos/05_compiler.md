@@ -1,5 +1,15 @@
 视频反复看，第一次开课 -> 第二次开课...
 
+mit官网视频
+
+​	[数学](https://ocw.mit.edu/courses/find-by-topic/#cat=mathematics)
+
+​	[计算机科学](https://ocw.mit.edu/courses/find-by-topic/#cat=engineering&subcat=computerscience)
+
+mit youtube频道
+
+​	[MIT播放列表](https://www.youtube.com/user/MIT/playlists)
+
 离散数学
 
 ​	[离散数学](http://mooc.study.163.com/course/1000002018?tid=1000002017#/info)
