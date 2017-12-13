@@ -583,3 +583,7 @@ config.vm.synced_folder "E:/stone/month11_null", "/vagrant", type: "virtualbox"
 
     - ​
 
+
+# 30 win常用工具
+
+- 稻壳搜搜
