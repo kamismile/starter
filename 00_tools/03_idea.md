@@ -46,3 +46,10 @@
 : e 编辑文件
 
 : find 查找并打开文件(ctrl + shift + n)
+
+
+
+# idea tools
+
+- mps : dsl tools amazing
+- pycharm edu : tutor
