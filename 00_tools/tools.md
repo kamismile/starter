@@ -44,6 +44,7 @@ git-cmd.exe --no-cd --command=usr/bin/bash.exe -l -i
 - vscode_hexdump [vim 中使用%!xxd命令也可查看]
 - rest client
 - reStructuredText
+- latex workshop
 - java
 
 
