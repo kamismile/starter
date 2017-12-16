@@ -53,3 +53,15 @@
 
 - mps : dsl tools amazing
 - pycharm edu : tutor
+
+# create class
+
+If you are already in the Project View, press Alt+Insert (**New**) | **Class**. Project View can be activated via Alt+1.
+
+To create a new class in the **same directory** as the current one use Ctrl+Alt+Insert (**New...**).
+
+You can also do it from the Navigation Bar, press Alt+Home, then choose package with arrow keys, then press Alt+Insert.
+
+Another useful shortcut is View | Select In (Alt+F1), Project (1), then Alt+Insert to create a class near the existing one or use arrow keys to navigate through the packages.
+
+And yet another way is to just type the class name in the existing code where you want to use it, IDEA will highlight it in red as it doesn't exist yet, then press Alt+Enter for the Intention Actions pop-up, choose **Create Class**.
