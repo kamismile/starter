@@ -1,0 +1,5 @@
+- [MetaUML](https://github.com/ogheorghies/MetaUML) is a MetaPost library for typesetting UML diagrams with a human-friendly textual notation. Another useful package is emp. It allows to embed Metapost code and therefore MetaUML inside a LaTeX document
+- [`pst-uml`](http://ctan.org/pkg/pst-uml) is a PSTricks package providing support for drawing UML diagrams.
+- [`uml`](http://ctan.org/pkg/uml) is another package using PSTricks implementing at least a subset
+- [pgf/TikZ](http://ctan.org/pkg/pgf) is so feature rich that it can be used for typesetting UML diagrams as well
+- [`tikz-uml`](http://www.ensta-paristech.fr/~kielbasi/tikzuml/index.php?lang=en&id=doc) is a UML-specialized TikZ package
