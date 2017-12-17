@@ -24,13 +24,14 @@ git-cmd.exe --no-cd --command=usr/bin/bash.exe -l -i
 vscode 默认安装插件到${user.home}/.vscode/extension下，windows用户可下载.zip版新旧版本共存，升级方便
 
 - react code snippets
-- settings sync  [1d284c0e129f7b614e920a4ec22482293204eb71]
+- settings sync  [1d284c0e129f7b614e920a4ec22482293204eb71]\[d701d592440fa483d763a2bad62cac2c400a4e84]
 - vs code great icons
 - bookmark
 - project manager
 - guides
 - markdownlint
 - beautify
+- guides : html等对齐工具
 - c/c++
 - plantUML
 - java extensin pack
@@ -137,8 +138,6 @@ ctrl + space 且可自定义snippets
 ## CPP
 
 plugins: c/c++ 、 c++ intellisense
-
-
 
 ​
 
@@ -602,3 +601,5 @@ config.vm.synced_folder "E:/stone/month11_null", "/vagrant", type: "virtualbox"
 # 30 win常用工具
 
 - 稻壳搜搜
+- [latex editor](https://www.zhihu.com/question/19954023) 
+
