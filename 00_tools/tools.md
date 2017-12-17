@@ -21,16 +21,27 @@ git-cmd.exe --no-cd --command=usr/bin/bash.exe -l -i
 
 # 3. visual studio code plugins
 
+vscode 默认安装插件到${user.home}/.vscode/extension下，windows用户可下载.zip版新旧版本共存，升级方便
+
 - react code snippets
 - vs code great icons
 - bookmark
 - project manager
 - guides
+- markdownlint
+- beautify
 - c/c++
 - plantUML
+- java extensin pack
+- c/c++ lang command adapter
+- npm
+- java debug extension for visual studio code
+- debugger for java
+- [language support for java redhat](https://www.youtube.com/watch?v=l96vUqfB3R4)
 - code runner
 - debugger for chrome
 - eslint
+- jshint
 - go
 - npm
 - npm intellisense
