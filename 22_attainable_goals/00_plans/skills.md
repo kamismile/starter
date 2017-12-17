@@ -1,5 +1,18 @@
 [TOC]
 
+# 理论知识
+
+- 数学
+- 计算机相关， 网易公开课大一到大四，手机端公开课（中国mooc在线, 学堂在线）
+
+
+
+uml- java concurrency / io / net / collections
+
+uml - design pattern
+
+uml 下述内容
+
 # 大数据通用处理平台
 
 ## 1. Spark
