@@ -21,3 +21,6 @@
 # 在vscode中创建maven工程
 
 > terminal中输入maven archetype:generate -Dfilter=quickstart 进行交互式操作, 如果网络不畅，可以在user.home目录下的.m2目录下的settings.xml设置阿里的maven mirro地址
+>
+> 或者使用`mvn archetype:generate -DgroupId=XXX -DartifactId=XXX -DinteractiveMode=false` batch mode的方式创建基于quickstart的项目
+
