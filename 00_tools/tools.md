@@ -27,6 +27,7 @@ vscode 默认安装插件到${user.home}/.vscode/extension下，windows用户可
 - settings sync  [95d8e5e5afa6f89ee78477987a4dd28d]\[707a62da9c4f9f8132164687116e61f4eb72bd16]
 - vs code great icons
 - bookmark
+- vscode-graphviz / graphviz preview
 - project manager
 - guides
 - markdownlint
