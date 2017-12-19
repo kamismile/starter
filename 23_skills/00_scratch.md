@@ -24,3 +24,12 @@
 >
 > 或者使用`mvn archetype:generate -DgroupId=XXX -DartifactId=XXX -DinteractiveMode=false` batch mode的方式创建基于quickstart的项目
 
+# 创建多模块maven任务
+
+```shell
+mvn archetype:generate -DinteractiveMode=false -DgroupId=XXX -DartifactId=XXX
+# cd projectFolder && vim pom.xml 修改packaging jar - pom
+# in projectFolder with pom.xml
+mvn archetype:genearete -DinteractiveMode=false -DgroupId=subXXX -DartifactId=XXX
+```
+
