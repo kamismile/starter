@@ -27,6 +27,7 @@ vscode 默认安装插件到${user.home}/.vscode/extension下，windows用户可
 - settings sync  【bf272df76840d48f6bc6b18541daeded4c434257】【 98d542ccdfb045058a7d61011140dbfd】
 - vs code great icons
 - bookmark
+- jupyter
 - powershell
 - docker 搭配docker only client binary from docker office site
 - vscode-graphviz / graphviz preview
