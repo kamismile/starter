@@ -28,6 +28,7 @@ vscode 默认安装插件到${user.home}/.vscode/extension下，windows用户可
 - vs code great icons
 - graphviz lang
 - vscode icon
+- java test runner
 - bookmark
 - jupyter
 - powershell
