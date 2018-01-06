@@ -26,6 +26,7 @@ vscode 默认安装插件到${user.home}/.vscode/extension下，windows用户可
 - react code snippets
 - settings sync  【bf272df76840d48f6bc6b18541daeded4c434257】【 98d542ccdfb045058a7d61011140dbfd】
 - vs code great icons
+- Intellij Idea keyMapping
 - graphviz lang
 - vscode icon
 - java test runner
