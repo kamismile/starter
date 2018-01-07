@@ -75,7 +75,82 @@
 
 ## sed基础命令
 
+- 命令格式
+  - sed [-options]     \[ commands]  filename
+  - command格式:
+    - [address-range]  \[pattern-to-match]  \[sed-command]
+    - sed -n '5, 8p' passwd
+    - sed -n '/bash$/p' passwd
+    - sed -n '/^test/d' passwd
+    - sed -i '/^test/d' passwd
+    - sed -n '3,8p' passwd
+    - sed -nr '/bash$/s/(\w+):.*/\1/p' passwd
+    - sed -nr '/bash$/s/(\w+):\w:[0-9]+:.*:(.*):.*/\1 \2/p' passwd
+    - sed -n '/bash$/\\(.*\):\w\+:[0-9]\\+:.*:\(.*\\):.*/\1:\2/p' passwd
+    - sed -i 's/nologin/jike' passwd
+    - sed -i '5i\hello world' passwd
+    - sed -i '5a\hello world2' passwd
+    - sed -i '/hello/d' passwd
+    - sed -i '5\c\hello world' passwd
+    - echo abcdef | sed 'y/abcdef/ABCDEF/'
+    - echo fedcba | sed 'y/abcdef/ABCDEF/'
+    - sed '5q' passwd
+- 查找、删除、打印
+- 提取、替换
+- 插入、追加、更改
+- 转换、退出
+
 ## sed自动化实战应用
+
+- 一键安装脚本
+
+  - 安装PPTPD服务，并配置用户为guest,密码为123456
+
+  - ```shell
+    sudo apt-get install pptpd
+    sed -i '/logwtmp/# logwtmp/' /etc/pptpd.conf
+    touch auto.sh
+    vim auto.sh
+    ifconfig eth0 | grep "inet addr:" | cut -d: -f2 | cut -d" " -f1
+    ifconfig eth0 | grep "inet addr:" | awk -F'[ :]+' '{print $4}'
+    ifconfig eth0 | grep "inet addr:" | sed 's/\s+inet addr:([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}).*/\1/p'
+    ```
+
+  - ​
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
