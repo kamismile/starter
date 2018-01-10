@@ -69,3 +69,34 @@ void BSF(Node root) {
 
 # # topology sort
 
+[parallel job scheduling](http://www.codebytes.in/2015/11/parallel-job-scheduling-using.html)
+
+[avl tree](https://courses.cs.washington.edu/courses/cse332/16sp/exams/cse332-final-12wi.pdf)
+
+[Implementing parallel topological sort in a java graph library](http://fmt.cs.utwente.nl/files/sprojects/64.pdf)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+)
