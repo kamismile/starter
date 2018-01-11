@@ -67,7 +67,7 @@ void BSF(Node root) {
 
 > 1. 连接每个顶点最少的连线。最小生成树边的数量总是比顶点的数量少1
 
-# # topology sort
+# topology sort
 
 [parallel job scheduling](http://www.codebytes.in/2015/11/parallel-job-scheduling-using.html)
 
