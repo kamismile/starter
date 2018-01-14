@@ -48,3 +48,50 @@
     }
 ```
 
+## AtomicReferenceFieldUpdater
+
+### TODO
+
+## Unsafe
+
+```java
+Field theUnsafe = Unsafe.class.getDeclaredField("theUnsafe");
+theUnsafe.setAccessible(true);
+Unsafe unsafe = (Unsafe)theUnsafe.get(null);
+
+// alternatively
+Constructor<Unsafe> unsafeConstructor = Unsafe.class.getDeclaredConstructor();
+unsafeConstructor.setAccessible(true);
+Unsafe unsafe = unsafeConstructor.newInstance();
+```
+
+### create an instance of a class without calling a constructor
+
+```java
+class ClassWithExpensiveConstructor {
+  private final int value;
+  private ClassWithExpensiveConstructor() {
+    value = doExpensiveLookup();
+  }
+  private int doExpensiveLookup() {
+    try {
+      Thread.sleep(2000);
+    } catch (InterruptedException e) {
+      e.printStackTrace();
+    }
+    return 1;
+  }
+  
+  public int getValue() {
+    return value;
+  }
+}
+
+@Test
+public void testObjectCreation() {
+	ClassWithExpensiveConstructor instance = (ClassWithExpensiveConstructor)
+      unSafe.allocateInstance(ClassWithExpensiveConstructor.class);
+  	assertEquals(0, instance.getValue());
+}
+```
+
