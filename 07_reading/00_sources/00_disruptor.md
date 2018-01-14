@@ -16,3 +16,35 @@
 
 ## core Concepts
 
+## debug sources
+
+```java
+ @Test
+    public void t01() throws InterruptedException {
+        Disruptor<LongEvent> disruptor = new Disruptor<>(LongEvent::new, 1024, r -> {
+            return new Thread(r);
+        });
+
+        disruptor.handleEventsWith((event, sequence, endOfBatch) -> {
+            System.out.println("event = " + event);
+        });
+
+        RingBuffer<LongEvent> ringBuffer = disruptor.start();
+
+        ByteBuffer bb = ByteBuffer.allocate(8);
+        for (int i = 0; i < 10; i++) {
+            bb.putLong(0, i);
+            ringBuffer.publishEvent((event, sequence, args) -> event.setValue(args.getLong(0)), bb);
+            TimeUnit.SECONDS.sleep(1);
+        }
+
+        disruptor.shutdown();
+
+    }
+
+    @Data
+    static class LongEvent {
+        private long value;
+    }
+```
+
