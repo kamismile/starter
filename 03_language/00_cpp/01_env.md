@@ -10,5 +10,7 @@ cygwin / mingw
 
 cmake
 
+cygwin: gcc-g++, make, gdb
+
 ## visual studio
 
