@@ -1,0 +1,1 @@
+[sample](https://raw.githubusercontent.com/evilz/vscode-reveal/master/sample.md)
