@@ -29,6 +29,7 @@ vscode 默认安装插件到${user.home}/.vscode/extension下，windows用户可
 - Intellij Idea keyMapping
 - graphviz lang
 - vscode icon
+- vscode-reveal
 - java test runner
 - bookmark
 - jupyter
