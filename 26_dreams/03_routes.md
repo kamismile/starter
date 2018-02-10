@@ -143,6 +143,18 @@ diffutils(java-diff-utils)/java-diff(incava)/diff-match-patch/java-object-diff/d
 sequence-library/diffson(gnieh)/diff4j(cloudbees)/vault-diff(vault)
 gumtree/util-diff(madgag)/delta-diff
 
+---
+cross-cutting
+	logging and tracing
+	transaction management
+	security
+	caching
+	error handling
+	performance monitoring
+	custom business rules
+	event handling
+
+
 
 
 
