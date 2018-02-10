@@ -29,3 +29,4 @@ spring 5 (addbo
 javafx9 ecbooks
 kali
 实战java高并发
+按maven repo上的popular categories 每个项研究三款开源产品
