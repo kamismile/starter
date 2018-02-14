@@ -1,3 +1,9 @@
 https://github.com/avelino/awesome-go
 https://github.com/topics/go
-
+https://github.com/topics/pytho://github.com/topics/python
+https://github.com/topics/java
+https://github.com/topics/c
+https://github.com/topics/cpp
+https://github.com/topics/node
+https://github.com/topics/nodejs
+https://github.com/topics/devops
