@@ -1,3 +1,8 @@
+大学课程mooc
+	操作系统
+	计算机组成
+	算法
+	网络
 qlikeview
 tableau
 bitcoin, ethereum, bts
