@@ -24,6 +24,7 @@ git-cmd.exe --no-cd --command=usr/bin/bash.exe -l -i
 vscode 默认安装插件到${user.home}/.vscode/extension下，windows用户可下载.zip版新旧版本共存，升级方便
 
 - react code snippets
+- latex workshop
 - settings sync  【bf272df76840d48f6bc6b18541daeded4c434257】【 98d542ccdfb045058a7d61011140dbfd】
 - vs code great icons
 - Intellij Idea keyMapping
