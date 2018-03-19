@@ -612,4 +612,6 @@ config.vm.synced_folder "E:/stone/month11_null", "/vagrant", type: "virtualbox"
 
 - 稻壳搜搜
 - [latex editor](https://www.zhihu.com/question/19954023) 
+- [幕布思维导图](https://mubu.com/)
+
 
