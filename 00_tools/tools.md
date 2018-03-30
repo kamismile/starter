@@ -338,6 +338,10 @@ ideaVim
 
 plantUML integration
 
+swagger 
+
+swagger codegen
+
 visualvm launcher
 
 flow
