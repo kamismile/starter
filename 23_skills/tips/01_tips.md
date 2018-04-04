@@ -22,6 +22,20 @@ bash shell定义文字颜色有三个参数: ==style==, ==frontground==, 和==ba
 | White           | 37         | 47         |
 |                 |            |            |
 
+添加颜色到终端的语法:
+
+- \e[ : start color scheme.
+- x;y: color pairs to use(x;y)
+- $P1: your shell prompt variable.
+- \e[m: stop color scheme.
+
+```shell
+# set a red color prompt
+export PS1="\e[0;31m[\u@\h \W]\$ \e[m "
+```
+
+
+
 
 
 ```shell
