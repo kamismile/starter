@@ -158,7 +158,214 @@ cross-cutting
 
 
 
+## 源码分析专题（详细介绍源码中所用到的经典设计思想，看看大牛是如何写代码的，提升技术审美、提高核心竞争力）
 
+- 常用设计模式
+  - proxy代理模式
+  - factory工厂模式
+  - singleton单例模式
+  - Delegate委派模式
+  - strategy策略模式
+  - prototype原型模式
+  - template模板模式
+- Spring 5
+  - IOC容器设计原理及高级特性
+  - AOP设计原理
+  - FactoryBean与BeanFactory
+  - Spring事务处理机制
+  - 基于SpringJDBC手写ORM框架
+  - Spring MVC九大组件
+  - 手写实现 SpringMVC框架
+  - Spring MVC与Struts2对比
+  - Spring 5新特性
+- Mybatis
+  - 代码自动生成
+  - Mybatis关联查询、嵌套查询
+  - 缓存使用场景及选择策略
+  - Spring集成下的SqlSession与Mapper
+  - Mybatis的事务
+  - 分析Mybatis动态代理的真正实现
+  - 手写实现mini版的mybatis
+
+## 分布式专题(迎接高并发大数据的挑战、从深度到广度完善知识体系)
+
+- 分布式架构原理
+  - 分布式架构演进过程
+  - 如何把应用从单机扩展到分布式
+  - CDN加速静态文件访问
+  - 系统监控、容灾、存储动态扩容
+  - 架构设计及业务驱动划分
+  - CPA 、BASE理论及其应用
+- 分布式架构策略
+  - 分布式架构网络通信原理剖析
+  - 通信协议中的序列化与反序列化
+  - 基于框架的RPC技术web service/rmi/hession
+  - 深入分析zookeeper在disconf配置中心的应用
+  - 基于zookeeper实现分布式服务器动态上下线感知
+  - 深入分析 zookeeper zob协议及选举机制源码解读
+  - dubbo管理中心及监控平台安装部署
+  - 基于dubbo的分布式系统架构实战
+  - dubbo的容错机制及高扩展性分析
+- 分布式架构中间件
+  - 分布式消息通信activemq / rabbitmq
+  - redis主从复制原理及无磁盘复制分析
+  - 图解redis中aof和rdb持久化策略的原理
+  - mongodb企业级集群解决方案
+  - mongodb数据分片、转存及恢复策略
+  - 基于openresty部署应用层nginx及nginx + lua实践
+  - nginx反向代理服务器及负载均衡服务配置实战
+  - 基于netty实现高性能IM聊天
+  - 基于netty实现dubbo多协议通信支持
+  - netty无锁化串行设计及高并发处理机制
+- 分布式架构实战
+  - 分布式全局ID生成方案
+  - session的跨域共享及企业级单点登录解决方案实战
+  - 分布式事务解决方案实战
+  - 高并发下的服务降级、限流实战
+  - 基于分布式架构下分布式锁的解决方案实战
+  - 分布式架构下实现分布式定时调度
+
+
+
+## 微服务架构专题（围绕微服务的通用模式、讲解spring cloud的常见用法及原理让微服务的开发更加方便、快捷，让微服务更加稳定、可用）
+
+- 微框架
+  - 与微服务之间的关系
+  - 热部署实战
+  - 核心组件starter, actuator, autoconfiguration, cli
+  - 集成mybatis实现多数据源路由实战
+  - 集成dubbo实战
+  - 集成redis缓存实战
+  - 集成swagger2构建api管理及测试体系
+  - 实现多环境配置动态解析
+- spring cloud
+  - eureka注册中心
+  - ribbon集成rest实现负载均衡
+  - fegion声明式服务调用
+  - hystrix服务熔断降级方案
+  - zuul实现微服务网关
+  - config分布式统一配置中心
+  - sleuth调用链路跟踪
+  - bus消息总线
+  - 基于hystrix实现接口降级实战
+  - 集成spring cloud实现统一整合方案
+- docker虚拟化
+  - docker的镜像、仓库、容器
+  - docker file构建lnmp环境部署个人博客wordpress
+  - docker compose构建lnmp环境部署个人博客wordpress
+  - docker网络组成、路由互联、openswitch
+  - 基于swarm构建docker集群实战
+  - kubernetes简介
+- 漫谈微服务架构
+  - SOA架构和微服务之间的区别和联系
+  - 如何设计微服务及其设计原则
+  - 解惑spring boot 流行因素及能够解决什么问题
+  - 什么是spring cloud, 为何要选择spring cloud
+  - 基于全局分析spring cloud各个组件所解决的问题
+
+
+
+
+
+## 性能分析（从JVM底层原理到内存优化再到各中间件的性能调优）
+
+- 理解性能调优
+  - 性能基准
+  - 性能优化到底是什么
+  - 衡量维度
+- JVM调优篇
+  - 知其然，知其所以然
+  - 详解什么是JVM运行时数据区
+  - 详解什么是JVM内存模型 JMM
+  - 详解GC可达
+  - 详解各垃圾回收器使用场景(Throughput\cms)
+  - 详解GC日志、从日志看端倪
+  - 实战MAT分析dump文件(推理、验证)
+- tomcat调优篇
+  - how it works? 探查tomcat的运行机制及框架
+  - 分析tomcat线程模型
+  - tomcat系统参数认识及调优
+  - 基准测试
+- mysql调优篇
+  - 理解mysql底层b+ tree机制
+  - sql执行计划详解
+  - 索引优化理论
+  - sql语句优化
+
+
+
+## 工程化专题(工欲善其事必先利其器，不管是小白，还是资深开发，都需要先选择好的工具，提升开发效率和团队协作效率，让自己有更多的时间来思考)
+
+- maven
+
+  - 生成可执行jar, 理解scope生成最精确的jar
+  - 类冲突，包依赖
+  - 全面理解Maven的lifecycle, phase, goal
+  - 架构师必备之maven生成archetype
+  - maven流行插件实战、手写自己的插件
+  - nexus使用、上传、配置
+  - 对比gradle
+
+- Jenkins
+
+  - 搭建jenkins自动部署环境
+  - jenkins集成maven, git实现自动部署
+  - test\\pre\production多环境发布
+  - Jenkins多环境配置，权限管理及插件使用
+
+- sonar
+
+  - 使用sonar进行代码质量管理
+  - 关于代码检查工具findbugs/pmd的运用
+  - sonarqube代码质量管理平台安装及使用
+  - 使用jenkins与sonar集成对代码进行持续检测
+  - idea与sonar集合使用
+
+- git
+
+  - 什么是git以及git的工作原理
+
+  - git常用命令best practise 避坑教学
+
+  - git冲突怎么引起的，如何解决
+
+  - 架构师职责： git flow规范团队git使用规程
+
+    团队案例分享
+
+
+
+## 电商项目实战(大型电商分布式系统应用实践， 利用云服务器搭建真实的开发和部署环境，千人在线参与开发)
+
+- 用户认证
+  - 用户注册
+  - sso单点登录
+  - 第三方登录
+  - UI页面拦截
+- 店铺、商品
+  - elasticsearch实现大数据聚合检索
+  - hadoop环境搭建
+  - 动静分离
+  - 店铺管理
+  - 商品管理
+- 订单、支付
+  - 订单号统一生成规则
+  - 下单流程管理
+  - 库存管理
+  - 购物车
+  - 优惠码支付
+  - 积分支付
+  - 第三方支付
+- 数据统计分析
+  - 用户行为分析
+  - 行业分析
+  - 区域分析
+- 通知推送
+  - 融云推送
+  - 消息中间件
+  - 用户群聊
+  - 点对点聊天
+  - 文件断点续传
 
 
 

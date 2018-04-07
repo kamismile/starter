@@ -24,6 +24,7 @@ git-cmd.exe --no-cd --command=usr/bin/bash.exe -l -i
 vscode 默认安装插件到${user.home}/.vscode/extension下，windows用户可下载.zip版新旧版本共存，升级方便
 
 - react code snippets
+- latex workshop
 - settings sync  【bf272df76840d48f6bc6b18541daeded4c434257】【 98d542ccdfb045058a7d61011140dbfd】
 - vs code great icons
 - Intellij Idea keyMapping
@@ -337,6 +338,10 @@ ideaVim
 
 plantUML integration
 
+swagger 
+
+swagger codegen
+
 visualvm launcher
 
 flow
@@ -611,4 +616,6 @@ config.vm.synced_folder "E:/stone/month11_null", "/vagrant", type: "virtualbox"
 
 - 稻壳搜搜
 - [latex editor](https://www.zhihu.com/question/19954023) 
+- [幕布思维导图](https://mubu.com/)
+
 
