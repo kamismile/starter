@@ -65,3 +65,13 @@ You can also do it from the Navigation Bar, press Alt+Home, then choose package 
 Another useful shortcut is View | Select In (Alt+F1), Project (1), then Alt+Insert to create a class near the existing one or use arrow keys to navigate through the packages.
 
 And yet another way is to just type the class name in the existing code where you want to use it, IDEA will highlight it in red as it doesn't exist yet, then press Alt+Enter for the Intention Actions pop-up, choose **Create Class**.
+
+
+
+# terminal
+
+>**Setup JetBrains(InteliJ, WebStorm, PHPStorm) IDE terminal to use GIT bash**
+>
+>File-->Settings-->(Enter 'Terminal' in search) Change Shell path to:
+>
+>"C:\Program Files (x86)\Git\bin\sh.exe" --login -i
