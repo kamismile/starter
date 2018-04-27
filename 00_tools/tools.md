@@ -33,6 +33,7 @@ vscode 默认安装插件到${user.home}/.vscode/extension下，windows用户可
 - vscode-reveal
 - java test runner
 - bookmark
+- GlassIT-VSC
 - jupyter
 - powershell
 - docker 搭配docker only client binary from docker office site
